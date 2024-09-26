@@ -1,0 +1,1304 @@
+\hypertarget{graphic_8h}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/controller/graphics/graphic.h File Reference}
+\label{graphic_8h}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/graphics/graphic.h@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/graphics/graphic.h}}
+
+
+File containing the constants and functions to interact with the graphic card.  
+
+
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}lcom/lcf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}VBE.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../model/game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../mouse/mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Game\+Elements/clock\+\_\+150.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/0\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/1\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/2\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/3\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/4\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/5\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/6\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/7\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/8\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/9\+\_\+20.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Characters/\+Characters20x32/two\+\_\+point.\+xpm\char`\"{}}\newline
+Include dependency graph for graphic.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{graphic_8h_a323257f43d5806ff628b4625424cb675}{MAX\+\_\+\+PIXELS}}~75
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{graphic_8h_ad68181bf7a320dc3a6bfd8210c3ae0c8}{set\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t $\ast$mode)
+\begin{DoxyCompactList}\small\item\em sets the graphic mode \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a9c86d5e3807f8c993bbaa4e7f139b581}{set\+\_\+frame\+\_\+mode}} (uint16\+\_\+t $\ast$mode)
+\begin{DoxyCompactList}\small\item\em sets the frame mode \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a62f63672fd06c462a0873e30f5e32ef8}{set\+\_\+text\+\_\+mode}} ()
+\begin{DoxyCompactList}\small\item\em sets the text mode \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a67f86e0b7cb832cdc53f3d578b83afb7}{load\+\_\+xpm}} (xpm\+\_\+map\+\_\+t img, enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} piece\+Type, bool is\+White)
+\begin{DoxyCompactList}\small\item\em loads the xpm \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a96f078d5229cccb86c289af5e7310399}{load\+\_\+xpm\+\_\+cursor}} ()
+\begin{DoxyCompactList}\small\item\em loads the xpm cursor \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphic_8h_aba8fbf35f49c528a721402130a55a4fa}{load\+\_\+xpm\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em loads the xpm menu \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_ad8b6297b2011f89271f23879309fda93}{load\+\_\+numbers}} ()
+\begin{DoxyCompactList}\small\item\em loads the xpm game background \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a6399456ceeeb8df04f6ea6c55fee505c}{load\+\_\+xpm\+\_\+clocks\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em loads the xpm game background \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphic_8h_aa4e683fb6c23914b14e7932daa196d2c}{allocate\+\_\+buffers}} ()
+\begin{DoxyCompactList}\small\item\em loads the xpm game background \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic_8h_a0d157d997329169f936545f9985e334b}{swap\+\_\+buffers}} ()
+\begin{DoxyCompactList}\small\item\em swaps the buffers \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic_8h_a0af812a9bbb79b79e6a18b0c5a32c7f2}{swap\+\_\+\+Background\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em swaps the background buffer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic_8h_adfc3bb95533d2e51ccef9b19209075e8}{copy\+\_\+\+Back\+Ground\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em copies the buffer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic_8h_a24015f2b3c19b2228803ab038d692dd4}{erase\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em erases the buffer \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_aaa1bbaac45cbb20512a7248b7b67d6c2}{get\+\_\+h\+\_\+res}} ()
+\begin{DoxyCompactList}\small\item\em gets the horizontal resolution \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_ad784c220dd9a82e4d6a2573b555296dc}{get\+\_\+v\+\_\+res}} ()
+\begin{DoxyCompactList}\small\item\em gets the vertical resolution \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a08c498ffeb0a3962e3b7711b57397741}{vg\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em draws a pixel \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a75345e5faafba44236ec85097c8b5fe3}{adjust\+\_\+color}} (uint32\+\_\+t color, uint16\+\_\+t $\ast$new\+\_\+color)
+\begin{DoxyCompactList}\small\item\em adjusts the color \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a6440527c9cc05306c3fea3e53cb175fd}{draw\+\_\+xpm}} (xpm\+\_\+map\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em draws the xpm \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_add642ffbd7541851a3b8afeb2b477331}{draw\+\_\+black\+\_\+piece}} (uint16\+\_\+t x, uint16\+\_\+t y, enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} piece\+Type)
+\begin{DoxyCompactList}\small\item\em draws the black piece \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a5bc9007966db542e8991431c3ccd7c48}{draw\+\_\+white\+\_\+piece}} (uint16\+\_\+t x, uint16\+\_\+t y, enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} piece\+Type)
+\begin{DoxyCompactList}\small\item\em draws the white piece \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphic_8h_a41adeb1c7fb1ce2b9572338b694b2d7e}{draw\+\_\+both\+\_\+clocks}} ()
+\begin{DoxyCompactList}\small\item\em draws the both clocks \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a0f593d24f2659917247e9d8234b7ce68}{draw\+\_\+board\+\_\+without\+\_\+\+Pieces}} ()
+\begin{DoxyCompactList}\small\item\em draws the board with the pieces \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_ab7fef961e9c01f64b2a536701805cba8}{draw\+\_\+cursor\+\_\+mouse}} (uint16\+\_\+t x, uint16\+\_\+t y, enum \mbox{\hyperlink{enum_8h_abbe637356c8cb749a9726f13658031fa}{Cursor\+Type}} cursor\+Type)
+\begin{DoxyCompactList}\small\item\em draws the cursor \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a574331c32c3d1081fb697c030dd8aed0}{draw\+\_\+menu}} (uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em draws the menu \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a897283914114298c5832f5cb9cb14a6c}{draw\+\_\+number}} (uint16\+\_\+t x, uint16\+\_\+t y, int number)
+\begin{DoxyCompactList}\small\item\em draws the number \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a41527f0f12d7782adb5963a6ee03d53c}{draw\+\_\+two\+\_\+points}} (uint16\+\_\+t x, uint16\+\_\+t)
+\begin{DoxyCompactList}\small\item\em draws the two points \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_af0cbda77d440e6b2818b8a99c5ee2d6f}{draw\+\_\+game\+\_\+background}} ()
+\begin{DoxyCompactList}\small\item\em draws the game background \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphic_8h_a6b2bbc22fb8d3bbd05195bbf6cdfe296}{load\+\_\+xpm\+\_\+game\+\_\+background}} ()
+\begin{DoxyCompactList}\small\item\em loads the xpm game background \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_aab7503a2812fb4e0cc7fdd5ddaf515df}{draw\+\_\+game\+\_\+instructions}} ()
+\begin{DoxyCompactList}\small\item\em draws the game instructions \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a4bf1a613371611d5dcb60ef14cb531e2}{draw\+\_\+game\+\_\+mode\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em draws the game mode menu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic_8h_a9e3052daf125d9f29898e22da30c2e2b}{erase\+\_\+front\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em erases the front buffer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{graphic_8h_acb78a7ee3256c7619fffd93c454f4384}{erase\+\_\+background\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em erases the background buffer \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphic_8h_ac7bdc89e67af14917833c5008b172de8}{draw\+\_\+black\+\_\+wins}} ()
+\begin{DoxyCompactList}\small\item\em draws the black wins \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphic_8h_a41446ba811409a73cf1205eabc9a8c2b}{draw\+\_\+white\+\_\+wins}} ()
+\begin{DoxyCompactList}\small\item\em draws the white wins \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphic_8h_ac581b9d6af85c4c35f9d423a966cba8e}{draw\+\_\+pause\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em draws the pause menu \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{graphic_8h_a2608db1e4e461612f2f0ca0ef5ebfeab}{wait\+\_\+for\+\_\+\+ESC\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em waits for the ESC key \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing the constants and functions to interact with the graphic card. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{graphic_8h_a323257f43d5806ff628b4625424cb675}\label{graphic_8h_a323257f43d5806ff628b4625424cb675}} 
+\index{graphic.h@{graphic.h}!MAX\_PIXELS@{MAX\_PIXELS}}
+\index{MAX\_PIXELS@{MAX\_PIXELS}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_PIXELS}{MAX\_PIXELS}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+PIXELS~75}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{graphic_8h_a75345e5faafba44236ec85097c8b5fe3}\label{graphic_8h_a75345e5faafba44236ec85097c8b5fe3}} 
+\index{graphic.h@{graphic.h}!adjust\_color@{adjust\_color}}
+\index{adjust\_color@{adjust\_color}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{adjust\_color()}{adjust\_color()}}
+{\footnotesize\ttfamily int() adjust\+\_\+color (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color,  }\item[{uint16\+\_\+t $\ast$}]{new\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+adjusts the color 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color to be adjusted \\
+\hline
+{\em new\+\_\+color} & new color\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+adjusts the color
+
+This function adjusts the color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color. \\
+\hline
+{\em new\+\_\+color} & The new color.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphic_8h_aa4e683fb6c23914b14e7932daa196d2c}\label{graphic_8h_aa4e683fb6c23914b14e7932daa196d2c}} 
+\index{graphic.h@{graphic.h}!allocate\_buffers@{allocate\_buffers}}
+\index{allocate\_buffers@{allocate\_buffers}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{allocate\_buffers()}{allocate\_buffers()}}
+{\footnotesize\ttfamily int allocate\+\_\+buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loads the xpm game background 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+loads the xpm game background
+
+This function allocates the buffers.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_aa4e683fb6c23914b14e7932daa196d2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_adfc3bb95533d2e51ccef9b19209075e8}\label{graphic_8h_adfc3bb95533d2e51ccef9b19209075e8}} 
+\index{graphic.h@{graphic.h}!copy\_BackGroundBuffer@{copy\_BackGroundBuffer}}
+\index{copy\_BackGroundBuffer@{copy\_BackGroundBuffer}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{copy\_BackGroundBuffer()}{copy\_BackGroundBuffer()}}
+{\footnotesize\ttfamily void copy\+\_\+\+Back\+Ground\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+copies the buffer 
+
+copies the buffer
+
+This function copies the background buffer. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_adfc3bb95533d2e51ccef9b19209075e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_add642ffbd7541851a3b8afeb2b477331}\label{graphic_8h_add642ffbd7541851a3b8afeb2b477331}} 
+\index{graphic.h@{graphic.h}!draw\_black\_piece@{draw\_black\_piece}}
+\index{draw\_black\_piece@{draw\_black\_piece}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_black\_piece()}{draw\_black\_piece()}}
+{\footnotesize\ttfamily int() draw\+\_\+black\+\_\+piece (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}}]{piece\+Type }\end{DoxyParamCaption})}
+
+
+
+draws the black piece 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+{\em piece\+Type} & type of the piece\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the black piece
+
+This function draws the Black \mbox{\hyperlink{structPiece}{Piece}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position. \\
+\hline
+{\em piece\+Type} & The piece type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{graphic_8h_add642ffbd7541851a3b8afeb2b477331_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_add642ffbd7541851a3b8afeb2b477331_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_ac7bdc89e67af14917833c5008b172de8}\label{graphic_8h_ac7bdc89e67af14917833c5008b172de8}} 
+\index{graphic.h@{graphic.h}!draw\_black\_wins@{draw\_black\_wins}}
+\index{draw\_black\_wins@{draw\_black\_wins}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_black\_wins()}{draw\_black\_wins()}}
+{\footnotesize\ttfamily int draw\+\_\+black\+\_\+wins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the black wins 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the black wins
+
+This function draws the black wins.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{graphic_8h_ac7bdc89e67af14917833c5008b172de8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_ac7bdc89e67af14917833c5008b172de8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a0f593d24f2659917247e9d8234b7ce68}\label{graphic_8h_a0f593d24f2659917247e9d8234b7ce68}} 
+\index{graphic.h@{graphic.h}!draw\_board\_without\_Pieces@{draw\_board\_without\_Pieces}}
+\index{draw\_board\_without\_Pieces@{draw\_board\_without\_Pieces}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_board\_without\_Pieces()}{draw\_board\_without\_Pieces()}}
+{\footnotesize\ttfamily int() draw\+\_\+board\+\_\+without\+\_\+\+Pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the board with the pieces 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the board with the pieces
+
+This function draws the board without pieces.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{graphic_8h_a0f593d24f2659917247e9d8234b7ce68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a0f593d24f2659917247e9d8234b7ce68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a41adeb1c7fb1ce2b9572338b694b2d7e}\label{graphic_8h_a41adeb1c7fb1ce2b9572338b694b2d7e}} 
+\index{graphic.h@{graphic.h}!draw\_both\_clocks@{draw\_both\_clocks}}
+\index{draw\_both\_clocks@{draw\_both\_clocks}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_both\_clocks()}{draw\_both\_clocks()}}
+{\footnotesize\ttfamily int draw\+\_\+both\+\_\+clocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the both clocks 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the both clocks
+
+This function draws the both clocks.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{graphic_8h_a41adeb1c7fb1ce2b9572338b694b2d7e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_ab7fef961e9c01f64b2a536701805cba8}\label{graphic_8h_ab7fef961e9c01f64b2a536701805cba8}} 
+\index{graphic.h@{graphic.h}!draw\_cursor\_mouse@{draw\_cursor\_mouse}}
+\index{draw\_cursor\_mouse@{draw\_cursor\_mouse}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_cursor\_mouse()}{draw\_cursor\_mouse()}}
+{\footnotesize\ttfamily int() draw\+\_\+cursor\+\_\+mouse (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{enum \mbox{\hyperlink{enum_8h_abbe637356c8cb749a9726f13658031fa}{Cursor\+Type}}}]{cursor\+Type }\end{DoxyParamCaption})}
+
+
+
+draws the cursor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+{\em cursor\+Type} & type of the cursor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the cursor
+
+This function draws the cursor mouse.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position. \\
+\hline
+{\em cursor\+Type} & The cursor type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{graphic_8h_ab7fef961e9c01f64b2a536701805cba8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_ab7fef961e9c01f64b2a536701805cba8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_af0cbda77d440e6b2818b8a99c5ee2d6f}\label{graphic_8h_af0cbda77d440e6b2818b8a99c5ee2d6f}} 
+\index{graphic.h@{graphic.h}!draw\_game\_background@{draw\_game\_background}}
+\index{draw\_game\_background@{draw\_game\_background}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_game\_background()}{draw\_game\_background()}}
+{\footnotesize\ttfamily int() draw\+\_\+game\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the game background 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the game background
+
+This function draws the game background.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{graphic_8h_af0cbda77d440e6b2818b8a99c5ee2d6f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_af0cbda77d440e6b2818b8a99c5ee2d6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_aab7503a2812fb4e0cc7fdd5ddaf515df}\label{graphic_8h_aab7503a2812fb4e0cc7fdd5ddaf515df}} 
+\index{graphic.h@{graphic.h}!draw\_game\_instructions@{draw\_game\_instructions}}
+\index{draw\_game\_instructions@{draw\_game\_instructions}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_game\_instructions()}{draw\_game\_instructions()}}
+{\footnotesize\ttfamily int() draw\+\_\+game\+\_\+instructions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the game instructions 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the game instructions
+
+This function draws the game instructions.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{graphic_8h_aab7503a2812fb4e0cc7fdd5ddaf515df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_aab7503a2812fb4e0cc7fdd5ddaf515df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a4bf1a613371611d5dcb60ef14cb531e2}\label{graphic_8h_a4bf1a613371611d5dcb60ef14cb531e2}} 
+\index{graphic.h@{graphic.h}!draw\_game\_mode\_menu@{draw\_game\_mode\_menu}}
+\index{draw\_game\_mode\_menu@{draw\_game\_mode\_menu}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_game\_mode\_menu()}{draw\_game\_mode\_menu()}}
+{\footnotesize\ttfamily int() draw\+\_\+game\+\_\+mode\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the game mode menu 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the game mode menu
+
+This function draws the game mode menu.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{graphic_8h_a4bf1a613371611d5dcb60ef14cb531e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a4bf1a613371611d5dcb60ef14cb531e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a574331c32c3d1081fb697c030dd8aed0}\label{graphic_8h_a574331c32c3d1081fb697c030dd8aed0}} 
+\index{graphic.h@{graphic.h}!draw\_menu@{draw\_menu}}
+\index{draw\_menu@{draw\_menu}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_menu()}{draw\_menu()}}
+{\footnotesize\ttfamily int() draw\+\_\+menu (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+draws the menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the menu
+
+This function draws the menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{graphic_8h_a574331c32c3d1081fb697c030dd8aed0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a574331c32c3d1081fb697c030dd8aed0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a897283914114298c5832f5cb9cb14a6c}\label{graphic_8h_a897283914114298c5832f5cb9cb14a6c}} 
+\index{graphic.h@{graphic.h}!draw\_number@{draw\_number}}
+\index{draw\_number@{draw\_number}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_number()}{draw\_number()}}
+{\footnotesize\ttfamily int() draw\+\_\+number (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+draws the number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+{\em number} & number to be drawn\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the number
+
+This function draws the number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position. \\
+\hline
+{\em number} & The number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{graphic_8h_a897283914114298c5832f5cb9cb14a6c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a897283914114298c5832f5cb9cb14a6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_ac581b9d6af85c4c35f9d423a966cba8e}\label{graphic_8h_ac581b9d6af85c4c35f9d423a966cba8e}} 
+\index{graphic.h@{graphic.h}!draw\_pause\_menu@{draw\_pause\_menu}}
+\index{draw\_pause\_menu@{draw\_pause\_menu}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_pause\_menu()}{draw\_pause\_menu()}}
+{\footnotesize\ttfamily int draw\+\_\+pause\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the pause menu 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the pause menu
+
+This function draws the pause menu.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{graphic_8h_ac581b9d6af85c4c35f9d423a966cba8e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_ac581b9d6af85c4c35f9d423a966cba8e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a41527f0f12d7782adb5963a6ee03d53c}\label{graphic_8h_a41527f0f12d7782adb5963a6ee03d53c}} 
+\index{graphic.h@{graphic.h}!draw\_two\_points@{draw\_two\_points}}
+\index{draw\_two\_points@{draw\_two\_points}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_two\_points()}{draw\_two\_points()}}
+{\footnotesize\ttfamily int() draw\+\_\+two\+\_\+points (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+draws the two points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the two points
+
+This function draws the two points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{graphic_8h_a41527f0f12d7782adb5963a6ee03d53c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a41527f0f12d7782adb5963a6ee03d53c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a5bc9007966db542e8991431c3ccd7c48}\label{graphic_8h_a5bc9007966db542e8991431c3ccd7c48}} 
+\index{graphic.h@{graphic.h}!draw\_white\_piece@{draw\_white\_piece}}
+\index{draw\_white\_piece@{draw\_white\_piece}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_white\_piece()}{draw\_white\_piece()}}
+{\footnotesize\ttfamily int() draw\+\_\+white\+\_\+piece (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}}]{piece\+Type }\end{DoxyParamCaption})}
+
+
+
+draws the white piece 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+{\em piece\+Type} & type of the piece\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the white piece
+
+This function draws the White \mbox{\hyperlink{structPiece}{Piece}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position. \\
+\hline
+{\em piece\+Type} & The piece type. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{graphic_8h_a5bc9007966db542e8991431c3ccd7c48_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a5bc9007966db542e8991431c3ccd7c48_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a41446ba811409a73cf1205eabc9a8c2b}\label{graphic_8h_a41446ba811409a73cf1205eabc9a8c2b}} 
+\index{graphic.h@{graphic.h}!draw\_white\_wins@{draw\_white\_wins}}
+\index{draw\_white\_wins@{draw\_white\_wins}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_white\_wins()}{draw\_white\_wins()}}
+{\footnotesize\ttfamily int draw\+\_\+white\+\_\+wins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the white wins 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the white wins
+
+This function draws the white wins.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{graphic_8h_a41446ba811409a73cf1205eabc9a8c2b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a41446ba811409a73cf1205eabc9a8c2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a6440527c9cc05306c3fea3e53cb175fd}\label{graphic_8h_a6440527c9cc05306c3fea3e53cb175fd}} 
+\index{graphic.h@{graphic.h}!draw\_xpm@{draw\_xpm}}
+\index{draw\_xpm@{draw\_xpm}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{draw\_xpm()}{draw\_xpm()}}
+{\footnotesize\ttfamily int() draw\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{img,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+draws the xpm 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & xpm to be drawn \\
+\hline
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws the xpm
+
+This function draws the xpm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The image to draw. \\
+\hline
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{graphic_8h_a6440527c9cc05306c3fea3e53cb175fd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{graphic_8h_a6440527c9cc05306c3fea3e53cb175fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_acb78a7ee3256c7619fffd93c454f4384}\label{graphic_8h_acb78a7ee3256c7619fffd93c454f4384}} 
+\index{graphic.h@{graphic.h}!erase\_backgroundBuffer@{erase\_backgroundBuffer}}
+\index{erase\_backgroundBuffer@{erase\_backgroundBuffer}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{erase\_backgroundBuffer()}{erase\_backgroundBuffer()}}
+{\footnotesize\ttfamily void erase\+\_\+background\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+erases the background buffer 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+erases the background buffer
+
+This function erases the background buffer. \mbox{\Hypertarget{graphic_8h_a24015f2b3c19b2228803ab038d692dd4}\label{graphic_8h_a24015f2b3c19b2228803ab038d692dd4}} 
+\index{graphic.h@{graphic.h}!erase\_buffer@{erase\_buffer}}
+\index{erase\_buffer@{erase\_buffer}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{erase\_buffer()}{erase\_buffer()}}
+{\footnotesize\ttfamily void erase\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+erases the buffer 
+
+erases the buffer
+
+This function erases the buffer. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a24015f2b3c19b2228803ab038d692dd4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a9e3052daf125d9f29898e22da30c2e2b}\label{graphic_8h_a9e3052daf125d9f29898e22da30c2e2b}} 
+\index{graphic.h@{graphic.h}!erase\_frontBuffer@{erase\_frontBuffer}}
+\index{erase\_frontBuffer@{erase\_frontBuffer}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{erase\_frontBuffer()}{erase\_frontBuffer()}}
+{\footnotesize\ttfamily void erase\+\_\+front\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+erases the front buffer 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+erases the front buffer
+
+This function erases the front buffer. \mbox{\Hypertarget{graphic_8h_aaa1bbaac45cbb20512a7248b7b67d6c2}\label{graphic_8h_aaa1bbaac45cbb20512a7248b7b67d6c2}} 
+\index{graphic.h@{graphic.h}!get\_h\_res@{get\_h\_res}}
+\index{get\_h\_res@{get\_h\_res}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{get\_h\_res()}{get\_h\_res()}}
+{\footnotesize\ttfamily int() get\+\_\+h\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the horizontal resolution 
+
+\begin{DoxyReturn}{Returns}
+horizontal resolution
+\end{DoxyReturn}
+gets the horizontal resolution
+
+This function gets the horizontal resolution.
+
+\begin{DoxyReturn}{Returns}
+int The horizontal resolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphic_8h_ad784c220dd9a82e4d6a2573b555296dc}\label{graphic_8h_ad784c220dd9a82e4d6a2573b555296dc}} 
+\index{graphic.h@{graphic.h}!get\_v\_res@{get\_v\_res}}
+\index{get\_v\_res@{get\_v\_res}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{get\_v\_res()}{get\_v\_res()}}
+{\footnotesize\ttfamily int() get\+\_\+v\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the vertical resolution 
+
+\begin{DoxyReturn}{Returns}
+vertical resolution
+\end{DoxyReturn}
+gets the vertical resolution
+
+This function gets the vertical resolution.
+
+\begin{DoxyReturn}{Returns}
+int The vertical resolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{graphic_8h_ad8b6297b2011f89271f23879309fda93}\label{graphic_8h_ad8b6297b2011f89271f23879309fda93}} 
+\index{graphic.h@{graphic.h}!load\_numbers@{load\_numbers}}
+\index{load\_numbers@{load\_numbers}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{load\_numbers()}{load\_numbers()}}
+{\footnotesize\ttfamily int() load\+\_\+numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loads the xpm game background 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+loads the xpm game background
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_ad8b6297b2011f89271f23879309fda93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a67f86e0b7cb832cdc53f3d578b83afb7}\label{graphic_8h_a67f86e0b7cb832cdc53f3d578b83afb7}} 
+\index{graphic.h@{graphic.h}!load\_xpm@{load\_xpm}}
+\index{load\_xpm@{load\_xpm}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{load\_xpm()}{load\_xpm()}}
+{\footnotesize\ttfamily int() load\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{img,  }\item[{enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}}]{piece\+Type,  }\item[{bool}]{is\+White }\end{DoxyParamCaption})}
+
+
+
+loads the xpm 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & xpm to be loaded \\
+\hline
+{\em piece\+Type} & type of the piece \\
+\hline
+{\em is\+White} & if the piece is white\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+loads the xpm
+
+This function loads the xpm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The image to load. \\
+\hline
+{\em piece\+Type} & The piece type. \\
+\hline
+{\em is\+White} & If the piece is white.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a67f86e0b7cb832cdc53f3d578b83afb7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a6399456ceeeb8df04f6ea6c55fee505c}\label{graphic_8h_a6399456ceeeb8df04f6ea6c55fee505c}} 
+\index{graphic.h@{graphic.h}!load\_xpm\_clocks\_board@{load\_xpm\_clocks\_board}}
+\index{load\_xpm\_clocks\_board@{load\_xpm\_clocks\_board}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{load\_xpm\_clocks\_board()}{load\_xpm\_clocks\_board()}}
+{\footnotesize\ttfamily int() load\+\_\+xpm\+\_\+clocks\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loads the xpm game background 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+loads the xpm game background
+
+This function loads the xpm clocks board.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a6399456ceeeb8df04f6ea6c55fee505c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a96f078d5229cccb86c289af5e7310399}\label{graphic_8h_a96f078d5229cccb86c289af5e7310399}} 
+\index{graphic.h@{graphic.h}!load\_xpm\_cursor@{load\_xpm\_cursor}}
+\index{load\_xpm\_cursor@{load\_xpm\_cursor}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{load\_xpm\_cursor()}{load\_xpm\_cursor()}}
+{\footnotesize\ttfamily int() load\+\_\+xpm\+\_\+cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loads the xpm cursor 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+loads the xpm cursor
+
+This function loads the xpm cursors.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a96f078d5229cccb86c289af5e7310399_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a6b2bbc22fb8d3bbd05195bbf6cdfe296}\label{graphic_8h_a6b2bbc22fb8d3bbd05195bbf6cdfe296}} 
+\index{graphic.h@{graphic.h}!load\_xpm\_game\_background@{load\_xpm\_game\_background}}
+\index{load\_xpm\_game\_background@{load\_xpm\_game\_background}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{load\_xpm\_game\_background()}{load\_xpm\_game\_background()}}
+{\footnotesize\ttfamily int load\+\_\+xpm\+\_\+game\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loads the xpm game background 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+loads the xpm game background
+
+This function loads the xpm game background.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a6b2bbc22fb8d3bbd05195bbf6cdfe296_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_aba8fbf35f49c528a721402130a55a4fa}\label{graphic_8h_aba8fbf35f49c528a721402130a55a4fa}} 
+\index{graphic.h@{graphic.h}!load\_xpm\_menu@{load\_xpm\_menu}}
+\index{load\_xpm\_menu@{load\_xpm\_menu}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{load\_xpm\_menu()}{load\_xpm\_menu()}}
+{\footnotesize\ttfamily int load\+\_\+xpm\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loads the xpm menu 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+loads the xpm menu
+
+This function loads the xpm menu.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_aba8fbf35f49c528a721402130a55a4fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a9c86d5e3807f8c993bbaa4e7f139b581}\label{graphic_8h_a9c86d5e3807f8c993bbaa4e7f139b581}} 
+\index{graphic.h@{graphic.h}!set\_frame\_mode@{set\_frame\_mode}}
+\index{set\_frame\_mode@{set\_frame\_mode}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_mode()}{set\_frame\_mode()}}
+{\footnotesize\ttfamily int() set\+\_\+frame\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{mode }\end{DoxyParamCaption})}
+
+
+
+sets the frame mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & mode to be set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+sets the frame mode
+
+This function sets the frame mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a9c86d5e3807f8c993bbaa4e7f139b581_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_ad68181bf7a320dc3a6bfd8210c3ae0c8}\label{graphic_8h_ad68181bf7a320dc3a6bfd8210c3ae0c8}} 
+\index{graphic.h@{graphic.h}!set\_graphic\_mode@{set\_graphic\_mode}}
+\index{set\_graphic\_mode@{set\_graphic\_mode}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{set\_graphic\_mode()}{set\_graphic\_mode()}}
+{\footnotesize\ttfamily int() set\+\_\+graphic\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{mode }\end{DoxyParamCaption})}
+
+
+
+sets the graphic mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & mode to be set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+sets the graphic mode
+
+This function sets the graphic mode to the given mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Sets the mode of the reg86.\+bx register with the given mode value. The mode value is combined with the BIT(14) flag using the bitwise OR operator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode value to set.\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_ad68181bf7a320dc3a6bfd8210c3ae0c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a62f63672fd06c462a0873e30f5e32ef8}\label{graphic_8h_a62f63672fd06c462a0873e30f5e32ef8}} 
+\index{graphic.h@{graphic.h}!set\_text\_mode@{set\_text\_mode}}
+\index{set\_text\_mode@{set\_text\_mode}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{set\_text\_mode()}{set\_text\_mode()}}
+{\footnotesize\ttfamily int() set\+\_\+text\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+sets the text mode 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+sets the text mode
+
+This function sets the text mode.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a62f63672fd06c462a0873e30f5e32ef8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a0af812a9bbb79b79e6a18b0c5a32c7f2}\label{graphic_8h_a0af812a9bbb79b79e6a18b0c5a32c7f2}} 
+\index{graphic.h@{graphic.h}!swap\_BackgroundBuffer@{swap\_BackgroundBuffer}}
+\index{swap\_BackgroundBuffer@{swap\_BackgroundBuffer}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{swap\_BackgroundBuffer()}{swap\_BackgroundBuffer()}}
+{\footnotesize\ttfamily void swap\+\_\+\+Background\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+swaps the background buffer 
+
+swaps the background buffer
+
+This function swaps the background buffer. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a0af812a9bbb79b79e6a18b0c5a32c7f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a0d157d997329169f936545f9985e334b}\label{graphic_8h_a0d157d997329169f936545f9985e334b}} 
+\index{graphic.h@{graphic.h}!swap\_buffers@{swap\_buffers}}
+\index{swap\_buffers@{swap\_buffers}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{swap\_buffers()}{swap\_buffers()}}
+{\footnotesize\ttfamily void swap\+\_\+buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+swaps the buffers 
+
+swaps the buffers
+
+This function swaps the buffers. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a0d157d997329169f936545f9985e334b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a08c498ffeb0a3962e3b7711b57397741}\label{graphic_8h_a08c498ffeb0a3962e3b7711b57397741}} 
+\index{graphic.h@{graphic.h}!vg\_draw\_pixel@{vg\_draw\_pixel}}
+\index{vg\_draw\_pixel@{vg\_draw\_pixel}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+draws a pixel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+{\em color} & color of the pixel\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise
+\end{DoxyReturn}
+draws a pixel
+
+This function draws the pixel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position. \\
+\hline
+{\em y} & The y position. \\
+\hline
+{\em color} & The color.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic_8h_a08c498ffeb0a3962e3b7711b57397741_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{graphic_8h_a2608db1e4e461612f2f0ca0ef5ebfeab}\label{graphic_8h_a2608db1e4e461612f2f0ca0ef5ebfeab}} 
+\index{graphic.h@{graphic.h}!wait\_for\_ESC\_@{wait\_for\_ESC\_}}
+\index{wait\_for\_ESC\_@{wait\_for\_ESC\_}!graphic.h@{graphic.h}}
+\doxysubsubsection{\texorpdfstring{wait\_for\_ESC\_()}{wait\_for\_ESC\_()}}
+{\footnotesize\ttfamily int() wait\+\_\+for\+\_\+\+ESC\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+waits for the ESC key 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise 
+\end{DoxyReturn}

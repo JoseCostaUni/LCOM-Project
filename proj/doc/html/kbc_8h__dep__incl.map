@@ -1,0 +1,16 @@
+<map id="/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX&#45;LCOM/shared/g1/proj/src/mvc/controller/kbc/kbc.h" name="/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX&#45;LCOM/shared/g1/proj/src/mvc/controller/kbc/kbc.h">
+<area shape="rect" id="node1" title="File containing the constants and functions to interact with the KBC." alt="" coords="854,5,1046,91"/>
+<area shape="rect" id="node2" href="$main_8c.html" title="File containing the main loop of the program." alt="" coords="5,546,196,617"/>
+<area shape="rect" id="node3" href="$graphic_8c.html" title="File containing the implementation of the functions to interact with the graphic card." alt="" coords="1002,405,1194,491"/>
+<area shape="rect" id="node4" href="$kbc_8c.html" title="File containing the implementation of the functions to interact with the KBC." alt="" coords="987,139,1179,224"/>
+<area shape="rect" id="node5" href="$keyboard_8c.html" title="File containing the implementation of the functions to interact with the keyboard." alt="" coords="1203,139,1395,224"/>
+<area shape="rect" id="node6" href="$mouse_8h.html" title="File containing the constants and functions to interact with the mouse." alt="" coords="555,139,747,224"/>
+<area shape="rect" id="node7" href="$controller_8h.html" title="This file contains the declaration of the functions that will be used to control the game...." alt="" coords="453,405,645,491"/>
+<area shape="rect" id="node10" href="$mouse_8c.html" title="File containing the implementation of the functions to interact with the mouse." alt="" coords="495,672,687,757"/>
+<area shape="rect" id="node14" href="$graphic_8h.html" title="File containing the constants and functions to interact with the graphic card." alt="" coords="721,272,913,357"/>
+<area shape="rect" id="node8" href="$controller_8c.html" title="This file contains the implementation of the controller." alt="" coords="221,539,413,624"/>
+<area shape="rect" id="node9" href="$view_8h.html" title="This file contains the declaration of the functions that will be used to draw the game on the screen." alt="" coords="720,546,927,617"/>
+<area shape="rect" id="node13" href="$linked__list_8c.html" title=" " alt="" coords="437,546,644,617"/>
+<area shape="rect" id="node11" href="$game_8c.html" title="Implementation of the chess game logic." alt="" coords="712,679,935,750"/>
+<area shape="rect" id="node12" href="$view_8c.html" title="This file contains the implementation of the functions that will be used to draw the game on the scre..." alt="" coords="959,679,1165,750"/>
+</map>

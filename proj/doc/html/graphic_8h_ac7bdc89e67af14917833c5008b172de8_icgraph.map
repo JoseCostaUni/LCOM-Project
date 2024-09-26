@@ -1,0 +1,7 @@
+<map id="draw_black_wins" name="draw_black_wins">
+<area shape="rect" id="node1" title="draws the black wins" alt="" coords="499,31,632,57"/>
+<area shape="rect" id="node2" href="$controller_8c.html#af3ae34fba8ae3b1f47d23af125079282" title="Main game loop that updates the game state and checks for game&#45;ending conditions." alt="" coords="211,5,306,32"/>
+<area shape="rect" id="node4" href="$controller_8c.html#ab0957bc720f28c7bbfc56f57309dffcb" title="Routes the program flow based on the current state and user input." alt="" coords="389,56,451,83"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node5" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="176,56,341,83"/>
+</map>

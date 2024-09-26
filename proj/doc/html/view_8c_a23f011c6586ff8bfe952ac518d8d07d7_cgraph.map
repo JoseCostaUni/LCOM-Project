@@ -1,0 +1,7 @@
+<map id="draw_backBackGround" name="draw_backBackGround">
+<area shape="rect" id="node1" title="Draws the background of the game." alt="" coords="5,42,176,69"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#a0f593d24f2659917247e9d8234b7ce68" title="Draws the board without pieces." alt="" coords="237,5,392,47"/>
+<area shape="rect" id="node4" href="$graphic_8c.html#af0cbda77d440e6b2818b8a99c5ee2d6f" title="Draws the game background." alt="" coords="224,71,405,98"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="453,17,568,43"/>
+<area shape="rect" id="node5" href="$graphic_8c.html#a0d157d997329169f936545f9985e334b" title="Swaps the buffers." alt="" coords="457,71,565,98"/>
+</map>

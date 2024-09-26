@@ -1,0 +1,7 @@
+<map id="draw_cursor_mouse" name="draw_cursor_mouse">
+<area shape="rect" id="node1" title="draws the cursor" alt="" coords="395,56,547,83"/>
+<area shape="rect" id="node2" href="$controller_8c.html#acb677e252595a3a91a9d3bfe595108c3" title="Decreases the timer of the current player and updates the display if necessary." alt="" coords="176,5,347,32"/>
+<area shape="rect" id="node4" href="$view_8c.html#a0c697bef52486fe9045091ca868896ee" title="Draws the cursor on the game board." alt="" coords="211,56,312,83"/>
+<area shape="rect" id="node5" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="187,107,336,133"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,56,128,83"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX&#45;LCOM/shared/g1/proj/src/mvc/controller/controller.h" name="/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX&#45;LCOM/shared/g1/proj/src/mvc/controller/controller.h">
+<area shape="rect" id="node1" title="This file contains the declaration of the functions that will be used to control the game...." alt="" coords="449,5,641,91"/>
+<area shape="rect" id="node2" href="$main_8c.html" title="File containing the main loop of the program." alt="" coords="5,279,196,350"/>
+<area shape="rect" id="node3" href="$controller_8c.html" title="This file contains the implementation of the controller." alt="" coords="626,139,818,224"/>
+<area shape="rect" id="node4" href="$mouse_8h.html" title="File containing the constants and functions to interact with the mouse." alt="" coords="285,139,477,224"/>
+<area shape="rect" id="node8" href="$view_8h.html" title="This file contains the declaration of the functions that will be used to draw the game on the screen." alt="" coords="539,413,745,483"/>
+<area shape="rect" id="node11" href="$linked__list_8c.html" title=" " alt="" coords="843,146,1049,217"/>
+<area shape="rect" id="node5" href="$graphic_8h.html" title="File containing the constants and functions to interact with the graphic card." alt="" coords="335,272,527,357"/>
+<area shape="rect" id="node9" href="$mouse_8c.html" title="File containing the implementation of the functions to interact with the mouse." alt="" coords="159,539,351,624"/>
+<area shape="rect" id="node6" href="$graphic_8c.html" title="File containing the implementation of the functions to interact with the graphic card." alt="" coords="271,405,463,491"/>
+<area shape="rect" id="node7" href="$view_8c.html" title="This file contains the implementation of the functions that will be used to draw the game on the scre..." alt="" coords="397,546,604,617"/>
+<area shape="rect" id="node10" href="$game_8c.html" title="Implementation of the chess game logic." alt="" coords="628,546,851,617"/>
+</map>

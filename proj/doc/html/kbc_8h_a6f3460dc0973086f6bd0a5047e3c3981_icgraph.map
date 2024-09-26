@@ -1,0 +1,7 @@
+<map id="send_commands_kbc" name="send_commands_kbc">
+<area shape="rect" id="node1" title="sends commands to the KBC" alt="" coords="391,56,553,83"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a18f94800c87c2b1f3c1dbaedf861347b" title="disables the mouse report" alt="" coords="176,5,343,32"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a96f453d50b145b9a6de548552a8c5a2e" title="enables the mouse report" alt="" coords="178,56,341,83"/>
+<area shape="rect" id="node5" href="$kbc_8h.html#a6ac0bdf5df1c2fd3b92a16034e743ffd" title="enables the KBC interrupts" alt="" coords="176,107,343,133"/>
+<area shape="rect" id="node4" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,56,128,83"/>
+</map>

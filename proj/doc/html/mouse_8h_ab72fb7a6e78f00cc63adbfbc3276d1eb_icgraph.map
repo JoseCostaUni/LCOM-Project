@@ -1,0 +1,11 @@
+<map id="read_status_register" name="read_status_register">
+<area shape="rect" id="node1" title="this function reads the status register" alt="" coords="631,107,785,133"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#aea970a154161a35f6894898a092ed70a" title="interrupts handler of the keyboard" alt="" coords="455,56,519,83"/>
+<area shape="rect" id="node7" href="$kbc_8c.html#a720fef46ec6987a346760be3a6ce4e8f" title="writes a command arguments to the KBC" alt="" coords="391,107,583,133"/>
+<area shape="rect" id="node8" href="$keyboard_8c.html#a7c5f611b9e6ee9f0f11a224c8a196b23" title="tries to read the out buffer" alt="" coords="412,157,561,184"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a23cd4ccfc95bca48e72307ca8b416f18" title="breaks from the cycles" alt="" coords="187,5,332,32"/>
+<area shape="rect" id="node4" href="$keyboard_8c.html#a95f165b5a576577a6c2fff2013f71d5b" title="checks if the ESC key was pressed" alt="" coords="213,56,305,83"/>
+<area shape="rect" id="node5" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="177,107,342,133"/>
+<area shape="rect" id="node6" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,107,128,133"/>
+<area shape="rect" id="node9" href="$kbc_8h.html#a6ac0bdf5df1c2fd3b92a16034e743ffd" title="enables the KBC interrupts" alt="" coords="176,157,343,184"/>
+</map>

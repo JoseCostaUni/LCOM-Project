@@ -1,0 +1,12 @@
+<map id="draw_piece" name="draw_piece">
+<area shape="rect" id="node1" title="Draws a piece on the game board based on its type." alt="" coords="5,132,101,159"/>
+<area shape="rect" id="node2" href="$view_8c.html#a53f0b5b34609223c0a533f2849cefb5a" title="Draws a bishop piece on the game board." alt="" coords="149,5,253,32"/>
+<area shape="rect" id="node6" href="$view_8c.html#aef66694baa8e4666f767a620d280dde9" title="Draws a king piece on the game board." alt="" coords="157,56,246,83"/>
+<area shape="rect" id="node7" href="$view_8c.html#a6ceaf37e6d9cbc86262c90c8ad3e93af" title="Draws a knight piece on the game board." alt="" coords="150,107,253,133"/>
+<area shape="rect" id="node8" href="$view_8c.html#ad7d6b1e676da779cfdce637886a566e9" title="Draws a pawn piece on the game board." alt="" coords="153,157,249,184"/>
+<area shape="rect" id="node9" href="$view_8c.html#a432e60ce009b513f1b5a1c04df97950d" title="Draws a queen piece on the game board." alt="" coords="151,208,252,235"/>
+<area shape="rect" id="node10" href="$view_8c.html#aa4230432f295a4afc9c536ce8ce58f26" title="Draws a rook piece on the game board." alt="" coords="156,259,247,285"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#add642ffbd7541851a3b8afeb2b477331" title="Draws the Black Piece." alt="" coords="301,107,440,133"/>
+<area shape="rect" id="node5" href="$graphic_8c.html#a5bc9007966db542e8991431c3ccd7c48" title="Draws the White Piece." alt="" coords="301,157,440,184"/>
+<area shape="rect" id="node4" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="488,132,603,159"/>
+</map>

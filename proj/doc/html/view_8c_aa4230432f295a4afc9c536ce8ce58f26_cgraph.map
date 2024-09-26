@@ -1,0 +1,6 @@
+<map id="draw_rook" name="draw_rook">
+<area shape="rect" id="node1" title="Draws a rook piece on the game board." alt="" coords="5,31,96,57"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#add642ffbd7541851a3b8afeb2b477331" title="Draws the Black Piece." alt="" coords="144,5,283,32"/>
+<area shape="rect" id="node4" href="$graphic_8c.html#a5bc9007966db542e8991431c3ccd7c48" title="Draws the White Piece." alt="" coords="144,56,283,83"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="331,31,445,57"/>
+</map>

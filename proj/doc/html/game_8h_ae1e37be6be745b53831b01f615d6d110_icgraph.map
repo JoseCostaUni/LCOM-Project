@@ -1,0 +1,9 @@
+<map id="is_movement_legal_without_removing" name="is_movement_legal_without_removing">
+<area shape="rect" id="node1" title="Checks if a movement of a specific piece type is legal without actually removing the piece from the b..." alt="" coords="1044,5,1251,47"/>
+<area shape="rect" id="node2" href="$game_8c.html#ab3424831142ea48ac62e2f5cb3e18baf" title="Checks if the current player&#39;s king is in check." alt="" coords="917,13,996,39"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a6fa632a85f47c9d846c55b975d118df9" title="In game mouse movement." alt="" coords="663,13,869,39"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a7c35b8ea4b294430bfbb2d6c0dd98354" title="parses the values of the mouse packet" alt="" coords="507,13,615,39"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Subscribes mouse interrupts." alt="" coords="373,13,459,39"/>
+<area shape="rect" id="node6" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="176,13,325,39"/>
+<area shape="rect" id="node7" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,13,128,39"/>
+</map>

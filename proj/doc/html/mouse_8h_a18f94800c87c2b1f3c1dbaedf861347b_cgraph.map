@@ -1,0 +1,6 @@
+<map id="disable_mouse_report" name="disable_mouse_report">
+<area shape="rect" id="node1" title="this function disables the mouse report" alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$kbc_8c.html#afea21b2fd0fa8db0f39a9ca17f633aad" title="reads the commands of the KBC" alt="" coords="221,5,381,32"/>
+<area shape="rect" id="node4" href="$kbc_8c.html#a6f3460dc0973086f6bd0a5047e3c3981" title="sends commands to the KBC" alt="" coords="220,56,383,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="431,31,529,57"/>
+</map>

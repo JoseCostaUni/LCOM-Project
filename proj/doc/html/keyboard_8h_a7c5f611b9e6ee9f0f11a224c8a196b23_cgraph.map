@@ -1,0 +1,6 @@
+<map id="try_read_out_buffer" name="try_read_out_buffer">
+<area shape="rect" id="node1" title="Try to read the output buffer." alt="" coords="5,31,155,57"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#ad02355ed53c92ce490bb67d40c44c0b4" title="Reads the outputbuffer from the keyboard." alt="" coords="218,5,342,32"/>
+<area shape="rect" id="node4" href="$keyboard_8c.html#ab72fb7a6e78f00cc63adbfbc3276d1eb" title="Reads a register from the keyboard." alt="" coords="203,56,357,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="405,31,504,57"/>
+</map>

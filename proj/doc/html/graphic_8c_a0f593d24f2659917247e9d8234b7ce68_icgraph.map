@@ -1,0 +1,8 @@
+<map id="draw_board_without_Pieces" name="draw_board_without_Pieces">
+<area shape="rect" id="node1" title="Draws the board without pieces." alt="" coords="745,27,900,69"/>
+<area shape="rect" id="node2" href="$view_8c.html#a23f011c6586ff8bfe952ac518d8d07d7" title="Draws the background of the game." alt="" coords="513,5,683,32"/>
+<area shape="rect" id="node6" href="$view_8c.html#a629ac1df60646dd7cda462e23cfdb301" title="Draws the background of the game without erasing existing elements." alt="" coords="499,57,697,98"/>
+<area shape="rect" id="node3" href="$controller_8c.html#ab0957bc720f28c7bbfc56f57309dffcb" title="Routes the program flow based on the current state and user input." alt="" coords="389,5,451,32"/>
+<area shape="rect" id="node4" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="176,5,341,32"/>
+<area shape="rect" id="node5" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,5,128,32"/>
+</map>

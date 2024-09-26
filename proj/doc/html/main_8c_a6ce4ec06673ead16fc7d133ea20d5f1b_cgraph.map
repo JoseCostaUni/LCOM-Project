@@ -1,0 +1,8 @@
+<map id="_exit_" name="_exit_">
+<area shape="rect" id="node1" title="Exits the program." alt="" coords="5,107,67,133"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a32cc4de66854f8a7bd909e7aa8b901ed" title="Unsubscribes keyboard interrupts." alt="" coords="115,5,305,32"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a3ecf823d80520009ae5e0d76ae40a3c3" title="Unsubscribes mouse interrupts." alt="" coords="123,56,297,83"/>
+<area shape="rect" id="node4" href="$rtc_8c.html#a9d4850bb2a488644672d43287f160622" title="Unsubscribes RTC interrupts." alt="" coords="136,107,284,133"/>
+<area shape="rect" id="node5" href="$graphic_8c.html#a62f63672fd06c462a0873e30f5e32ef8" title="Sets the text mode." alt="" coords="151,157,269,184"/>
+<area shape="rect" id="node6" href="$group__timer.html#gafabd21de449be154dd65d5fdb2d8045d" title="Unsubscribes Timer interrupts." alt="" coords="127,208,293,235"/>
+</map>

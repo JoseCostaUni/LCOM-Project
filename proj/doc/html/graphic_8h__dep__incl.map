@@ -1,0 +1,13 @@
+<map id="/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX&#45;LCOM/shared/g1/proj/src/mvc/controller/graphics/graphic.h" name="/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX&#45;LCOM/shared/g1/proj/src/mvc/controller/graphics/graphic.h">
+<area shape="rect" id="node1" title="File containing the constants and functions to interact with the graphic card." alt="" coords="727,5,919,91"/>
+<area shape="rect" id="node2" href="$controller_8h.html" title="This file contains the declaration of the functions that will be used to control the game...." alt="" coords="407,139,599,224"/>
+<area shape="rect" id="node7" href="$view_8h.html" title="This file contains the declaration of the functions that will be used to draw the game on the screen." alt="" coords="719,279,926,350"/>
+<area shape="rect" id="node9" href="$view_8c.html" title="This file contains the implementation of the functions that will be used to draw the game on the scre..." alt="" coords="861,413,1067,483"/>
+<area shape="rect" id="node11" href="$graphic_8c.html" title="File containing the implementation of the functions to interact with the graphic card." alt="" coords="1001,139,1193,224"/>
+<area shape="rect" id="node3" href="$main_8c.html" title="File containing the main loop of the program." alt="" coords="73,413,263,483"/>
+<area shape="rect" id="node4" href="$controller_8c.html" title="This file contains the implementation of the controller." alt="" coords="272,272,464,357"/>
+<area shape="rect" id="node5" href="$mouse_8h.html" title="File containing the constants and functions to interact with the mouse." alt="" coords="5,272,197,357"/>
+<area shape="rect" id="node10" href="$linked__list_8c.html" title=" " alt="" coords="489,279,695,350"/>
+<area shape="rect" id="node6" href="$mouse_8c.html" title="File containing the implementation of the functions to interact with the mouse." alt="" coords="376,405,568,491"/>
+<area shape="rect" id="node8" href="$game_8c.html" title="Implementation of the chess game logic." alt="" coords="614,413,837,483"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="DoublyLinkedList" name="DoublyLinkedList">
+<area shape="rect" id="node1" title=" " alt="" coords="5,395,139,421"/>
+<area shape="rect" id="node2" href="$structNode.html" title=" " alt="" coords="44,289,100,316"/>
+<area shape="rect" id="node3" href="$structBoard.html" title="Structure representing the game board." alt="" coords="42,199,102,225"/>
+<area shape="rect" id="node4" href="$structPiece.html" title="Structure representing a piece on the chessboard." alt="" coords="43,95,101,121"/>
+<area shape="rect" id="node5" href="$structPosition.html" title="Structure representing a position on the chessboard." alt="" coords="35,5,109,32"/>
+</map>

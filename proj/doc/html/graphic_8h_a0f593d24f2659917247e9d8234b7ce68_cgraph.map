@@ -1,0 +1,4 @@
+<map id="draw_board_without_Pieces" name="draw_board_without_Pieces">
+<area shape="rect" id="node1" title="draws the board with the pieces" alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="208,13,323,39"/>
+</map>

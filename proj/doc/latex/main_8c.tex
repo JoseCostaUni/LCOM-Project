@@ -1,0 +1,280 @@
+\hypertarget{main_8c}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/main.c File Reference}
+\label{main_8c}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/main.c@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/main.c}}
+
+
+File containing the main loop of the program.  
+
+
+{\ttfamily \#include \char`\"{}mvc/controller/graphics/\+VBE.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mvc/controller/kbc/i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mvc/controller/kbc/kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mvc/controller/keyboard/keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mvc/controller/mouse/mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mvc/controller/timer/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mvc/controller/rtc/rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mvc/model/game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/\+Cursor/cursors.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprites/pieces.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mvc/controller/controller.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{main_8c_a099d48038e444c2f3e69904477527798}{setup}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the program. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a6ce4ec06673ead16fc7d133ea20d5f1b}{\+\_\+exit\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Exits the program. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{main_8c_a2a16f651eccbd248e1ad3b3b924b143b}{proj\+\_\+main\+\_\+loop}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main loop of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_ac146a68c4f16e60191fc953d914b3803}{elapsed\+\_\+seconds}} = true
+\item 
+const int \mbox{\hyperlink{main_8c_ad9ba633ca62ac94f89fdcc1c3289c3ad}{desired\+Frame\+Rate}} = 30
+\item 
+const double \mbox{\hyperlink{main_8c_a888b8b8ffd1f254da8a87dab492cc0d4}{target\+Frame\+Time}} = 1.\+0 / \mbox{\hyperlink{main_8c_ad9ba633ca62ac94f89fdcc1c3289c3ad}{desired\+Frame\+Rate}}
+\item 
+bool \mbox{\hyperlink{main_8c_a35e1fbda907c4c69651e7ffed1543106}{is\+Running}} = true
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_a85866b7666b04613bcdac3330f2e9155}{timer\+\_\+hook\+\_\+id}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_aa94a89144e81754bbb912c1c55270d35}{keyboard\+\_\+hook\+\_\+id}} = 1
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_aeb5624c024bdc1977bc5772a87bbba57}{mouse\+\_\+hook\+\_\+id}} = 2
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main_8c_a7974aa48f9a40db19869bac345d77402}{rtc\+\_\+hook\+\_\+id}} = 8
+\item 
+int \mbox{\hyperlink{main_8c_a8525e1b1418726e34137f44604b4ee40}{counter\+\_\+packet\+\_\+print}} = 0
+\item 
+int \mbox{\hyperlink{main_8c_a913773c9d479d1739a332b92cea6fbfa}{counter\+\_\+mouse}}
+\item 
+struct \mbox{\hyperlink{structcursor}{cursor}} \mbox{\hyperlink{main_8c_a5c19f7053c1165c8efa2a26378c4671b}{cursor}}
+\item 
+enum \mbox{\hyperlink{controller_8h_a63902368e861707741c59c4186d20a0b}{Clicked\+Key}} \mbox{\hyperlink{main_8c_ab3788eaaca805b33267986c3370ecf40}{key\+\_\+pressed}}
+\item 
+enum \mbox{\hyperlink{controller_8h_a1a5d3ef4270e82acfb6d302c9ad7628a}{Flow\+State}} \mbox{\hyperlink{main_8c_af8d104b0fa588a220aa4b58b63dfc17a}{current\+\_\+state}}
+\item 
+struct \mbox{\hyperlink{structBoard}{Board}} $\ast$ \mbox{\hyperlink{main_8c_a3061922d2c52f6358873d0b03f9cdac9}{board}}
+\item 
+struct \mbox{\hyperlink{structGame}{Game}} $\ast$ \mbox{\hyperlink{main_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}}
+\begin{DoxyCompactList}\small\item\em Pointer to the current game instance. \end{DoxyCompactList}\item 
+struct Menu $\ast$ \mbox{\hyperlink{main_8c_a53eb2accd0b5a7985e8af7c28c4fc044}{menu}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{main_8c_a51322ddb267b4729d6b5f2bb05d49fff}{counter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing the main loop of the program. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a6ce4ec06673ead16fc7d133ea20d5f1b}\label{main_8c_a6ce4ec06673ead16fc7d133ea20d5f1b}} 
+\index{main.c@{main.c}!\_exit\_@{\_exit\_}}
+\index{\_exit\_@{\_exit\_}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{\_exit\_()}{\_exit\_()}}
+{\footnotesize\ttfamily int \+\_\+exit\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exits the program. 
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{main_8c_a6ce4ec06673ead16fc7d133ea20d5f1b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{main_8c_a6ce4ec06673ead16fc7d133ea20d5f1b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8c_a2a16f651eccbd248e1ad3b3b924b143b}\label{main_8c_a2a16f651eccbd248e1ad3b3b924b143b}} 
+\index{main.c@{main.c}!proj\_main\_loop@{proj\_main\_loop}}
+\index{proj\_main\_loop@{proj\_main\_loop}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{proj\_main\_loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily int() proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Main loop of the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of arguments \\
+\hline
+{\em argv} & arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a2a16f651eccbd248e1ad3b3b924b143b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8c_a099d48038e444c2f3e69904477527798}\label{main_8c_a099d48038e444c2f3e69904477527798}} 
+\index{main.c@{main.c}!setup@{setup}}
+\index{setup@{setup}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily int setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the program. 
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a099d48038e444c2f3e69904477527798_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{main_8c_a099d48038e444c2f3e69904477527798_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_a3061922d2c52f6358873d0b03f9cdac9}\label{main_8c_a3061922d2c52f6358873d0b03f9cdac9}} 
+\index{main.c@{main.c}!board@{board}}
+\index{board@{board}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structBoard}{Board}}$\ast$ board\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{main_8c_a51322ddb267b4729d6b5f2bb05d49fff}\label{main_8c_a51322ddb267b4729d6b5f2bb05d49fff}} 
+\index{main.c@{main.c}!counter@{counter}}
+\index{counter@{counter}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily uint32\+\_\+t counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{main_8c_a913773c9d479d1739a332b92cea6fbfa}\label{main_8c_a913773c9d479d1739a332b92cea6fbfa}} 
+\index{main.c@{main.c}!counter\_mouse@{counter\_mouse}}
+\index{counter\_mouse@{counter\_mouse}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{counter\_mouse}{counter\_mouse}}
+{\footnotesize\ttfamily int counter\+\_\+mouse\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{main_8c_a8525e1b1418726e34137f44604b4ee40}\label{main_8c_a8525e1b1418726e34137f44604b4ee40}} 
+\index{main.c@{main.c}!counter\_packet\_print@{counter\_packet\_print}}
+\index{counter\_packet\_print@{counter\_packet\_print}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{counter\_packet\_print}{counter\_packet\_print}}
+{\footnotesize\ttfamily int counter\+\_\+packet\+\_\+print = 0}
+
+\mbox{\Hypertarget{main_8c_af8d104b0fa588a220aa4b58b63dfc17a}\label{main_8c_af8d104b0fa588a220aa4b58b63dfc17a}} 
+\index{main.c@{main.c}!current\_state@{current\_state}}
+\index{current\_state@{current\_state}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{current\_state}{current\_state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{controller_8h_a1a5d3ef4270e82acfb6d302c9ad7628a}{Flow\+State}} current\+\_\+state\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{main_8c_a5c19f7053c1165c8efa2a26378c4671b}\label{main_8c_a5c19f7053c1165c8efa2a26378c4671b}} 
+\index{main.c@{main.c}!cursor@{cursor}}
+\index{cursor@{cursor}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structcursor}{cursor}} \mbox{\hyperlink{structcursor}{cursor}}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{main_8c_ad9ba633ca62ac94f89fdcc1c3289c3ad}\label{main_8c_ad9ba633ca62ac94f89fdcc1c3289c3ad}} 
+\index{main.c@{main.c}!desiredFrameRate@{desiredFrameRate}}
+\index{desiredFrameRate@{desiredFrameRate}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{desiredFrameRate}{desiredFrameRate}}
+{\footnotesize\ttfamily const int desired\+Frame\+Rate = 30}
+
+\mbox{\Hypertarget{main_8c_ac146a68c4f16e60191fc953d914b3803}\label{main_8c_ac146a68c4f16e60191fc953d914b3803}} 
+\index{main.c@{main.c}!elapsed\_seconds@{elapsed\_seconds}}
+\index{elapsed\_seconds@{elapsed\_seconds}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{elapsed\_seconds}{elapsed\_seconds}}
+{\footnotesize\ttfamily int elapsed\+\_\+seconds = true}
+
+\mbox{\Hypertarget{main_8c_abcd66f5a5ff960ad9b26a34a702d408d}\label{main_8c_abcd66f5a5ff960ad9b26a34a702d408d}} 
+\index{main.c@{main.c}!game@{game}}
+\index{game@{game}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structGame}{Game}}$\ast$ game\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Pointer to the current game instance. 
+
+\mbox{\Hypertarget{main_8c_a35e1fbda907c4c69651e7ffed1543106}\label{main_8c_a35e1fbda907c4c69651e7ffed1543106}} 
+\index{main.c@{main.c}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{isRunning}{isRunning}}
+{\footnotesize\ttfamily bool is\+Running = true}
+
+\mbox{\Hypertarget{main_8c_ab3788eaaca805b33267986c3370ecf40}\label{main_8c_ab3788eaaca805b33267986c3370ecf40}} 
+\index{main.c@{main.c}!key\_pressed@{key\_pressed}}
+\index{key\_pressed@{key\_pressed}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{key\_pressed}{key\_pressed}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{controller_8h_a63902368e861707741c59c4186d20a0b}{Clicked\+Key}} key\+\_\+pressed\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{main_8c_aa94a89144e81754bbb912c1c55270d35}\label{main_8c_aa94a89144e81754bbb912c1c55270d35}} 
+\index{main.c@{main.c}!keyboard\_hook\_id@{keyboard\_hook\_id}}
+\index{keyboard\_hook\_id@{keyboard\_hook\_id}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{keyboard\_hook\_id}{keyboard\_hook\_id}}
+{\footnotesize\ttfamily uint8\+\_\+t keyboard\+\_\+hook\+\_\+id = 1}
+
+\mbox{\Hypertarget{main_8c_a53eb2accd0b5a7985e8af7c28c4fc044}\label{main_8c_a53eb2accd0b5a7985e8af7c28c4fc044}} 
+\index{main.c@{main.c}!menu@{menu}}
+\index{menu@{menu}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily struct Menu$\ast$ menu\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{main_8c_aeb5624c024bdc1977bc5772a87bbba57}\label{main_8c_aeb5624c024bdc1977bc5772a87bbba57}} 
+\index{main.c@{main.c}!mouse\_hook\_id@{mouse\_hook\_id}}
+\index{mouse\_hook\_id@{mouse\_hook\_id}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_hook\_id}{mouse\_hook\_id}}
+{\footnotesize\ttfamily uint8\+\_\+t mouse\+\_\+hook\+\_\+id = 2}
+
+\mbox{\Hypertarget{main_8c_a7974aa48f9a40db19869bac345d77402}\label{main_8c_a7974aa48f9a40db19869bac345d77402}} 
+\index{main.c@{main.c}!rtc\_hook\_id@{rtc\_hook\_id}}
+\index{rtc\_hook\_id@{rtc\_hook\_id}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_hook\_id}{rtc\_hook\_id}}
+{\footnotesize\ttfamily uint8\+\_\+t rtc\+\_\+hook\+\_\+id = 8}
+
+\mbox{\Hypertarget{main_8c_a888b8b8ffd1f254da8a87dab492cc0d4}\label{main_8c_a888b8b8ffd1f254da8a87dab492cc0d4}} 
+\index{main.c@{main.c}!targetFrameTime@{targetFrameTime}}
+\index{targetFrameTime@{targetFrameTime}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{targetFrameTime}{targetFrameTime}}
+{\footnotesize\ttfamily const double target\+Frame\+Time = 1.\+0 / \mbox{\hyperlink{main_8c_ad9ba633ca62ac94f89fdcc1c3289c3ad}{desired\+Frame\+Rate}}}
+
+\mbox{\Hypertarget{main_8c_a85866b7666b04613bcdac3330f2e9155}\label{main_8c_a85866b7666b04613bcdac3330f2e9155}} 
+\index{main.c@{main.c}!timer\_hook\_id@{timer\_hook\_id}}
+\index{timer\_hook\_id@{timer\_hook\_id}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{timer\_hook\_id}{timer\_hook\_id}}
+{\footnotesize\ttfamily uint8\+\_\+t timer\+\_\+hook\+\_\+id = 0}
+

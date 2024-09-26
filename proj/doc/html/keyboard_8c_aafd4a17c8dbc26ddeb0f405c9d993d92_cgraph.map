@@ -1,0 +1,4 @@
+<map id="receive_keyboard_scan" name="receive_keyboard_scan">
+<area shape="rect" id="node1" title="receives the keyboard scan" alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a36aef6e0db295f00cbc0db17796a3b5a" title="cleans the scan info" alt="" coords="228,5,355,32"/>
+</map>

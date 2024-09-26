@@ -1,0 +1,467 @@
+\hypertarget{mouse_8c}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/controller/mouse/mouse.c File Reference}
+\label{mouse_8c}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/mouse/mouse.c@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/mouse/mouse.c}}
+
+
+File containing the implementation of the functions to interact with the mouse.  
+
+
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../proj/src/mvc/model/game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../proj/src/sprites/\+Cursor/cursors.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../view/view.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../kbc/i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for mouse.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{mouse_8c_a210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Subscribes mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_a20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_a3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes mouse interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_a1d0d211f4db5439b6cc36482e4529e67}{reset\+\_\+mouse\+\_\+struct}} (struct packet $\ast$\mbox{\hyperlink{mouse_8c_af00020a78ba3e30cf695a339bff66a51}{mouse}})
+\begin{DoxyCompactList}\small\item\em resets the mouse struct \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_af77e8e5565a99914b46599038682f453}{cursor\+\_\+draw\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em draws the cursor at the start of the game \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_a7c35b8ea4b294430bfbb2d6c0dd98354}{parse\+\_\+values}} (uint8\+\_\+t data, int $\ast$\mbox{\hyperlink{utils_8c_a884497f3269a8ae82bcd0a4814997702}{cnt}}, struct packet $\ast$pp)
+\begin{DoxyCompactList}\small\item\em parses the values of the mouse packet \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mouse_8c_aa47896867b3c275546bf08dde63449b1}{clean\+\_\+packet}} (struct packet $\ast$\mbox{\hyperlink{mouse_8c_af00020a78ba3e30cf695a339bff66a51}{mouse}})
+\begin{DoxyCompactList}\small\item\em cleans the mouse packet \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_a18f94800c87c2b1f3c1dbaedf861347b}{disable\+\_\+mouse\+\_\+report}} ()
+\begin{DoxyCompactList}\small\item\em disables the mouse report \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_a96f453d50b145b9a6de548552a8c5a2e}{enable\+\_\+mouse\+\_\+report}} ()
+\begin{DoxyCompactList}\small\item\em enables the mouse report \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structmousePosition}{mouse\+Position}}() \mbox{\hyperlink{mouse_8c_a7c45116b4ace4be828c23f618e830cae}{get\+\_\+position\+\_\+cursor}} (struct \mbox{\hyperlink{structcursor}{cursor}} $\ast$\mbox{\hyperlink{structcursor}{cursor}})
+\begin{DoxyCompactList}\small\item\em gets the position of the cursor \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_a6fa632a85f47c9d846c55b975d118df9}{in\+\_\+game\+\_\+mouse\+\_\+movement}} ()
+\begin{DoxyCompactList}\small\item\em In game mouse movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mouse_8c_a0b0da21bbdff62b7b28e9af7ec3d0d76}{hook\+\_\+id\+\_\+mouse}} = 2
+\item 
+struct packet \mbox{\hyperlink{mouse_8c_af00020a78ba3e30cf695a339bff66a51}{mouse}}
+\item 
+struct \mbox{\hyperlink{structcursor}{cursor}} \mbox{\hyperlink{mouse_8c_a5c19f7053c1165c8efa2a26378c4671b}{cursor}}
+\item 
+bool \mbox{\hyperlink{mouse_8c_a4bd4faf59ae51cd0ca09b19f56d1c8c3}{sync\+\_\+v}} = false
+\item 
+int \mbox{\hyperlink{mouse_8c_a913773c9d479d1739a332b92cea6fbfa}{counter\+\_\+mouse}} = 0
+\item 
+int \mbox{\hyperlink{mouse_8c_a8525e1b1418726e34137f44604b4ee40}{counter\+\_\+packet\+\_\+print}}
+\item 
+struct \mbox{\hyperlink{structGame}{Game}} $\ast$ \mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}}
+\begin{DoxyCompactList}\small\item\em Pointer to the current game instance. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mouse_8h_a8301a430841cc07d03e165218263666d}{In\+Game\+States}} \mbox{\hyperlink{mouse_8c_a8391528ab02bf0f8a9abb6e5e324e736}{\+\_\+current\+\_\+state}} = \mbox{\hyperlink{mouse_8h_a8301a430841cc07d03e165218263666da7116db6906963fd0720c4a85be250cf4}{INITIAL}}
+\item 
+struct \mbox{\hyperlink{structPosition}{Position}} \mbox{\hyperlink{mouse_8c_aff35daf977b46d14c16e793357676ff8}{initial\+\_\+pos}}
+\item 
+struct \mbox{\hyperlink{structPosition}{Position}} \mbox{\hyperlink{mouse_8c_a5f83da1aabf136b74d2fc1d5549891a3}{final\+\_\+pos}}
+\item 
+struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$ \mbox{\hyperlink{mouse_8c_af4aea4b551955f58e30f7061ff08f2f5}{piece\+\_\+selected}}
+\item 
+struct \mbox{\hyperlink{structPosition}{Position}} \mbox{\hyperlink{mouse_8c_a7932f2bc61b4f5870dc2baf221d009ef}{button\+\_\+position}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing the implementation of the functions to interact with the mouse. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mouse_8c_aa47896867b3c275546bf08dde63449b1}\label{mouse_8c_aa47896867b3c275546bf08dde63449b1}} 
+\index{mouse.c@{mouse.c}!clean\_packet@{clean\_packet}}
+\index{clean\_packet@{clean\_packet}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{clean\_packet()}{clean\_packet()}}
+{\footnotesize\ttfamily void clean\+\_\+packet (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+cleans the mouse packet 
+
+this cleans the packet
+
+This function cleans the mouse packet
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & Address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_aa47896867b3c275546bf08dde63449b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_af77e8e5565a99914b46599038682f453}\label{mouse_8c_af77e8e5565a99914b46599038682f453}} 
+\index{mouse.c@{mouse.c}!cursor\_draw\_start@{cursor\_draw\_start}}
+\index{cursor\_draw\_start@{cursor\_draw\_start}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{cursor\_draw\_start()}{cursor\_draw\_start()}}
+{\footnotesize\ttfamily int() cursor\+\_\+draw\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the cursor at the start of the game 
+
+this function draws the cursor at the start of the game
+
+This function draws the cursor at the start of the game
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_af77e8e5565a99914b46599038682f453_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_a18f94800c87c2b1f3c1dbaedf861347b}\label{mouse_8c_a18f94800c87c2b1f3c1dbaedf861347b}} 
+\index{mouse.c@{mouse.c}!disable\_mouse\_report@{disable\_mouse\_report}}
+\index{disable\_mouse\_report@{disable\_mouse\_report}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{disable\_mouse\_report()}{disable\_mouse\_report()}}
+{\footnotesize\ttfamily int() disable\+\_\+mouse\+\_\+report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+disables the mouse report 
+
+this function disables the mouse report
+
+This function disables the mouse report
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a18f94800c87c2b1f3c1dbaedf861347b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_a96f453d50b145b9a6de548552a8c5a2e}\label{mouse_8c_a96f453d50b145b9a6de548552a8c5a2e}} 
+\index{mouse.c@{mouse.c}!enable\_mouse\_report@{enable\_mouse\_report}}
+\index{enable\_mouse\_report@{enable\_mouse\_report}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{enable\_mouse\_report()}{enable\_mouse\_report()}}
+{\footnotesize\ttfamily int() enable\+\_\+mouse\+\_\+report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+enables the mouse report 
+
+this function enables the mouse report
+
+This function enables the mouse report
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a96f453d50b145b9a6de548552a8c5a2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{mouse_8c_a96f453d50b145b9a6de548552a8c5a2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_a7c45116b4ace4be828c23f618e830cae}\label{mouse_8c_a7c45116b4ace4be828c23f618e830cae}} 
+\index{mouse.c@{mouse.c}!get\_position\_cursor@{get\_position\_cursor}}
+\index{get\_position\_cursor@{get\_position\_cursor}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{get\_position\_cursor()}{get\_position\_cursor()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structmousePosition}{mouse\+Position}}() get\+\_\+position\+\_\+cursor (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structcursor}{cursor}} $\ast$}]{cursor }\end{DoxyParamCaption})}
+
+
+
+gets the position of the cursor 
+
+This function gets the position of the cursor
+
+
+\begin{DoxyParams}{Parameters}
+{\em cursor} & Address of memory to be initialized with the value read from the register\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8c_a6fa632a85f47c9d846c55b975d118df9}\label{mouse_8c_a6fa632a85f47c9d846c55b975d118df9}} 
+\index{mouse.c@{mouse.c}!in\_game\_mouse\_movement@{in\_game\_mouse\_movement}}
+\index{in\_game\_mouse\_movement@{in\_game\_mouse\_movement}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{in\_game\_mouse\_movement()}{in\_game\_mouse\_movement()}}
+{\footnotesize\ttfamily int() in\+\_\+game\+\_\+mouse\+\_\+movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+In game mouse movement. 
+
+this function handles mouse movement during the game.
+
+This function handles the mouse movement in the game
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a6fa632a85f47c9d846c55b975d118df9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a6fa632a85f47c9d846c55b975d118df9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_a210374b50462acdedab00df64d5cea3c}\label{mouse_8c_a210374b50462acdedab00df64d5cea3c}} 
+\index{mouse.c@{mouse.c}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes mouse interrupts. 
+
+This function Creates mouse interrupts
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a210374b50462acdedab00df64d5cea3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a210374b50462acdedab00df64d5cea3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_a20285aed4b3ef45812cd967532dd09db}\label{mouse_8c_a20285aed4b3ef45812cd967532dd09db}} 
+\index{mouse.c@{mouse.c}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes mouse interrupts. 
+
+this function subscribes mouse interrupts
+
+This function subscribes mouse interrupts
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{mouse_8c_a20285aed4b3ef45812cd967532dd09db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_a3ecf823d80520009ae5e0d76ae40a3c3}\label{mouse_8c_a3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{mouse.c@{mouse.c}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes mouse interrupts. 
+
+this function unsubscribes mouse interrupts
+
+This function unsubscribes mouse interrupts
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a3ecf823d80520009ae5e0d76ae40a3c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_a7c35b8ea4b294430bfbb2d6c0dd98354}\label{mouse_8c_a7c35b8ea4b294430bfbb2d6c0dd98354}} 
+\index{mouse.c@{mouse.c}!parse\_values@{parse\_values}}
+\index{parse\_values@{parse\_values}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{parse\_values()}{parse\_values()}}
+{\footnotesize\ttfamily int() parse\+\_\+values (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data,  }\item[{int $\ast$}]{cnt,  }\item[{struct packet $\ast$}]{pp }\end{DoxyParamCaption})}
+
+
+
+parses the values of the mouse packet 
+
+parses the values of the mouse
+
+This function parses the values of the mouse packet
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & data to be parsed \\
+\hline
+{\em cnt} & counter of the packet \\
+\hline
+{\em pp} & packet to be parsed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a7c35b8ea4b294430bfbb2d6c0dd98354_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8c_a7c35b8ea4b294430bfbb2d6c0dd98354_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8c_a1d0d211f4db5439b6cc36482e4529e67}\label{mouse_8c_a1d0d211f4db5439b6cc36482e4529e67}} 
+\index{mouse.c@{mouse.c}!reset\_mouse\_struct@{reset\_mouse\_struct}}
+\index{reset\_mouse\_struct@{reset\_mouse\_struct}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{reset\_mouse\_struct()}{reset\_mouse\_struct()}}
+{\footnotesize\ttfamily int() reset\+\_\+mouse\+\_\+struct (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+resets the mouse struct 
+
+this function resets the mouse struct
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & Address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mouse_8c_a8391528ab02bf0f8a9abb6e5e324e736}\label{mouse_8c_a8391528ab02bf0f8a9abb6e5e324e736}} 
+\index{mouse.c@{mouse.c}!\_current\_state@{\_current\_state}}
+\index{\_current\_state@{\_current\_state}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{\_current\_state}{\_current\_state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mouse_8h_a8301a430841cc07d03e165218263666d}{In\+Game\+States}} \+\_\+current\+\_\+state = \mbox{\hyperlink{mouse_8h_a8301a430841cc07d03e165218263666da7116db6906963fd0720c4a85be250cf4}{INITIAL}}}
+
+\mbox{\Hypertarget{mouse_8c_a7932f2bc61b4f5870dc2baf221d009ef}\label{mouse_8c_a7932f2bc61b4f5870dc2baf221d009ef}} 
+\index{mouse.c@{mouse.c}!button\_position@{button\_position}}
+\index{button\_position@{button\_position}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{button\_position}{button\_position}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPosition}{Position}} button\+\_\+position}
+
+\mbox{\Hypertarget{mouse_8c_a913773c9d479d1739a332b92cea6fbfa}\label{mouse_8c_a913773c9d479d1739a332b92cea6fbfa}} 
+\index{mouse.c@{mouse.c}!counter\_mouse@{counter\_mouse}}
+\index{counter\_mouse@{counter\_mouse}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{counter\_mouse}{counter\_mouse}}
+{\footnotesize\ttfamily int counter\+\_\+mouse = 0}
+
+\mbox{\Hypertarget{mouse_8c_a8525e1b1418726e34137f44604b4ee40}\label{mouse_8c_a8525e1b1418726e34137f44604b4ee40}} 
+\index{mouse.c@{mouse.c}!counter\_packet\_print@{counter\_packet\_print}}
+\index{counter\_packet\_print@{counter\_packet\_print}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{counter\_packet\_print}{counter\_packet\_print}}
+{\footnotesize\ttfamily int counter\+\_\+packet\+\_\+print\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{mouse_8c_a5c19f7053c1165c8efa2a26378c4671b}\label{mouse_8c_a5c19f7053c1165c8efa2a26378c4671b}} 
+\index{mouse.c@{mouse.c}!cursor@{cursor}}
+\index{cursor@{cursor}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structcursor}{cursor}} \mbox{\hyperlink{structcursor}{cursor}}}
+
+\mbox{\Hypertarget{mouse_8c_a5f83da1aabf136b74d2fc1d5549891a3}\label{mouse_8c_a5f83da1aabf136b74d2fc1d5549891a3}} 
+\index{mouse.c@{mouse.c}!final\_pos@{final\_pos}}
+\index{final\_pos@{final\_pos}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{final\_pos}{final\_pos}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPosition}{Position}} final\+\_\+pos}
+
+\mbox{\Hypertarget{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}\label{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}} 
+\index{mouse.c@{mouse.c}!game@{game}}
+\index{game@{game}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structGame}{Game}}$\ast$ game\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Pointer to the current game instance. 
+
+\mbox{\Hypertarget{mouse_8c_a0b0da21bbdff62b7b28e9af7ec3d0d76}\label{mouse_8c_a0b0da21bbdff62b7b28e9af7ec3d0d76}} 
+\index{mouse.c@{mouse.c}!hook\_id\_mouse@{hook\_id\_mouse}}
+\index{hook\_id\_mouse@{hook\_id\_mouse}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id\_mouse}{hook\_id\_mouse}}
+{\footnotesize\ttfamily int hook\+\_\+id\+\_\+mouse = 2}
+
+\mbox{\Hypertarget{mouse_8c_aff35daf977b46d14c16e793357676ff8}\label{mouse_8c_aff35daf977b46d14c16e793357676ff8}} 
+\index{mouse.c@{mouse.c}!initial\_pos@{initial\_pos}}
+\index{initial\_pos@{initial\_pos}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{initial\_pos}{initial\_pos}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPosition}{Position}} initial\+\_\+pos}
+
+\mbox{\Hypertarget{mouse_8c_af00020a78ba3e30cf695a339bff66a51}\label{mouse_8c_af00020a78ba3e30cf695a339bff66a51}} 
+\index{mouse.c@{mouse.c}!mouse@{mouse}}
+\index{mouse@{mouse}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily struct packet mouse}
+
+\mbox{\Hypertarget{mouse_8c_af4aea4b551955f58e30f7061ff08f2f5}\label{mouse_8c_af4aea4b551955f58e30f7061ff08f2f5}} 
+\index{mouse.c@{mouse.c}!piece\_selected@{piece\_selected}}
+\index{piece\_selected@{piece\_selected}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{piece\_selected}{piece\_selected}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPiece}{Piece}}$\ast$ piece\+\_\+selected}
+
+\mbox{\Hypertarget{mouse_8c_a4bd4faf59ae51cd0ca09b19f56d1c8c3}\label{mouse_8c_a4bd4faf59ae51cd0ca09b19f56d1c8c3}} 
+\index{mouse.c@{mouse.c}!sync\_v@{sync\_v}}
+\index{sync\_v@{sync\_v}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{sync\_v}{sync\_v}}
+{\footnotesize\ttfamily bool sync\+\_\+v = false}
+

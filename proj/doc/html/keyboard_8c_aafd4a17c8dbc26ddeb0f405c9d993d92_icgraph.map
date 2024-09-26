@@ -1,0 +1,7 @@
+<map id="receive_keyboard_scan" name="receive_keyboard_scan">
+<area shape="rect" id="node1" title="receives the keyboard scan" alt="" coords="389,56,564,83"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a23cd4ccfc95bca48e72307ca8b416f18" title="breaks from the cycles" alt="" coords="186,5,331,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a95f165b5a576577a6c2fff2013f71d5b" title="checks if the ESC key was pressed" alt="" coords="213,56,305,83"/>
+<area shape="rect" id="node4" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="176,107,341,133"/>
+<area shape="rect" id="node5" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,107,128,133"/>
+</map>

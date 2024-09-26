@@ -1,0 +1,125 @@
+front buffer size : 1440000
+Scancode: 0x3a
+Number of interrupts received: 1
+Scancode: 0xba
+Scancode: 0x3
+Number of interrupts received: 2
+Scancode: 0x83
+Scancode: 0x3a
+Number of interrupts received: 3
+Scancode: 0xba
+Scancode: 0x3a
+Number of interrupts received: 4
+Scancode: 0xba
+Scancode: 0x7
+Number of interrupts received: 5
+Scancode: 0x87
+Scancode: 0x3
+Number of interrupts received: 6
+Scancode: 0x83
+Scancode: 0x7
+Number of interrupts received: 7
+Scancode: 0x87
+Scancode: 0x2
+Number of interrupts received: 8
+Scancode: 0x82
+Scancode: 0x2
+Number of interrupts received: 9
+Scancode: 0x82
+Scancode: 0x3
+File opened successfully
+Number of interrupts received: 10
+Scancode: 0x83
+Scancode: 0x3
+17:33:1417:33:15Number of interrupts received: 11
+Scancode: 0x83
+Scancode: 0x3
+File opened successfully
+Number of interrupts received: 12
+Scancode: 0x83
+Scancode: 0x3
+17:33:1717:33:22Number of interrupts received: 13
+Scancode: 0x83
+Scancode: 0x2
+Number of interrupts received: 14
+Scancode: 0x82
+Scancode: 0x3
+Number of interrupts received: 15
+Scancode: 0x83
+Scancode: 0x2
+Number of interrupts received: 16
+Scancode: 0x82
+piece_selected is not NULL
+white turn 1
+piece selected is white 0
+PIECE_SELECTED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+PIECE_DRAGGED
+COMPLETE
+Piece moved
+piece_selected is not NULL
+white turn 0
+piece selected is white 0
+Scancode: 0x3
+File opened successfully
+Number of interrupts received: 17
+Scancode: 0x83
+Scancode: 0x3
+17:35:0117:36:06Number of interrupts received: 18
+Scancode: 0x83
+Scancode: 0x2
+Number of interrupts received: 19
+Scancode: 0x82
+Scancode: 0x3
+Number of interrupts received: 20
+Scancode: 0x83
+Scancode: 0x2
+Number of interrupts received: 21
+Scancode: 0x82
+Scancode: 0x3
+File opened successfully
+Number of interrupts received: 22
+Scancode: 0x83
+Scancode: 0x1
+Number of interrupts received: 23
+Scancode: 0x81
+esc pressedText mode setted

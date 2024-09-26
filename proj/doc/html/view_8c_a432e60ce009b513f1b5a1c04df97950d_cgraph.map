@@ -1,0 +1,6 @@
+<map id="draw_queen" name="draw_queen">
+<area shape="rect" id="node1" title="Draws a queen piece on the game board." alt="" coords="5,31,107,57"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#add642ffbd7541851a3b8afeb2b477331" title="Draws the Black Piece." alt="" coords="155,5,293,32"/>
+<area shape="rect" id="node4" href="$graphic_8c.html#a5bc9007966db542e8991431c3ccd7c48" title="Draws the White Piece." alt="" coords="155,56,293,83"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="341,31,456,57"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="parse_values" name="parse_values">
+<area shape="rect" id="node1" title="parses the values of the mouse" alt="" coords="507,5,615,32"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Subscribes mouse interrupts." alt="" coords="373,5,459,32"/>
+<area shape="rect" id="node3" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="176,5,325,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,5,128,32"/>
+</map>

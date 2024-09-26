@@ -1,0 +1,5 @@
+<map id="vg_draw_hline" name="vg_draw_hline">
+<area shape="rect" id="node1" title="Draws the horizontal line." alt="" coords="199,31,315,57"/>
+<area shape="rect" id="node2" href="$view_8c.html#a033e2ab573217307392c7d22622597a5" title="Fills a rectangular area with a specified color." alt="" coords="59,5,97,32"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a99d2da2559e11200c6b40c469e9977ec" title="Draws the rectangle." alt="" coords="5,56,151,83"/>
+</map>

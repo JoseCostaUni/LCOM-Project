@@ -1,0 +1,5 @@
+<map id="mouse_unsubscribe_int" name="mouse_unsubscribe_int">
+<area shape="rect" id="node1" title="this function unsubscribes mouse interrupts" alt="" coords="285,5,460,32"/>
+<area shape="rect" id="node2" href="$main_8c.html#a6ce4ec06673ead16fc7d133ea20d5f1b" title="Exits the program." alt="" coords="176,5,237,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,5,128,32"/>
+</map>

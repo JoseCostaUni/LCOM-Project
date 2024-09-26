@@ -1,0 +1,5 @@
+<map id="update_in_progress" name="update_in_progress">
+<area shape="rect" id="node1" title="Checks if an update is in progress." alt="" coords="5,5,155,32"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#a67b735a7406ec94e19258b318f939b2f" title="Reads a register from the RTC." alt="" coords="203,5,311,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="359,5,457,32"/>
+</map>

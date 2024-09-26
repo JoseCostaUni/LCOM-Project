@@ -1,0 +1,7 @@
+<map id="change_game_state_to_menu" name="change_game_state_to_menu">
+<area shape="rect" id="node1" title="Changes the game state to the pause menu." alt="" coords="5,56,223,83"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#ae85336e04569224dd46343f921c796d3" title="Draws the pause menu." alt="" coords="271,31,415,57"/>
+<area shape="rect" id="node5" href="$graphic_8c.html#a24015f2b3c19b2228803ab038d692dd4" title="erases the buffer." alt="" coords="291,81,394,108"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a0d157d997329169f936545f9985e334b" title="Swaps the buffers." alt="" coords="466,5,574,32"/>
+<area shape="rect" id="node4" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="463,56,577,83"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="swap_BackgroundBuffer" name="swap_BackgroundBuffer">
+<area shape="rect" id="node1" title="swaps the background buffer" alt="" coords="1396,132,1575,159"/>
+<area shape="rect" id="node2" href="$view_8c.html#abda224a2136d1683aefd16a605263d33" title="Advances a piece to a new position on the game board." alt="" coords="1211,5,1330,32"/>
+<area shape="rect" id="node7" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="176,56,325,83"/>
+<area shape="rect" id="node9" href="$controller_8c.html#acb677e252595a3a91a9d3bfe595108c3" title="Decreases the timer of the current player and updates the display if necessary." alt="" coords="738,107,909,133"/>
+<area shape="rect" id="node10" href="$view_8c.html#a0c697bef52486fe9045091ca868896ee" title="Draws the cursor on the game board." alt="" coords="1220,157,1321,184"/>
+<area shape="rect" id="node11" href="$view_8c.html#a1add12a8f215611a402c91a709a12698" title="Moves a piece to its initial position on the game board." alt="" coords="1193,208,1348,235"/>
+<area shape="rect" id="node12" href="$controller_8c.html#ab0957bc720f28c7bbfc56f57309dffcb" title="Routes the program flow based on the current state and user input." alt="" coords="1240,259,1301,285"/>
+<area shape="rect" id="node3" href="$game_8c.html#a5d5cf7f4919fd953e240529e8a92863b" title="Changes the position of a piece on the board if the move is legal." alt="" coords="975,5,1145,32"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a6fa632a85f47c9d846c55b975d118df9" title="In game mouse movement." alt="" coords="720,5,927,32"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a7c35b8ea4b294430bfbb2d6c0dd98354" title="parses the values of the mouse packet" alt="" coords="535,5,643,32"/>
+<area shape="rect" id="node6" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Subscribes mouse interrupts." alt="" coords="373,5,459,32"/>
+<area shape="rect" id="node8" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,107,128,133"/>
+<area shape="rect" id="node13" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="507,195,672,221"/>
+</map>

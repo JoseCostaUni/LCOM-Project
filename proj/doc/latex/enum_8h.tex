@@ -1,0 +1,219 @@
+\hypertarget{enum_8h}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/model/enum.h File Reference}
+\label{enum_8h}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/model/enum.h@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/model/enum.h}}
+
+
+This file contains the declaration of the enumerations that will be used in the game.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enum_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \{ \newline
+\mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a1f189a15a64c7c4a1553e876b56c6bf2}{PAWN}} = 0
+, \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a49b75ad9a5137e805c60f32ed9cc2820}{ROOK}} = 1
+, \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021ad4a86ac7d51335fcb5756203a88612d6}{KNIGHT}} = 2
+, \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a6bc4b5ac244475b6bd2595d608f18814}{BISHOP}} = 3
+, \newline
+\mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a58561257be7e2f96f82c0fdb51d7f964}{QUEEN}} = 4
+, \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a157524408d6f0fc4b7dc5e52f3dd3b80}{KING}} = 5
+, \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021abd1c3204d9046c798b90b1b25bd9d8f1}{CASTLE}} = 6
+, \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a2f0d18fc0d0fa4a6cd92dc328501874d}{EMPTY}} = 7
+ \}
+\begin{DoxyCompactList}\small\item\em Enum representing the type of a chess piece. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{enum_8h_abbe637356c8cb749a9726f13658031fa}{Cursor\+Type}} \{ \mbox{\hyperlink{enum_8h_abbe637356c8cb749a9726f13658031faa88ec7d5086d2469ba843c7fcceade8a6}{DEFAULT}} = 0
+, \mbox{\hyperlink{enum_8h_abbe637356c8cb749a9726f13658031faa76c44c6d322cdc30cfcb6cd70250686f}{HOVERING}} = 1
+, \mbox{\hyperlink{enum_8h_abbe637356c8cb749a9726f13658031faa02b0fb84d46d585b477a6509abf32b5d}{SELECTED}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Enum representing the type of cursor. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985}{Piece\+Color}} \{ \mbox{\hyperlink{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985a283fc479650da98250635b9c3c0e7e50}{WHITE}} = 0
+, \mbox{\hyperlink{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985af77fb67151d0c18d397069ad8c271ba3}{BLACK}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Enum representing the color of a chess piece. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688ad}{Game\+States}} \{ \newline
+\mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688ada13d000b4d7dc70d90239b7430d1eb6b2}{START}}
+, \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688ada5d52fbb867b34eb59327ec0a99d421f6}{STALEMATE}}
+, \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688ada06fb949814bfccc55c1fb2208d63d7b1}{CHECKMATE}}
+, \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688adaed65b7dfe470f4e500b15f7074bb7fa2}{CHECK}}
+, \newline
+\mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688ada61f3c57b6943c85413975507aede78cd}{DRAW}}
+, \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688adadc6f24fd6915a3f2786a1b7045406924}{END}}
+, \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688adaea9e2a8ce4339ceb6af69f47c7610012}{ONGOING}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum representing the possible states of a chess game. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0}{Menu\+States}} \{ \mbox{\hyperlink{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0ac22743f1fc74de09544ecc9bab74a17b}{MAIN\+\_\+\+MENU}}
+, \mbox{\hyperlink{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0aa65481e2492a0d2954f4e8de6dabf01d}{GAME\+\_\+\+MENU}}
+, \mbox{\hyperlink{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0a8e623952deb0a56550e1b96de5111eac}{SETTINGS\+\_\+\+MENU}}
+, \mbox{\hyperlink{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0a5c0d1c2cc18859a1432892b71b4d6279}{EXIT\+\_\+\+MENU}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum representing the possible states of the game menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of the enumerations that will be used in the game. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{enum_8h_abbe637356c8cb749a9726f13658031fa}\label{enum_8h_abbe637356c8cb749a9726f13658031fa}} 
+\index{enum.h@{enum.h}!CursorType@{CursorType}}
+\index{CursorType@{CursorType}!enum.h@{enum.h}}
+\doxysubsubsection{\texorpdfstring{CursorType}{CursorType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{enum_8h_abbe637356c8cb749a9726f13658031fa}{Cursor\+Type}}}
+
+
+
+Enum representing the type of cursor. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEFAULT@{DEFAULT}!enum.h@{enum.h}}\index{enum.h@{enum.h}!DEFAULT@{DEFAULT}}}\mbox{\Hypertarget{enum_8h_abbe637356c8cb749a9726f13658031faa88ec7d5086d2469ba843c7fcceade8a6}\label{enum_8h_abbe637356c8cb749a9726f13658031faa88ec7d5086d2469ba843c7fcceade8a6}} 
+DEFAULT&Default cursor. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HOVERING@{HOVERING}!enum.h@{enum.h}}\index{enum.h@{enum.h}!HOVERING@{HOVERING}}}\mbox{\Hypertarget{enum_8h_abbe637356c8cb749a9726f13658031faa76c44c6d322cdc30cfcb6cd70250686f}\label{enum_8h_abbe637356c8cb749a9726f13658031faa76c44c6d322cdc30cfcb6cd70250686f}} 
+HOVERING&Cursor when hovering over a piece. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECTED@{SELECTED}!enum.h@{enum.h}}\index{enum.h@{enum.h}!SELECTED@{SELECTED}}}\mbox{\Hypertarget{enum_8h_abbe637356c8cb749a9726f13658031faa02b0fb84d46d585b477a6509abf32b5d}\label{enum_8h_abbe637356c8cb749a9726f13658031faa02b0fb84d46d585b477a6509abf32b5d}} 
+SELECTED&Cursor when a piece is selected. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{enum_8h_ae3a29b920db0912c06cb59c2a21688ad}\label{enum_8h_ae3a29b920db0912c06cb59c2a21688ad}} 
+\index{enum.h@{enum.h}!GameStates@{GameStates}}
+\index{GameStates@{GameStates}!enum.h@{enum.h}}
+\doxysubsubsection{\texorpdfstring{GameStates}{GameStates}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688ad}{Game\+States}}}
+
+
+
+Enum representing the possible states of a chess game. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{START@{START}!enum.h@{enum.h}}\index{enum.h@{enum.h}!START@{START}}}\mbox{\Hypertarget{enum_8h_ae3a29b920db0912c06cb59c2a21688ada13d000b4d7dc70d90239b7430d1eb6b2}\label{enum_8h_ae3a29b920db0912c06cb59c2a21688ada13d000b4d7dc70d90239b7430d1eb6b2}} 
+START&\mbox{\hyperlink{structGame}{Game}} starting state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STALEMATE@{STALEMATE}!enum.h@{enum.h}}\index{enum.h@{enum.h}!STALEMATE@{STALEMATE}}}\mbox{\Hypertarget{enum_8h_ae3a29b920db0912c06cb59c2a21688ada5d52fbb867b34eb59327ec0a99d421f6}\label{enum_8h_ae3a29b920db0912c06cb59c2a21688ada5d52fbb867b34eb59327ec0a99d421f6}} 
+STALEMATE&Stalemate state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHECKMATE@{CHECKMATE}!enum.h@{enum.h}}\index{enum.h@{enum.h}!CHECKMATE@{CHECKMATE}}}\mbox{\Hypertarget{enum_8h_ae3a29b920db0912c06cb59c2a21688ada06fb949814bfccc55c1fb2208d63d7b1}\label{enum_8h_ae3a29b920db0912c06cb59c2a21688ada06fb949814bfccc55c1fb2208d63d7b1}} 
+CHECKMATE&Checkmate state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHECK@{CHECK}!enum.h@{enum.h}}\index{enum.h@{enum.h}!CHECK@{CHECK}}}\mbox{\Hypertarget{enum_8h_ae3a29b920db0912c06cb59c2a21688adaed65b7dfe470f4e500b15f7074bb7fa2}\label{enum_8h_ae3a29b920db0912c06cb59c2a21688adaed65b7dfe470f4e500b15f7074bb7fa2}} 
+CHECK&Check state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DRAW@{DRAW}!enum.h@{enum.h}}\index{enum.h@{enum.h}!DRAW@{DRAW}}}\mbox{\Hypertarget{enum_8h_ae3a29b920db0912c06cb59c2a21688ada61f3c57b6943c85413975507aede78cd}\label{enum_8h_ae3a29b920db0912c06cb59c2a21688ada61f3c57b6943c85413975507aede78cd}} 
+DRAW&Draw state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{END@{END}!enum.h@{enum.h}}\index{enum.h@{enum.h}!END@{END}}}\mbox{\Hypertarget{enum_8h_ae3a29b920db0912c06cb59c2a21688adadc6f24fd6915a3f2786a1b7045406924}\label{enum_8h_ae3a29b920db0912c06cb59c2a21688adadc6f24fd6915a3f2786a1b7045406924}} 
+END&\mbox{\hyperlink{structGame}{Game}} ending state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONGOING@{ONGOING}!enum.h@{enum.h}}\index{enum.h@{enum.h}!ONGOING@{ONGOING}}}\mbox{\Hypertarget{enum_8h_ae3a29b920db0912c06cb59c2a21688adaea9e2a8ce4339ceb6af69f47c7610012}\label{enum_8h_ae3a29b920db0912c06cb59c2a21688adaea9e2a8ce4339ceb6af69f47c7610012}} 
+ONGOING&Ongoing game state. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0}\label{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0}} 
+\index{enum.h@{enum.h}!MenuStates@{MenuStates}}
+\index{MenuStates@{MenuStates}!enum.h@{enum.h}}
+\doxysubsubsection{\texorpdfstring{MenuStates}{MenuStates}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0}{Menu\+States}}}
+
+
+
+Enum representing the possible states of the game menu. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAIN\_MENU@{MAIN\_MENU}!enum.h@{enum.h}}\index{enum.h@{enum.h}!MAIN\_MENU@{MAIN\_MENU}}}\mbox{\Hypertarget{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0ac22743f1fc74de09544ecc9bab74a17b}\label{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0ac22743f1fc74de09544ecc9bab74a17b}} 
+MAIN\+\_\+\+MENU&Main menu state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_MENU@{GAME\_MENU}!enum.h@{enum.h}}\index{enum.h@{enum.h}!GAME\_MENU@{GAME\_MENU}}}\mbox{\Hypertarget{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0aa65481e2492a0d2954f4e8de6dabf01d}\label{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0aa65481e2492a0d2954f4e8de6dabf01d}} 
+GAME\+\_\+\+MENU&\mbox{\hyperlink{structGame}{Game}} menu state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SETTINGS\_MENU@{SETTINGS\_MENU}!enum.h@{enum.h}}\index{enum.h@{enum.h}!SETTINGS\_MENU@{SETTINGS\_MENU}}}\mbox{\Hypertarget{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0a8e623952deb0a56550e1b96de5111eac}\label{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0a8e623952deb0a56550e1b96de5111eac}} 
+SETTINGS\+\_\+\+MENU&Settings menu state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXIT\_MENU@{EXIT\_MENU}!enum.h@{enum.h}}\index{enum.h@{enum.h}!EXIT\_MENU@{EXIT\_MENU}}}\mbox{\Hypertarget{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0a5c0d1c2cc18859a1432892b71b4d6279}\label{enum_8h_a0badaa492c3fe1e188c7290b143cb6c0a5c0d1c2cc18859a1432892b71b4d6279}} 
+EXIT\+\_\+\+MENU&Exit menu state. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985}\label{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985}} 
+\index{enum.h@{enum.h}!PieceColor@{PieceColor}}
+\index{PieceColor@{PieceColor}!enum.h@{enum.h}}
+\doxysubsubsection{\texorpdfstring{PieceColor}{PieceColor}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985}{Piece\+Color}}}
+
+
+
+Enum representing the color of a chess piece. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE@{WHITE}!enum.h@{enum.h}}\index{enum.h@{enum.h}!WHITE@{WHITE}}}\mbox{\Hypertarget{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985a283fc479650da98250635b9c3c0e7e50}\label{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985a283fc479650da98250635b9c3c0e7e50}} 
+WHITE&White piece. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLACK@{BLACK}!enum.h@{enum.h}}\index{enum.h@{enum.h}!BLACK@{BLACK}}}\mbox{\Hypertarget{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985af77fb67151d0c18d397069ad8c271ba3}\label{enum_8h_ad7595c48bb74c0dd2a7648712a2d4985af77fb67151d0c18d397069ad8c271ba3}} 
+BLACK&Black piece. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}} 
+\index{enum.h@{enum.h}!PieceType@{PieceType}}
+\index{PieceType@{PieceType}!enum.h@{enum.h}}
+\doxysubsubsection{\texorpdfstring{PieceType}{PieceType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}}
+
+
+
+Enum representing the type of a chess piece. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAWN@{PAWN}!enum.h@{enum.h}}\index{enum.h@{enum.h}!PAWN@{PAWN}}}\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a1f189a15a64c7c4a1553e876b56c6bf2}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a1f189a15a64c7c4a1553e876b56c6bf2}} 
+PAWN&pawn. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROOK@{ROOK}!enum.h@{enum.h}}\index{enum.h@{enum.h}!ROOK@{ROOK}}}\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a49b75ad9a5137e805c60f32ed9cc2820}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a49b75ad9a5137e805c60f32ed9cc2820}} 
+ROOK&rook. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KNIGHT@{KNIGHT}!enum.h@{enum.h}}\index{enum.h@{enum.h}!KNIGHT@{KNIGHT}}}\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021ad4a86ac7d51335fcb5756203a88612d6}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021ad4a86ac7d51335fcb5756203a88612d6}} 
+KNIGHT&knight. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BISHOP@{BISHOP}!enum.h@{enum.h}}\index{enum.h@{enum.h}!BISHOP@{BISHOP}}}\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a6bc4b5ac244475b6bd2595d608f18814}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a6bc4b5ac244475b6bd2595d608f18814}} 
+BISHOP&bishop. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUEEN@{QUEEN}!enum.h@{enum.h}}\index{enum.h@{enum.h}!QUEEN@{QUEEN}}}\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a58561257be7e2f96f82c0fdb51d7f964}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a58561257be7e2f96f82c0fdb51d7f964}} 
+QUEEN&queen. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KING@{KING}!enum.h@{enum.h}}\index{enum.h@{enum.h}!KING@{KING}}}\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a157524408d6f0fc4b7dc5e52f3dd3b80}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a157524408d6f0fc4b7dc5e52f3dd3b80}} 
+KING&king. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CASTLE@{CASTLE}!enum.h@{enum.h}}\index{enum.h@{enum.h}!CASTLE@{CASTLE}}}\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021abd1c3204d9046c798b90b1b25bd9d8f1}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021abd1c3204d9046c798b90b1b25bd9d8f1}} 
+CASTLE&castle. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EMPTY@{EMPTY}!enum.h@{enum.h}}\index{enum.h@{enum.h}!EMPTY@{EMPTY}}}\mbox{\Hypertarget{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a2f0d18fc0d0fa4a6cd92dc328501874d}\label{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021a2f0d18fc0d0fa4a6cd92dc328501874d}} 
+EMPTY&empty. \\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,8 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node1" title="Structure representing the game." alt="" coords="91,303,152,329"/>
+<area shape="rect" id="node2" href="$structBoard.html" title="Structure representing the game board." alt="" coords="151,199,211,225"/>
+<area shape="rect" id="node3" href="$structPiece.html" title="Structure representing a piece on the chessboard." alt="" coords="121,95,178,121"/>
+<area shape="rect" id="node5" href="$structPlayer.html" title="Structure representing a player." alt="" coords="30,199,93,225"/>
+<area shape="rect" id="node4" href="$structPosition.html" title="Structure representing a position on the chessboard." alt="" coords="112,5,187,32"/>
+<area shape="rect" id="node6" href="$structClock.html" title="Structure representing the clock used to keep track of the game time." alt="" coords="5,95,64,121"/>
+</map>

@@ -1,0 +1,876 @@
+\hypertarget{game_8c}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/model/game.c File Reference}
+\label{game_8c}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/model/game.c@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/model/game.c}}
+
+
+Implementation of the chess game logic.  
+
+
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../view/view.\+h\char`\"{}}\newline
+Include dependency graph for game.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGame}{Game}} $\ast$ \mbox{\hyperlink{game_8c_a01b298d02836b9f0b60e7187048627fe}{create\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new game instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a3b8fb84616ca82e274acecf105b00645}{destroy\+\_\+game}} (struct \mbox{\hyperlink{structGame}{Game}} $\ast$\mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}})
+\begin{DoxyCompactList}\small\item\em Destroys the game instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a4c98c41350e4eb93c515e1c3524a6795}{change\+State}} (struct \mbox{\hyperlink{structGame}{Game}} $\ast$\mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}}, enum \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688ad}{Game\+States}} state)
+\begin{DoxyCompactList}\small\item\em Changes the state of the game. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structPlayer}{Player}} $\ast$ \mbox{\hyperlink{game_8c_af5d68204f0b48987fe8f1122de31f793}{create\+\_\+player}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{structPlayer}{Player}} structure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a8b9df359ab00f838315c330f5250879d}{destroy\+\_\+player}} (struct \mbox{\hyperlink{structPlayer}{Player}} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Frees the memory allocated for a player structure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_addee263d25ca6e5b1b80b3a28babce3c}{init\+Clock}} (struct \mbox{\hyperlink{structClock}{Clock}} $\ast$clock, int \mbox{\hyperlink{controller_8c_ab693b677bdc9ded12b06daf49778101c}{minutes}}, int \mbox{\hyperlink{controller_8c_a77bd4f876bdc3afed5acdd936f775d34}{seconds}})
+\begin{DoxyCompactList}\small\item\em Initializes a clock with the specified minutes and seconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a8f27307c4c9a231c9a309e4921203a98}{init\+\_\+player}} (struct \mbox{\hyperlink{structPlayer}{Player}} $\ast$player, bool is\+White, int \mbox{\hyperlink{controller_8c_ab693b677bdc9ded12b06daf49778101c}{minutes}}, int \mbox{\hyperlink{controller_8c_a77bd4f876bdc3afed5acdd936f775d34}{seconds}})
+\begin{DoxyCompactList}\small\item\em Initializes a player with the specified parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a0cce8bce2f6778db2f4d1e979665ac00}{change\+Turn}} (struct \mbox{\hyperlink{structGame}{Game}} $\ast$\mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}})
+\begin{DoxyCompactList}\small\item\em Changes the turn in the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a94a80510f34ef6a90c807b05256b26d5}{move\+\_\+piece}} (struct \mbox{\hyperlink{structGame}{Game}} $\ast$\mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}}, enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}, struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$piece, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$init\+\_\+pos, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$\mbox{\hyperlink{mouse_8c_a5f83da1aabf136b74d2fc1d5549891a3}{final\+\_\+pos}})
+\begin{DoxyCompactList}\small\item\em Moves a piece on the board if the move is legal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_ab3424831142ea48ac62e2f5cb3e18baf}{is\+\_\+check}} (struct \mbox{\hyperlink{structGame}{Game}} $\ast$\mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}})
+\begin{DoxyCompactList}\small\item\em Checks if the current player\textquotesingle{}s king is in check. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_ade169791146ac7d5daf9707a78cbff7b}{is\+\_\+stalemate}} (struct \mbox{\hyperlink{structGame}{Game}} $\ast$\mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}})
+\begin{DoxyCompactList}\small\item\em Checks if the game is in a stalemate state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a6ff412cc65b749f06d0f595b2ddbc9bd}{is\+\_\+draw}} (struct \mbox{\hyperlink{structGame}{Game}} $\ast$\mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}})
+\begin{DoxyCompactList}\small\item\em Checks if the game is in a draw state. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structMovelist}{Movelist}} \mbox{\hyperlink{game_8c_a8c3db4739ecad8f8c9f150821b0c753c}{get\+\_\+possible\+\_\+moves}} (struct \mbox{\hyperlink{structGame}{Game}} $\ast$\mbox{\hyperlink{mouse_8c_abcd66f5a5ff960ad9b26a34a702d408d}{game}}, struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$piece)
+\begin{DoxyCompactList}\small\item\em Gets the possible legal moves for a given piece on the board. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structBoard}{Board}} $\ast$ \mbox{\hyperlink{game_8c_ab79f72dd3b2fba1136d699ca194f5be7}{create\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new chessboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_abedfcd42292a70db44eb3b4b21d05b7a}{destroy\+\_\+board}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}})
+\begin{DoxyCompactList}\small\item\em Destroys the chessboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a3b50ad929b824d4209271a22ecf64c42}{init\+\_\+board}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}})
+\begin{DoxyCompactList}\small\item\em Initializes the chessboard with pieces in their starting positions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_adb617cd595b97ecd4f8bf3628d141580}{is\+\_\+piece\+\_\+in\+\_\+front}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$initial\+Pos, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$final\+Pos)
+\begin{DoxyCompactList}\small\item\em Checks if there is any piece in front of a given position on the board. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a193a818b9f61c0b72d19f2389ff42253}{is\+\_\+piece\+\_\+in\+\_\+diagonal}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$initial\+Pos, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$final\+Pos)
+\begin{DoxyCompactList}\small\item\em Checks if there is any piece in the diagonal path between two positions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a860165381000e46c104b2e4631df2510}{is\+\_\+square\+\_\+occupied}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$pos)
+\begin{DoxyCompactList}\small\item\em Checks if a square on the board is occupied by a piece. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_afec517f7ade95b1b05f45a87450c092c}{can\+\_\+take}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$pos, struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$piece)
+\begin{DoxyCompactList}\small\item\em Checks if a piece can take another piece at a given position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_abd49d26334fbdf53701754ce3b58f9a3}{is\+\_\+movement\+\_\+legal}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}, struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$piece, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$init\+\_\+pos, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$\mbox{\hyperlink{mouse_8c_a5f83da1aabf136b74d2fc1d5549891a3}{final\+\_\+pos}})
+\begin{DoxyCompactList}\small\item\em Checks if a movement of a piece on the board is legal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a751a2c812e963953ca039bb200f84a4a}{is\+\_\+inside\+\_\+board}} (struct \mbox{\hyperlink{structPosition}{Position}} $\ast$pos)
+\begin{DoxyCompactList}\small\item\em Checks if a given position is within the boundaries of the board. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$ \mbox{\hyperlink{game_8c_abf2e06862d428b5fbdab97e4146150cd}{get\+\_\+piece\+\_\+from\+\_\+click}} (int click\+\_\+x, int click\+\_\+y, int square\+\_\+size, struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}})
+\begin{DoxyCompactList}\small\item\em Retrieves a piece from the board based on a click position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a5d5cf7f4919fd953e240529e8a92863b}{change\+\_\+piece\+\_\+position}} (struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$piece, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$init\+\_\+pos, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$\mbox{\hyperlink{mouse_8c_a5f83da1aabf136b74d2fc1d5549891a3}{final\+\_\+pos}}, struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}})
+\begin{DoxyCompactList}\small\item\em Changes the position of a piece on the board if the move is legal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_aa8a72467f38fa34620b572504d2e9115}{remove\+\_\+piece\+\_\+from\+\_\+board}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$pos)
+\begin{DoxyCompactList}\small\item\em Removes a piece from the board at the specified position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_ae1e37be6be745b53831b01f615d6d110}{is\+\_\+movement\+\_\+legal\+\_\+without\+\_\+removing}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}, struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$piece, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$init\+\_\+pos, struct \mbox{\hyperlink{structPosition}{Position}} $\ast$\mbox{\hyperlink{mouse_8c_a5f83da1aabf136b74d2fc1d5549891a3}{final\+\_\+pos}})
+\begin{DoxyCompactList}\small\item\em Checks if a piece\textquotesingle{}s movement from an initial position to a final position is legal without removing the piece. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game_8c_a1ee684593d96bcf0e28b86235f212506}{promote\+\_\+pawn\+\_\+to\+\_\+queen}} (struct \mbox{\hyperlink{structBoard}{Board}} $\ast$\mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$pawn)
+\begin{DoxyCompactList}\small\item\em Promotes a pawn to a queen on the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{controller_8h_a1a5d3ef4270e82acfb6d302c9ad7628a}{Flow\+State}} \mbox{\hyperlink{game_8c_af8d104b0fa588a220aa4b58b63dfc17a}{current\+\_\+state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the chess game logic. 
+
+This file contains the functions required to manage the game state, players, board setup, and move validation for a chess game. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game_8c_afec517f7ade95b1b05f45a87450c092c}\label{game_8c_afec517f7ade95b1b05f45a87450c092c}} 
+\index{game.c@{game.c}!can\_take@{can\_take}}
+\index{can\_take@{can\_take}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{can\_take()}{can\_take()}}
+{\footnotesize\ttfamily bool can\+\_\+take (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{pos,  }\item[{struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{piece }\end{DoxyParamCaption})}
+
+
+
+Checks if a piece can take another piece at a given position. 
+
+Checks if a piece can take another piece on a specific position on the board.
+
+This function determines whether a piece can take another piece located at the specified position on the board. It checks if the target position is occupied by an opponent\textquotesingle{}s piece, considering the color of the pieces involved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure representing the position of the piece to be taken. \\
+\hline
+{\em piece} & A pointer to the \mbox{\hyperlink{structPiece}{Piece}} structure representing the piece attempting to take another piece. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the piece can take the opponent\textquotesingle{}s piece at the specified position, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_afec517f7ade95b1b05f45a87450c092c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a5d5cf7f4919fd953e240529e8a92863b}\label{game_8c_a5d5cf7f4919fd953e240529e8a92863b}} 
+\index{game.c@{game.c}!change\_piece\_position@{change\_piece\_position}}
+\index{change\_piece\_position@{change\_piece\_position}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{change\_piece\_position()}{change\_piece\_position()}}
+{\footnotesize\ttfamily bool change\+\_\+piece\+\_\+position (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{piece,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{init\+\_\+pos,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{final\+\_\+pos,  }\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Changes the position of a piece on the board if the move is legal. 
+
+Changes the position of a piece on the board from an initial position to a final position.
+
+This function checks if the movement of a piece from its initial position to the final position ~\newline
+ is legal and within the board boundaries. If the move is valid, it updates the piece\textquotesingle{}s position on the board and in the piece\textquotesingle{}s own data structure, and advances the piece.
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & A pointer to the \mbox{\hyperlink{structPiece}{Piece}} structure to be moved. \\
+\hline
+{\em init\+\_\+pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure representing the initial position of the piece. \\
+\hline
+{\em final\+\_\+pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure representing the final position of the piece. \\
+\hline
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure containing the current game state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the piece\textquotesingle{}s position was successfully changed, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a5d5cf7f4919fd953e240529e8a92863b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a5d5cf7f4919fd953e240529e8a92863b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a4c98c41350e4eb93c515e1c3524a6795}\label{game_8c_a4c98c41350e4eb93c515e1c3524a6795}} 
+\index{game.c@{game.c}!changeState@{changeState}}
+\index{changeState@{changeState}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void change\+State (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structGame}{Game}} $\ast$}]{game,  }\item[{enum \mbox{\hyperlink{enum_8h_ae3a29b920db0912c06cb59c2a21688ad}{Game\+States}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Changes the state of the game. 
+
+This function updates the state of the game to the specified state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the \mbox{\hyperlink{structGame}{Game}} structure. \\
+\hline
+{\em state} & The new state of the game. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game_8c_a0cce8bce2f6778db2f4d1e979665ac00}\label{game_8c_a0cce8bce2f6778db2f4d1e979665ac00}} 
+\index{game.c@{game.c}!changeTurn@{changeTurn}}
+\index{changeTurn@{changeTurn}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{changeTurn()}{changeTurn()}}
+{\footnotesize\ttfamily void change\+Turn (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structGame}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Changes the turn in the game. 
+
+Changes the turn of the game.
+
+This function toggles the turn between white and black players in the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the \mbox{\hyperlink{structGame}{Game}} structure representing the current game state. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a0cce8bce2f6778db2f4d1e979665ac00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_ab79f72dd3b2fba1136d699ca194f5be7}\label{game_8c_ab79f72dd3b2fba1136d699ca194f5be7}} 
+\index{game.c@{game.c}!create\_board@{create\_board}}
+\index{create\_board@{create\_board}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{create\_board()}{create\_board()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structBoard}{Board}}$\ast$ create\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new chessboard. 
+
+Creates and initializes a new game board.
+
+This function creates a new chessboard by dynamically allocating memory for a new \mbox{\hyperlink{structBoard}{Board}} structure representing the chessboard.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created \mbox{\hyperlink{structBoard}{Board}} structure, or NULL if memory allocation fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8c_a01b298d02836b9f0b60e7187048627fe}\label{game_8c_a01b298d02836b9f0b60e7187048627fe}} 
+\index{game.c@{game.c}!create\_game@{create\_game}}
+\index{create\_game@{create\_game}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{create\_game()}{create\_game()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structGame}{Game}}$\ast$ create\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new game instance. 
+
+Creates a new game.
+
+This function Creates a new game by allocating memory for a new game instance and initializes it.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created \mbox{\hyperlink{structGame}{Game}} structure, or NULL if memory allocation fails. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a01b298d02836b9f0b60e7187048627fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_af5d68204f0b48987fe8f1122de31f793}\label{game_8c_af5d68204f0b48987fe8f1122de31f793}} 
+\index{game.c@{game.c}!create\_player@{create\_player}}
+\index{create\_player@{create\_player}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{create\_player()}{create\_player()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPlayer}{Player}}$\ast$ create\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new \mbox{\hyperlink{structPlayer}{Player}} structure. 
+
+Initializes a game.
+
+This function creates a player by dynamically allocating memory for a new \mbox{\hyperlink{structPlayer}{Player}} structure and initializes its members to default values.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created \mbox{\hyperlink{structPlayer}{Player}} structure, or NULL if memory allocation fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8c_abedfcd42292a70db44eb3b4b21d05b7a}\label{game_8c_abedfcd42292a70db44eb3b4b21d05b7a}} 
+\index{game.c@{game.c}!destroy\_board@{destroy\_board}}
+\index{destroy\_board@{destroy\_board}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_board()}{destroy\_board()}}
+{\footnotesize\ttfamily void destroy\+\_\+board (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Destroys the chessboard. 
+
+This function \char`\"{}\+Deletes\char`\"{} the chessboard by freeing memory allocated for the chessboard structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game_8c_a3b8fb84616ca82e274acecf105b00645}\label{game_8c_a3b8fb84616ca82e274acecf105b00645}} 
+\index{game.c@{game.c}!destroy\_game@{destroy\_game}}
+\index{destroy\_game@{destroy\_game}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_game()}{destroy\_game()}}
+{\footnotesize\ttfamily void destroy\+\_\+game (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structGame}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Destroys the game instance. 
+
+Destroys a game.
+
+This function destroys the game by freeing memory allocated for the game instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the \mbox{\hyperlink{structGame}{Game}} structure to be destroyed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game_8c_a8b9df359ab00f838315c330f5250879d}\label{game_8c_a8b9df359ab00f838315c330f5250879d}} 
+\index{game.c@{game.c}!destroy\_player@{destroy\_player}}
+\index{destroy\_player@{destroy\_player}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_player()}{destroy\_player()}}
+{\footnotesize\ttfamily void destroy\+\_\+player (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structPlayer}{Player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+
+
+Frees the memory allocated for a player structure. 
+
+Destroys a player.
+
+This function destroys the player by freeing memory allocated for a player structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & A pointer to the \mbox{\hyperlink{structPlayer}{Player}} structure to be destroyed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game_8c_abf2e06862d428b5fbdab97e4146150cd}\label{game_8c_abf2e06862d428b5fbdab97e4146150cd}} 
+\index{game.c@{game.c}!get\_piece\_from\_click@{get\_piece\_from\_click}}
+\index{get\_piece\_from\_click@{get\_piece\_from\_click}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{get\_piece\_from\_click()}{get\_piece\_from\_click()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPiece}{Piece}}$\ast$ get\+\_\+piece\+\_\+from\+\_\+click (\begin{DoxyParamCaption}\item[{int}]{click\+\_\+x,  }\item[{int}]{click\+\_\+y,  }\item[{int}]{square\+\_\+size,  }\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Retrieves a piece from the board based on a click position. 
+
+Retrieves the piece located at the given click coordinates on the board.
+
+This function calculates the board position based on the click coordinates, converts them to board coordinates, and returns the piece located at that position if it exists and the board position is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em click\+\_\+x} & The x-\/coordinate of the click. \\
+\hline
+{\em click\+\_\+y} & The y-\/coordinate of the click. \\
+\hline
+{\em square\+\_\+size} & The size of each square on the board in pixels. \\
+\hline
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure containing the current game state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \mbox{\hyperlink{structPiece}{Piece}} structure located at the click position, or NULL if no piece is present or the position is invalid. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{game_8c_abf2e06862d428b5fbdab97e4146150cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_abf2e06862d428b5fbdab97e4146150cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a8c3db4739ecad8f8c9f150821b0c753c}\label{game_8c_a8c3db4739ecad8f8c9f150821b0c753c}} 
+\index{game.c@{game.c}!get\_possible\_moves@{get\_possible\_moves}}
+\index{get\_possible\_moves@{get\_possible\_moves}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{get\_possible\_moves()}{get\_possible\_moves()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structMovelist}{Movelist}} get\+\_\+possible\+\_\+moves (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structGame}{Game}} $\ast$}]{game,  }\item[{struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{piece }\end{DoxyParamCaption})}
+
+
+
+Gets the possible legal moves for a given piece on the board. 
+
+Retrieves all possible moves for a given piece in the current game state.
+
+This function determines all possible legal moves for a given piece on the chessboard based on the current game state. It considers the rules of movement without actually removing any pieces from the board.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the \mbox{\hyperlink{structGame}{Game}} structure representing the current game state. \\
+\hline
+{\em piece} & A pointer to the \mbox{\hyperlink{structPiece}{Piece}} structure for which possible moves are to be determined. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{structMovelist}{Movelist}} structure containing an array of \mbox{\hyperlink{structMove}{Move}} structures representing the possible moves for the piece. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a8c3db4739ecad8f8c9f150821b0c753c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a3b50ad929b824d4209271a22ecf64c42}\label{game_8c_a3b50ad929b824d4209271a22ecf64c42}} 
+\index{game.c@{game.c}!init\_board@{init\_board}}
+\index{init\_board@{init\_board}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{init\_board()}{init\_board()}}
+{\footnotesize\ttfamily void init\+\_\+board (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Initializes the chessboard with pieces in their starting positions. 
+
+Initializes a game board.
+
+This function initializes the chessboard with pieces in their starting positions. It sets up the board with empty squares and places white and black pieces according to standard chess starting positions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a3b50ad929b824d4209271a22ecf64c42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a8f27307c4c9a231c9a309e4921203a98}\label{game_8c_a8f27307c4c9a231c9a309e4921203a98}} 
+\index{game.c@{game.c}!init\_player@{init\_player}}
+\index{init\_player@{init\_player}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{init\_player()}{init\_player()}}
+{\footnotesize\ttfamily void init\+\_\+player (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structPlayer}{Player}} $\ast$}]{player,  }\item[{bool}]{is\+White,  }\item[{int}]{minutes,  }\item[{int}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Initializes a player with the specified parameters. 
+
+Initializes a player.
+
+This function initializes a player with the given color (white or black), sets initial flags for winner and draw states to false, and initializes the player\textquotesingle{}s clock with the provided minutes and seconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & A pointer to the \mbox{\hyperlink{structPlayer}{Player}} structure to be initialized. \\
+\hline
+{\em is\+White} & A boolean indicating whether the player is white (true) or black (false). \\
+\hline
+{\em minutes} & The initial minutes for the player\textquotesingle{}s clock. \\
+\hline
+{\em seconds} & The initial seconds for the player\textquotesingle{}s clock. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{game_8c_a8f27307c4c9a231c9a309e4921203a98_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a8f27307c4c9a231c9a309e4921203a98_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_addee263d25ca6e5b1b80b3a28babce3c}\label{game_8c_addee263d25ca6e5b1b80b3a28babce3c}} 
+\index{game.c@{game.c}!initClock@{initClock}}
+\index{initClock@{initClock}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{initClock()}{initClock()}}
+{\footnotesize\ttfamily void init\+Clock (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structClock}{Clock}} $\ast$}]{clock,  }\item[{int}]{minutes,  }\item[{int}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Initializes a clock with the specified minutes and seconds. 
+
+Initializes a clock.
+
+This function initializes a clock with the specified minutes and seconds. It sets the days, hours, tenths of a second, minutes, and seconds to the provided values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clock} & A pointer to the \mbox{\hyperlink{structClock}{Clock}} structure to be initialized. \\
+\hline
+{\em minutes} & The initial minutes for the clock. \\
+\hline
+{\em seconds} & The initial seconds for the clock. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_addee263d25ca6e5b1b80b3a28babce3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_ab3424831142ea48ac62e2f5cb3e18baf}\label{game_8c_ab3424831142ea48ac62e2f5cb3e18baf}} 
+\index{game.c@{game.c}!is\_check@{is\_check}}
+\index{is\_check@{is\_check}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_check()}{is\_check()}}
+{\footnotesize\ttfamily bool is\+\_\+check (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structGame}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Checks if the current player\textquotesingle{}s king is in check. 
+
+Checks if the current player is in check.
+
+This function determines if the current player\textquotesingle{}s king is in check, meaning it is under attack by an opponent\textquotesingle{}s piece and is threatened with capture on the next move.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the \mbox{\hyperlink{structGame}{Game}} structure representing the current game state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the current player\textquotesingle{}s king is in check, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ab3424831142ea48ac62e2f5cb3e18baf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ab3424831142ea48ac62e2f5cb3e18baf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a6ff412cc65b749f06d0f595b2ddbc9bd}\label{game_8c_a6ff412cc65b749f06d0f595b2ddbc9bd}} 
+\index{game.c@{game.c}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily bool is\+\_\+draw (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structGame}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Checks if the game is in a draw state. 
+
+Checks if the game is in a draw situation.
+
+This function checks if the current game state qualifies as a draw based on the remaining pieces on the board. It considers various conditions such as pawn, queen, rook, bishop, and knight counts to determine if the game is in a draw state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the \mbox{\hyperlink{structGame}{Game}} structure representing the current game state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the game is in a draw state, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8c_a751a2c812e963953ca039bb200f84a4a}\label{game_8c_a751a2c812e963953ca039bb200f84a4a}} 
+\index{game.c@{game.c}!is\_inside\_board@{is\_inside\_board}}
+\index{is\_inside\_board@{is\_inside\_board}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_inside\_board()}{is\_inside\_board()}}
+{\footnotesize\ttfamily bool is\+\_\+inside\+\_\+board (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+Checks if a given position is within the boundaries of the board. 
+
+Checks if a position is inside the boundaries of the board.
+
+This function determines whether the provided position lies within the valid range of the board\textquotesingle{}s coordinates (0 to 7 for both x and y axes).
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure containing the coordinates to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the position is inside the board boundaries, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a751a2c812e963953ca039bb200f84a4a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_abd49d26334fbdf53701754ce3b58f9a3}\label{game_8c_abd49d26334fbdf53701754ce3b58f9a3}} 
+\index{game.c@{game.c}!is\_movement\_legal@{is\_movement\_legal}}
+\index{is\_movement\_legal@{is\_movement\_legal}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_movement\_legal()}{is\_movement\_legal()}}
+{\footnotesize\ttfamily bool is\+\_\+movement\+\_\+legal (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board,  }\item[{enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}}]{,  }\item[{struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{piece,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{init\+\_\+pos,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{final\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Checks if a movement of a piece on the board is legal. 
+
+Checks if a movement of a specific piece type is legal from an initial position to a final position on the board.
+
+This function determines whether a movement of a piece from an initial position to a final position on the board is legal according to the rules of chess. It considers the type of the piece, its initial and final positions, and the current state of the board. If the movement is legal, it may also update certain attributes of the piece and the board.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em Piece\+Type} & The type of the piece being moved. \\
+\hline
+{\em piece} & A pointer to the \mbox{\hyperlink{structPiece}{Piece}} structure representing the piece being moved. \\
+\hline
+{\em init\+\_\+pos} & A pointer to the initial \mbox{\hyperlink{structPosition}{Position}} structure. \\
+\hline
+{\em final\+\_\+pos} & A pointer to the final \mbox{\hyperlink{structPosition}{Position}} structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the movement is legal and false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_abd49d26334fbdf53701754ce3b58f9a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_abd49d26334fbdf53701754ce3b58f9a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_ae1e37be6be745b53831b01f615d6d110}\label{game_8c_ae1e37be6be745b53831b01f615d6d110}} 
+\index{game.c@{game.c}!is\_movement\_legal\_without\_removing@{is\_movement\_legal\_without\_removing}}
+\index{is\_movement\_legal\_without\_removing@{is\_movement\_legal\_without\_removing}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_movement\_legal\_without\_removing()}{is\_movement\_legal\_without\_removing()}}
+{\footnotesize\ttfamily bool is\+\_\+movement\+\_\+legal\+\_\+without\+\_\+removing (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board,  }\item[{enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}}]{,  }\item[{struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{piece,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{init\+\_\+pos,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{final\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Checks if a piece\textquotesingle{}s movement from an initial position to a final position is legal without removing the piece. 
+
+Checks if a movement of a specific piece type is legal without actually removing the piece from the board.
+
+This function verifies the legality of a piece\textquotesingle{}s movement on the board based on its type and the positions involved. It considers specific rules for each piece type, such as pawns, rooks, knights, bishops, queens, and kings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em Piece\+Type} & An enumeration value representing the type of the piece (e.\+g., PAWN, ROOK, KNIGHT, BISHOP, QUEEN, KING). \\
+\hline
+{\em piece} & A pointer to the \mbox{\hyperlink{structPiece}{Piece}} structure representing the piece to be moved. \\
+\hline
+{\em init\+\_\+pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure indicating the initial position of the piece. \\
+\hline
+{\em final\+\_\+pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure indicating the final position of the piece. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the movement is legal, false otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ae1e37be6be745b53831b01f615d6d110_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ae1e37be6be745b53831b01f615d6d110_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a193a818b9f61c0b72d19f2389ff42253}\label{game_8c_a193a818b9f61c0b72d19f2389ff42253}} 
+\index{game.c@{game.c}!is\_piece\_in\_diagonal@{is\_piece\_in\_diagonal}}
+\index{is\_piece\_in\_diagonal@{is\_piece\_in\_diagonal}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_piece\_in\_diagonal()}{is\_piece\_in\_diagonal()}}
+{\footnotesize\ttfamily bool is\+\_\+piece\+\_\+in\+\_\+diagonal (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{initial\+Pos,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{final\+Pos }\end{DoxyParamCaption})}
+
+
+
+Checks if there is any piece in the diagonal path between two positions. 
+
+This function checks if there is any piece in the diagonal path between the initial position and the final position on the board.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em initial\+Pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure representing the initial position. \\
+\hline
+{\em final\+Pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure representing the final position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is any piece in the diagonal path, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a193a818b9f61c0b72d19f2389ff42253_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_adb617cd595b97ecd4f8bf3628d141580}\label{game_8c_adb617cd595b97ecd4f8bf3628d141580}} 
+\index{game.c@{game.c}!is\_piece\_in\_front@{is\_piece\_in\_front}}
+\index{is\_piece\_in\_front@{is\_piece\_in\_front}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_piece\_in\_front()}{is\_piece\_in\_front()}}
+{\footnotesize\ttfamily bool is\+\_\+piece\+\_\+in\+\_\+front (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{initial\+Pos,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{final\+Pos }\end{DoxyParamCaption})}
+
+
+
+Checks if there is any piece in front of a given position on the board. 
+
+This function checks if there is any piece in front of a given initial position on the board in the direction of a given final position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em initial\+Pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure representing the initial position. \\
+\hline
+{\em final\+Pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure representing the final position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there is any piece in front, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_adb617cd595b97ecd4f8bf3628d141580_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a860165381000e46c104b2e4631df2510}\label{game_8c_a860165381000e46c104b2e4631df2510}} 
+\index{game.c@{game.c}!is\_square\_occupied@{is\_square\_occupied}}
+\index{is\_square\_occupied@{is\_square\_occupied}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_square\_occupied()}{is\_square\_occupied()}}
+{\footnotesize\ttfamily bool is\+\_\+square\+\_\+occupied (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+Checks if a square on the board is occupied by a piece. 
+
+Checks if a square on the board is occupied.
+
+This function checks if the square at the specified position on the board is occupied by a piece.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure representing the position to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the square at the specified position is occupied by a piece, false otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a860165381000e46c104b2e4631df2510_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_ade169791146ac7d5daf9707a78cbff7b}\label{game_8c_ade169791146ac7d5daf9707a78cbff7b}} 
+\index{game.c@{game.c}!is\_stalemate@{is\_stalemate}}
+\index{is\_stalemate@{is\_stalemate}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{is\_stalemate()}{is\_stalemate()}}
+{\footnotesize\ttfamily bool is\+\_\+stalemate (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structGame}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Checks if the game is in a stalemate state. 
+
+Checks if the game is in a stalemate situation.
+
+This function checks if the current player is in a stalemate position, meaning they have no legal moves available and the game is not in checkmate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the \mbox{\hyperlink{structGame}{Game}} structure representing the current game state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the game is in a stalemate state, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8c_a94a80510f34ef6a90c807b05256b26d5}\label{game_8c_a94a80510f34ef6a90c807b05256b26d5}} 
+\index{game.c@{game.c}!move\_piece@{move\_piece}}
+\index{move\_piece@{move\_piece}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{move\_piece()}{move\_piece()}}
+{\footnotesize\ttfamily void move\+\_\+piece (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structGame}{Game}} $\ast$}]{game,  }\item[{enum \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}} \mbox{\hyperlink{enum_8h_a12ed9719bbdf7bc596ff7a6f4bf3f021}{Piece\+Type}}}]{,  }\item[{struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{piece,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{init\+\_\+pos,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{final\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Moves a piece on the board if the move is legal. 
+
+Moves a chess piece on the board.
+
+This function attempts to move a piece on the board from the initial position to the final position, provided that the move is legal according to the rules of chess. If the move is valid, the function updates the position of the piece on the board.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & A pointer to the \mbox{\hyperlink{structGame}{Game}} structure representing the current game state. \\
+\hline
+{\em Piece\+Type} & The type of the piece being moved. \\
+\hline
+{\em piece} & A pointer to the \mbox{\hyperlink{structPiece}{Piece}} structure representing the piece being moved. \\
+\hline
+{\em init\+\_\+pos} & A pointer to the initial \mbox{\hyperlink{structPosition}{Position}} structure representing the piece\textquotesingle{}s current position. \\
+\hline
+{\em final\+\_\+pos} & A pointer to the final \mbox{\hyperlink{structPosition}{Position}} structure representing the desired destination position. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a94a80510f34ef6a90c807b05256b26d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a1ee684593d96bcf0e28b86235f212506}\label{game_8c_a1ee684593d96bcf0e28b86235f212506}} 
+\index{game.c@{game.c}!promote\_pawn\_to\_queen@{promote\_pawn\_to\_queen}}
+\index{promote\_pawn\_to\_queen@{promote\_pawn\_to\_queen}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{promote\_pawn\_to\_queen()}{promote\_pawn\_to\_queen()}}
+{\footnotesize\ttfamily int promote\+\_\+pawn\+\_\+to\+\_\+queen (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board,  }\item[{struct \mbox{\hyperlink{structPiece}{Piece}} $\ast$}]{pawn }\end{DoxyParamCaption})}
+
+
+
+Promotes a pawn to a queen on the board. 
+
+This function promotes a specified pawn to a queen. It updates the type of the piece in the pieces array and on the board\textquotesingle{}s squares array. The function returns the index of the piece in the pieces array or -\/1 if not found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em pawn} & A pointer to the \mbox{\hyperlink{structPiece}{Piece}} structure representing the pawn to be promoted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the promoted piece in the board\textquotesingle{}s pieces array, or -\/1 if the pawn is not found. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a1ee684593d96bcf0e28b86235f212506_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_aa8a72467f38fa34620b572504d2e9115}\label{game_8c_aa8a72467f38fa34620b572504d2e9115}} 
+\index{game.c@{game.c}!remove\_piece\_from\_board@{remove\_piece\_from\_board}}
+\index{remove\_piece\_from\_board@{remove\_piece\_from\_board}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{remove\_piece\_from\_board()}{remove\_piece\_from\_board()}}
+{\footnotesize\ttfamily void remove\+\_\+piece\+\_\+from\+\_\+board (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}} $\ast$}]{board,  }\item[{struct \mbox{\hyperlink{structPosition}{Position}} $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+Removes a piece from the board at the specified position. 
+
+This function searches for a piece at the given position on the board and removes it. It sets the board square at the position to be empty and updates the piece\textquotesingle{}s position and type to indicate it has been removed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & A pointer to the \mbox{\hyperlink{structBoard}{Board}} structure representing the game board. \\
+\hline
+{\em pos} & A pointer to the \mbox{\hyperlink{structPosition}{Position}} structure indicating the coordinates of the piece to be removed. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_aa8a72467f38fa34620b572504d2e9115_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{game_8c_af8d104b0fa588a220aa4b58b63dfc17a}\label{game_8c_af8d104b0fa588a220aa4b58b63dfc17a}} 
+\index{game.c@{game.c}!current\_state@{current\_state}}
+\index{current\_state@{current\_state}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{current\_state}{current\_state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{controller_8h_a1a5d3ef4270e82acfb6d302c9ad7628a}{Flow\+State}} current\+\_\+state\hspace{0.3cm}{\ttfamily [extern]}}
+

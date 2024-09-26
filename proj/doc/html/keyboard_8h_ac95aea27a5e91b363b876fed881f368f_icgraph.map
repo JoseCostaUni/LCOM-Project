@@ -1,0 +1,6 @@
+<map id="keyboard_unsubscribe_int" name="keyboard_unsubscribe_int">
+<area shape="rect" id="node1" title="Unsubscribes keyboard interrupts." alt="" coords="369,31,560,57"/>
+<area shape="rect" id="node2" href="$main_8c.html#a6ce4ec06673ead16fc7d133ea20d5f1b" title="Exits the program." alt="" coords="218,5,279,32"/>
+<area shape="rect" id="node4" href="$keyboard_8c.html#a23cd4ccfc95bca48e72307ca8b416f18" title="breaks from the cycles" alt="" coords="176,56,321,83"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,5,128,32"/>
+</map>

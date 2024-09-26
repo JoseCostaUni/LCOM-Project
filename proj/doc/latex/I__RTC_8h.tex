@@ -1,0 +1,187 @@
+\hypertarget{I__RTC_8h}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/controller/rtc/\+I\+\_\+\+RTC.h File Reference}
+\label{I__RTC_8h}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/rtc/I\_RTC.h@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/rtc/I\_RTC.h}}
+
+
+File containing the constants and functions to interact with the RTC.  
+
+
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for I\+\_\+\+RTC.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{I__RTC_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{I__RTC_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a340bf4caee6c5c3b9fd29ea2efd02f1a}{INP\+\_\+\+REG}}~0x70
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_ad26b371026f8a5e0073cca0123a0991f}{OUT\+\_\+\+REG}}~0x71
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a86af996124075502edaa4c8cf60f5d61}{UPDATE\+\_\+\+REG}}~0x0A
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_ae26aecb4307bcf6576d8533f1df0423d}{UPDATE\+\_\+\+IN\+\_\+\+PROGRESS}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a4e22feb6ffbc1cda32fadff5c740dc51}{RTC\+\_\+\+IRQ}}~8
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a8bc5e463885769f21393880576c25f6b}{SEC}}~0x00
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a59d336dbc295731898ece988d0ebbb8e}{SECONDS\+\_\+\+ALARM}}~0x01
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a84be9dcfa5a172ee83121620d15c8e29}{MINUTES}}~0x02
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a3354ceb0b3dc74b2ff1123ecd0b7c043}{RTC\+\_\+\+MINUTES\+\_\+\+ALARM}}~0x03
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a212d0f839f6f7ca43ccde311f93d5892}{HOURS}}~0x04
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a736eabe8fe923b38d85437697f37ba35}{RTC\+\_\+\+HOURS\+\_\+\+ALARM}}~0x05
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_adc9f6e77f710440b588e7cc49d0ddf48}{DAY\+\_\+\+OF\+\_\+\+WEEK}}~0x06
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_ad13d305475e1f0163d4f86bfc80cbd85}{DAY\+\_\+\+OF\+\_\+\+MONTH}}~0x07
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a3729d06495d9713592f79f3122c9e677}{MONTH}}~0x08
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a5871356500f559add06ea81d60331b1b}{YEAR}}~0x09
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_aa0e40d1cb9fea79e800aa79b8ca291f7}{REG\+\_\+A}}~0x0A
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a28ed75c6727784e56c2bb8d828c876c9}{REG\+\_\+B}}~0x0B
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a088e580de0961d5f30eb3366f97b324c}{REG\+\_\+C}}~0x0C
+\item 
+\#define \mbox{\hyperlink{I__RTC_8h_a8f2a2da8b96e20112d3f225636392424}{REG\+\_\+D}}~0x0D
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing the constants and functions to interact with the RTC. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{I__RTC_8h_ad13d305475e1f0163d4f86bfc80cbd85}\label{I__RTC_8h_ad13d305475e1f0163d4f86bfc80cbd85}} 
+\index{I\_RTC.h@{I\_RTC.h}!DAY\_OF\_MONTH@{DAY\_OF\_MONTH}}
+\index{DAY\_OF\_MONTH@{DAY\_OF\_MONTH}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{DAY\_OF\_MONTH}{DAY\_OF\_MONTH}}
+{\footnotesize\ttfamily \#define DAY\+\_\+\+OF\+\_\+\+MONTH~0x07}
+
+\mbox{\Hypertarget{I__RTC_8h_adc9f6e77f710440b588e7cc49d0ddf48}\label{I__RTC_8h_adc9f6e77f710440b588e7cc49d0ddf48}} 
+\index{I\_RTC.h@{I\_RTC.h}!DAY\_OF\_WEEK@{DAY\_OF\_WEEK}}
+\index{DAY\_OF\_WEEK@{DAY\_OF\_WEEK}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{DAY\_OF\_WEEK}{DAY\_OF\_WEEK}}
+{\footnotesize\ttfamily \#define DAY\+\_\+\+OF\+\_\+\+WEEK~0x06}
+
+\mbox{\Hypertarget{I__RTC_8h_a212d0f839f6f7ca43ccde311f93d5892}\label{I__RTC_8h_a212d0f839f6f7ca43ccde311f93d5892}} 
+\index{I\_RTC.h@{I\_RTC.h}!HOURS@{HOURS}}
+\index{HOURS@{HOURS}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{HOURS}{HOURS}}
+{\footnotesize\ttfamily \#define HOURS~0x04}
+
+\mbox{\Hypertarget{I__RTC_8h_a340bf4caee6c5c3b9fd29ea2efd02f1a}\label{I__RTC_8h_a340bf4caee6c5c3b9fd29ea2efd02f1a}} 
+\index{I\_RTC.h@{I\_RTC.h}!INP\_REG@{INP\_REG}}
+\index{INP\_REG@{INP\_REG}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{INP\_REG}{INP\_REG}}
+{\footnotesize\ttfamily \#define INP\+\_\+\+REG~0x70}
+
+\mbox{\Hypertarget{I__RTC_8h_a84be9dcfa5a172ee83121620d15c8e29}\label{I__RTC_8h_a84be9dcfa5a172ee83121620d15c8e29}} 
+\index{I\_RTC.h@{I\_RTC.h}!MINUTES@{MINUTES}}
+\index{MINUTES@{MINUTES}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{MINUTES}{MINUTES}}
+{\footnotesize\ttfamily \#define MINUTES~0x02}
+
+\mbox{\Hypertarget{I__RTC_8h_a3729d06495d9713592f79f3122c9e677}\label{I__RTC_8h_a3729d06495d9713592f79f3122c9e677}} 
+\index{I\_RTC.h@{I\_RTC.h}!MONTH@{MONTH}}
+\index{MONTH@{MONTH}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{MONTH}{MONTH}}
+{\footnotesize\ttfamily \#define MONTH~0x08}
+
+\mbox{\Hypertarget{I__RTC_8h_ad26b371026f8a5e0073cca0123a0991f}\label{I__RTC_8h_ad26b371026f8a5e0073cca0123a0991f}} 
+\index{I\_RTC.h@{I\_RTC.h}!OUT\_REG@{OUT\_REG}}
+\index{OUT\_REG@{OUT\_REG}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{OUT\_REG}{OUT\_REG}}
+{\footnotesize\ttfamily \#define OUT\+\_\+\+REG~0x71}
+
+\mbox{\Hypertarget{I__RTC_8h_aa0e40d1cb9fea79e800aa79b8ca291f7}\label{I__RTC_8h_aa0e40d1cb9fea79e800aa79b8ca291f7}} 
+\index{I\_RTC.h@{I\_RTC.h}!REG\_A@{REG\_A}}
+\index{REG\_A@{REG\_A}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{REG\_A}{REG\_A}}
+{\footnotesize\ttfamily \#define REG\+\_\+A~0x0A}
+
+\mbox{\Hypertarget{I__RTC_8h_a28ed75c6727784e56c2bb8d828c876c9}\label{I__RTC_8h_a28ed75c6727784e56c2bb8d828c876c9}} 
+\index{I\_RTC.h@{I\_RTC.h}!REG\_B@{REG\_B}}
+\index{REG\_B@{REG\_B}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{REG\_B}{REG\_B}}
+{\footnotesize\ttfamily \#define REG\+\_\+B~0x0B}
+
+\mbox{\Hypertarget{I__RTC_8h_a088e580de0961d5f30eb3366f97b324c}\label{I__RTC_8h_a088e580de0961d5f30eb3366f97b324c}} 
+\index{I\_RTC.h@{I\_RTC.h}!REG\_C@{REG\_C}}
+\index{REG\_C@{REG\_C}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{REG\_C}{REG\_C}}
+{\footnotesize\ttfamily \#define REG\+\_\+C~0x0C}
+
+\mbox{\Hypertarget{I__RTC_8h_a8f2a2da8b96e20112d3f225636392424}\label{I__RTC_8h_a8f2a2da8b96e20112d3f225636392424}} 
+\index{I\_RTC.h@{I\_RTC.h}!REG\_D@{REG\_D}}
+\index{REG\_D@{REG\_D}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{REG\_D}{REG\_D}}
+{\footnotesize\ttfamily \#define REG\+\_\+D~0x0D}
+
+\mbox{\Hypertarget{I__RTC_8h_a736eabe8fe923b38d85437697f37ba35}\label{I__RTC_8h_a736eabe8fe923b38d85437697f37ba35}} 
+\index{I\_RTC.h@{I\_RTC.h}!RTC\_HOURS\_ALARM@{RTC\_HOURS\_ALARM}}
+\index{RTC\_HOURS\_ALARM@{RTC\_HOURS\_ALARM}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_HOURS\_ALARM}{RTC\_HOURS\_ALARM}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+HOURS\+\_\+\+ALARM~0x05}
+
+\mbox{\Hypertarget{I__RTC_8h_a4e22feb6ffbc1cda32fadff5c740dc51}\label{I__RTC_8h_a4e22feb6ffbc1cda32fadff5c740dc51}} 
+\index{I\_RTC.h@{I\_RTC.h}!RTC\_IRQ@{RTC\_IRQ}}
+\index{RTC\_IRQ@{RTC\_IRQ}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_IRQ}{RTC\_IRQ}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+IRQ~8}
+
+\mbox{\Hypertarget{I__RTC_8h_a3354ceb0b3dc74b2ff1123ecd0b7c043}\label{I__RTC_8h_a3354ceb0b3dc74b2ff1123ecd0b7c043}} 
+\index{I\_RTC.h@{I\_RTC.h}!RTC\_MINUTES\_ALARM@{RTC\_MINUTES\_ALARM}}
+\index{RTC\_MINUTES\_ALARM@{RTC\_MINUTES\_ALARM}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{RTC\_MINUTES\_ALARM}{RTC\_MINUTES\_ALARM}}
+{\footnotesize\ttfamily \#define RTC\+\_\+\+MINUTES\+\_\+\+ALARM~0x03}
+
+\mbox{\Hypertarget{I__RTC_8h_a8bc5e463885769f21393880576c25f6b}\label{I__RTC_8h_a8bc5e463885769f21393880576c25f6b}} 
+\index{I\_RTC.h@{I\_RTC.h}!SEC@{SEC}}
+\index{SEC@{SEC}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{SEC}{SEC}}
+{\footnotesize\ttfamily \#define SEC~0x00}
+
+\mbox{\Hypertarget{I__RTC_8h_a59d336dbc295731898ece988d0ebbb8e}\label{I__RTC_8h_a59d336dbc295731898ece988d0ebbb8e}} 
+\index{I\_RTC.h@{I\_RTC.h}!SECONDS\_ALARM@{SECONDS\_ALARM}}
+\index{SECONDS\_ALARM@{SECONDS\_ALARM}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{SECONDS\_ALARM}{SECONDS\_ALARM}}
+{\footnotesize\ttfamily \#define SECONDS\+\_\+\+ALARM~0x01}
+
+\mbox{\Hypertarget{I__RTC_8h_ae26aecb4307bcf6576d8533f1df0423d}\label{I__RTC_8h_ae26aecb4307bcf6576d8533f1df0423d}} 
+\index{I\_RTC.h@{I\_RTC.h}!UPDATE\_IN\_PROGRESS@{UPDATE\_IN\_PROGRESS}}
+\index{UPDATE\_IN\_PROGRESS@{UPDATE\_IN\_PROGRESS}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{UPDATE\_IN\_PROGRESS}{UPDATE\_IN\_PROGRESS}}
+{\footnotesize\ttfamily \#define UPDATE\+\_\+\+IN\+\_\+\+PROGRESS~BIT(7)}
+
+\mbox{\Hypertarget{I__RTC_8h_a86af996124075502edaa4c8cf60f5d61}\label{I__RTC_8h_a86af996124075502edaa4c8cf60f5d61}} 
+\index{I\_RTC.h@{I\_RTC.h}!UPDATE\_REG@{UPDATE\_REG}}
+\index{UPDATE\_REG@{UPDATE\_REG}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{UPDATE\_REG}{UPDATE\_REG}}
+{\footnotesize\ttfamily \#define UPDATE\+\_\+\+REG~0x0A}
+
+\mbox{\Hypertarget{I__RTC_8h_a5871356500f559add06ea81d60331b1b}\label{I__RTC_8h_a5871356500f559add06ea81d60331b1b}} 
+\index{I\_RTC.h@{I\_RTC.h}!YEAR@{YEAR}}
+\index{YEAR@{YEAR}!I\_RTC.h@{I\_RTC.h}}
+\doxysubsubsection{\texorpdfstring{YEAR}{YEAR}}
+{\footnotesize\ttfamily \#define YEAR~0x09}
+

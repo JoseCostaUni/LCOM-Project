@@ -1,0 +1,135 @@
+\hypertarget{kbc_8c}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/controller/kbc/kbc.c File Reference}
+\label{kbc_8c}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/kbc/kbc.c@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/kbc/kbc.c}}
+
+
+File containing the implementation of the functions to interact with the KBC.  
+
+
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lab4.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../keyboard/keyboard.\+h\char`\"{}}\newline
+Include dependency graph for kbc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{kbc_8c_afea21b2fd0fa8db0f39a9ca17f633aad}{read\+\_\+commands\+\_\+kbc}} (uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em reads the commands of the KBC \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{kbc_8c_a6f3460dc0973086f6bd0a5047e3c3981}{send\+\_\+commands\+\_\+kbc}} (uint8\+\_\+t command, int port)
+\begin{DoxyCompactList}\small\item\em sends commands to the KBC \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{kbc_8c_a720fef46ec6987a346760be3a6ce4e8f}{kbc\+\_\+write\+\_\+command\+\_\+args}} (uint8\+\_\+t $\ast$command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em writes a command arguments to the KBC \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing the implementation of the functions to interact with the KBC. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kbc_8c_a720fef46ec6987a346760be3a6ce4e8f}\label{kbc_8c_a720fef46ec6987a346760be3a6ce4e8f}} 
+\index{kbc.c@{kbc.c}!kbc\_write\_command\_args@{kbc\_write\_command\_args}}
+\index{kbc\_write\_command\_args@{kbc\_write\_command\_args}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_write\_command\_args()}{kbc\_write\_command\_args()}}
+{\footnotesize\ttfamily int() kbc\+\_\+write\+\_\+command\+\_\+args (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{command\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+writes a command arguments to the KBC 
+
+This function writes a command arguments to the KBC
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+byte} & command byte to be written\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c_a720fef46ec6987a346760be3a6ce4e8f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{kbc_8c_afea21b2fd0fa8db0f39a9ca17f633aad}\label{kbc_8c_afea21b2fd0fa8db0f39a9ca17f633aad}} 
+\index{kbc.c@{kbc.c}!read\_commands\_kbc@{read\_commands\_kbc}}
+\index{read\_commands\_kbc@{read\_commands\_kbc}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{read\_commands\_kbc()}{read\_commands\_kbc()}}
+{\footnotesize\ttfamily int() read\+\_\+commands\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+reads the commands of the KBC 
+
+This function reads the commands of the KBC
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Address of memory to be initialized with the value read from the register\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{kbc_8c_afea21b2fd0fa8db0f39a9ca17f633aad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c_afea21b2fd0fa8db0f39a9ca17f633aad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{kbc_8c_a6f3460dc0973086f6bd0a5047e3c3981}\label{kbc_8c_a6f3460dc0973086f6bd0a5047e3c3981}} 
+\index{kbc.c@{kbc.c}!send\_commands\_kbc@{send\_commands\_kbc}}
+\index{send\_commands\_kbc@{send\_commands\_kbc}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{send\_commands\_kbc()}{send\_commands\_kbc()}}
+{\footnotesize\ttfamily int() send\+\_\+commands\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+sends commands to the KBC 
+
+This function sends commands to the KBC
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & command to be sent \\
+\hline
+{\em port} & port to be used\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{kbc_8c_a6f3460dc0973086f6bd0a5047e3c3981_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c_a6f3460dc0973086f6bd0a5047e3c3981_icgraph}
+\end{center}
+\end{figure}

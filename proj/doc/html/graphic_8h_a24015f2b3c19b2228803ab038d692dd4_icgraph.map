@@ -1,0 +1,13 @@
+<map id="erase_buffer" name="erase_buffer">
+<area shape="rect" id="node1" title="erases the buffer" alt="" coords="1271,107,1373,133"/>
+<area shape="rect" id="node2" href="$controller_8c.html#a9bb0db8002fe1cc1ef244c31ce221684" title="Changes the game state to the pause menu." alt="" coords="1005,5,1223,32"/>
+<area shape="rect" id="node6" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="184,56,333,83"/>
+<area shape="rect" id="node8" href="$controller_8c.html#acb677e252595a3a91a9d3bfe595108c3" title="Decreases the timer of the current player and updates the display if necessary." alt="" coords="532,107,703,133"/>
+<area shape="rect" id="node9" href="$controller_8c.html#af3ae34fba8ae3b1f47d23af125079282" title="Main game loop that updates the game state and checks for game&#45;ending conditions." alt="" coords="389,157,484,184"/>
+<area shape="rect" id="node10" href="$controller_8c.html#ab0957bc720f28c7bbfc56f57309dffcb" title="Routes the program flow based on the current state and user input." alt="" coords="1083,208,1145,235"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a6fa632a85f47c9d846c55b975d118df9" title="In game mouse movement." alt="" coords="751,5,957,32"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a7c35b8ea4b294430bfbb2d6c0dd98354" title="parses the values of the mouse packet" alt="" coords="563,5,671,32"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Subscribes mouse interrupts." alt="" coords="394,5,479,32"/>
+<area shape="rect" id="node7" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,132,128,159"/>
+<area shape="rect" id="node11" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="176,208,341,235"/>
+</map>

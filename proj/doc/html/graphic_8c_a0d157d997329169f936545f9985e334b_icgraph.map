@@ -1,0 +1,28 @@
+<map id="swap_buffers" name="swap_buffers">
+<area shape="rect" id="node1" title="Swaps the buffers." alt="" coords="1497,398,1605,424"/>
+<area shape="rect" id="node2" href="$view_8c.html#abda224a2136d1683aefd16a605263d33" title="Advances a piece to a new position on the game board." alt="" coords="1297,119,1415,146"/>
+<area shape="rect" id="node7" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="176,195,325,222"/>
+<area shape="rect" id="node8" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,296,128,323"/>
+<area shape="rect" id="node9" href="$controller_8c.html#acb677e252595a3a91a9d3bfe595108c3" title="Decreases the timer of the current player and updates the display if necessary." alt="" coords="1021,271,1191,298"/>
+<area shape="rect" id="node10" href="$graphic_8c.html#a64cfb616e0bd35decb1db2b2e5d8f319" title="Draws the black wins." alt="" coords="1039,423,1173,450"/>
+<area shape="rect" id="node12" href="$controller_8c.html#ab0957bc720f28c7bbfc56f57309dffcb" title="Routes the program flow based on the current state and user input." alt="" coords="815,499,877,526"/>
+<area shape="rect" id="node14" href="$view_8c.html#a0c697bef52486fe9045091ca868896ee" title="Draws the cursor on the game board." alt="" coords="1055,322,1157,348"/>
+<area shape="rect" id="node15" href="$graphic_8c.html#ab7fef961e9c01f64b2a536701805cba8" title="Draws the cursor mouse." alt="" coords="1280,220,1432,247"/>
+<area shape="rect" id="node16" href="$graphic_8c.html#af0cbda77d440e6b2818b8a99c5ee2d6f" title="Draws the game background." alt="" coords="1265,575,1447,602"/>
+<area shape="rect" id="node18" href="$graphic_8c.html#aab7503a2812fb4e0cc7fdd5ddaf515df" title="Draws the game instructions." alt="" coords="1265,626,1447,652"/>
+<area shape="rect" id="node19" href="$graphic_8c.html#a4bf1a613371611d5dcb60ef14cb531e2" title="Draws the game mode menu." alt="" coords="1263,474,1449,500"/>
+<area shape="rect" id="node20" href="$graphic_8c.html#a574331c32c3d1081fb697c030dd8aed0" title="Draws the menu." alt="" coords="1057,676,1155,703"/>
+<area shape="rect" id="node21" href="$graphic_8c.html#ae85336e04569224dd46343f921c796d3" title="Draws the pause menu." alt="" coords="1284,68,1428,95"/>
+<area shape="rect" id="node23" href="$graphic_8c.html#a3c56d51a4e2cfe734fc68bbdf477f2fa" title="Draws the white wins." alt="" coords="1039,372,1173,399"/>
+<area shape="rect" id="node24" href="$graphic_8c.html#a6440527c9cc05306c3fea3e53cb175fd" title="Draws the xpm." alt="" coords="1311,727,1401,754"/>
+<area shape="rect" id="node26" href="$view_8c.html#a1add12a8f215611a402c91a709a12698" title="Moves a piece to its initial position on the game board." alt="" coords="1279,778,1433,804"/>
+<area shape="rect" id="node3" href="$game_8c.html#a5d5cf7f4919fd953e240529e8a92863b" title="Changes the position of a piece on the board if the move is legal." alt="" coords="1021,119,1191,146"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a6fa632a85f47c9d846c55b975d118df9" title="In game mouse movement." alt="" coords="743,119,949,146"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a7c35b8ea4b294430bfbb2d6c0dd98354" title="parses the values of the mouse packet" alt="" coords="587,119,695,146"/>
+<area shape="rect" id="node6" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Subscribes mouse interrupts." alt="" coords="413,119,499,146"/>
+<area shape="rect" id="node11" href="$controller_8c.html#af3ae34fba8ae3b1f47d23af125079282" title="Main game loop that updates the game state and checks for game&#45;ending conditions." alt="" coords="799,372,893,399"/>
+<area shape="rect" id="node13" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="373,423,539,450"/>
+<area shape="rect" id="node17" href="$view_8c.html#a23f011c6586ff8bfe952ac518d8d07d7" title="Draws the background of the game." alt="" coords="1021,575,1191,602"/>
+<area shape="rect" id="node22" href="$controller_8c.html#a9bb0db8002fe1cc1ef244c31ce221684" title="Changes the game state to the pause menu." alt="" coords="997,68,1215,95"/>
+<area shape="rect" id="node25" href="$view_8c.html#a36ec60e04156ca3329bf01dec1234350" title="Draws the clocks." alt="" coords="1054,727,1158,754"/>
+</map>

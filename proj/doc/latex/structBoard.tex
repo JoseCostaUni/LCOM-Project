@@ -1,0 +1,66 @@
+\hypertarget{structBoard}{}\doxysection{Board Struct Reference}
+\label{structBoard}\index{Board@{Board}}
+
+
+Structure representing the game board.  
+
+
+
+
+{\ttfamily \#include $<$/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/model/game.\+h$>$}
+
+
+
+Collaboration diagram for Board\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{structBoard__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPiece}{Piece}} \mbox{\hyperlink{structBoard_a757d5c68922deef302d8a9398240a7a8}{pieces}} \mbox{[}32\mbox{]}
+\item 
+struct \mbox{\hyperlink{structPiece}{Piece}} \mbox{\hyperlink{structBoard_ab65058017518dec17cdefae731c92178}{squares}} \mbox{[}8\mbox{]}\mbox{[}8\mbox{]}
+\item 
+char $\ast$ \mbox{\hyperlink{structBoard_ab0a026c88b59fd8b5ae0e61025333b78}{moves}} \mbox{[}1024\mbox{]}
+\item 
+int \mbox{\hyperlink{structBoard_a1f3bfd458f057dca03ebcbe2dcc1c8b5}{moves\+Index}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing the game board. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structBoard_ab0a026c88b59fd8b5ae0e61025333b78}\label{structBoard_ab0a026c88b59fd8b5ae0e61025333b78}} 
+\index{Board@{Board}!moves@{moves}}
+\index{moves@{moves}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{moves}{moves}}
+{\footnotesize\ttfamily char$\ast$ Board\+::moves\mbox{[}1024\mbox{]}}
+
+array of moves \mbox{\Hypertarget{structBoard_a1f3bfd458f057dca03ebcbe2dcc1c8b5}\label{structBoard_a1f3bfd458f057dca03ebcbe2dcc1c8b5}} 
+\index{Board@{Board}!movesIndex@{movesIndex}}
+\index{movesIndex@{movesIndex}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{movesIndex}{movesIndex}}
+{\footnotesize\ttfamily int Board\+::moves\+Index}
+
+index of the last move \mbox{\Hypertarget{structBoard_a757d5c68922deef302d8a9398240a7a8}\label{structBoard_a757d5c68922deef302d8a9398240a7a8}} 
+\index{Board@{Board}!pieces@{pieces}}
+\index{pieces@{pieces}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{pieces}{pieces}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPiece}{Piece}} Board\+::pieces\mbox{[}32\mbox{]}}
+
+array of pieces \mbox{\Hypertarget{structBoard_ab65058017518dec17cdefae731c92178}\label{structBoard_ab65058017518dec17cdefae731c92178}} 
+\index{Board@{Board}!squares@{squares}}
+\index{squares@{squares}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{squares}{squares}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPiece}{Piece}} Board\+::squares\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}}
+
+array of squares 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/model/\mbox{\hyperlink{game_8h}{game.\+h}}\end{DoxyCompactItemize}

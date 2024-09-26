@@ -1,0 +1,14 @@
+<map id="is_inside_board" name="is_inside_board">
+<area shape="rect" id="node1" title="Checks if a given position is within the boundaries of the board." alt="" coords="1391,122,1513,149"/>
+<area shape="rect" id="node2" href="$game_8c.html#a5d5cf7f4919fd953e240529e8a92863b" title="Changes the position of a piece on the board if the move is legal." alt="" coords="917,78,1088,105"/>
+<area shape="rect" id="node8" href="$game_8c.html#abf2e06862d428b5fbdab97e4146150cd" title="Retrieves a piece from the board based on a click position." alt="" coords="1159,223,1319,250"/>
+<area shape="rect" id="node9" href="$game_8c.html#abd49d26334fbdf53701754ce3b58f9a3" title="Checks if a movement of a piece on the board is legal." alt="" coords="1164,122,1315,149"/>
+<area shape="rect" id="node10" href="$game_8c.html#a94a80510f34ef6a90c807b05256b26d5" title="Moves a piece on the board if the move is legal." alt="" coords="952,135,1053,162"/>
+<area shape="rect" id="node11" href="$game_8c.html#ae1e37be6be745b53831b01f615d6d110" title="Checks if a piece&#39;s movement from an initial position to a final position is legal without removing t..." alt="" coords="1136,5,1343,47"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a6fa632a85f47c9d846c55b975d118df9" title="In game mouse movement." alt="" coords="663,78,869,105"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a7c35b8ea4b294430bfbb2d6c0dd98354" title="parses the values of the mouse packet" alt="" coords="507,78,615,105"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Subscribes mouse interrupts." alt="" coords="373,78,459,105"/>
+<area shape="rect" id="node6" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="176,78,325,105"/>
+<area shape="rect" id="node7" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,78,128,105"/>
+<area shape="rect" id="node12" href="$game_8c.html#ab3424831142ea48ac62e2f5cb3e18baf" title="Checks if the current player&#39;s king is in check." alt="" coords="963,21,1042,47"/>
+</map>

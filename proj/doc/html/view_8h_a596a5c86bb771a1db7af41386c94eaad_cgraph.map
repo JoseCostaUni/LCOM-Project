@@ -1,0 +1,6 @@
+<map id="initialize_graphics" name="initialize_graphics">
+<area shape="rect" id="node1" title="Initializes the graphics mode." alt="" coords="5,56,145,83"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#aa4e683fb6c23914b14e7932daa196d2c" title="Allocates the buffers." alt="" coords="201,5,327,32"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a9c86d5e3807f8c993bbaa4e7f139b581" title="Sets the frame mode." alt="" coords="198,56,330,83"/>
+<area shape="rect" id="node4" href="$graphic_8c.html#ad68181bf7a320dc3a6bfd8210c3ae0c8" title="Sets the graphic mode to the given mode." alt="" coords="193,107,335,133"/>
+</map>

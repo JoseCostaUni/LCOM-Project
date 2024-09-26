@@ -1,0 +1,5 @@
+<map id="fill" name="fill">
+<area shape="rect" id="node1" title="Fills a rectangular area with a specified color." alt="" coords="5,5,44,32"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#a5e5b25bd525250f61f40b9e9f212d5e6" title="Draws the horizontal line." alt="" coords="92,5,208,32"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="256,5,371,32"/>
+</map>

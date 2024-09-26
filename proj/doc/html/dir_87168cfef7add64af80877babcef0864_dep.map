@@ -1,0 +1,15 @@
+<map id="graphics" name="graphics">
+<area shape="rect" id="node1" href="dir_795d97da88712466c5865066e1f9ca37.html" title="kbc" alt="" coords="53,244,125,292"/>
+<area shape="rect" id="node3" href="dir_a4f72db237b7328b72287a4fd78dc26c.html" title="keyboard" alt="" coords="48,340,131,388"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000015_000018.html" title="1" alt="" coords="84,314,93,329"/>
+<area shape="rect" id="node2" href="dir_8ab628094bad2825015612525f1ac2d0.html" title="mouse" alt="" coords="53,148,125,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000020_000015.html" title="1" alt="" coords="93,218,102,233"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000018_000015.html" title="1" alt="" coords="85,304,95,318"/>
+<area shape="rect" id="node4" href="dir_87168cfef7add64af80877babcef0864.html" title="graphics" alt="" coords="63,52,140,100"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000014_000015.html" title="1" alt="" coords="60,217,69,231"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000014_000020.html" title="1" alt="" coords="98,124,108,138"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000014_000018.html" title="1" alt="" coords="123,323,132,338"/>
+<area shape="rect" id="node5" href="dir_fea95f16e1c281711842bd8ef50726ce.html" title="model" alt="" coords="176,148,248,196"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000014_000013.html" title="1" alt="" coords="172,122,181,137"/>
+<area shape="rect" id="clust1" href="dir_171e70772ae3d3824c42b9308b6de2c1.html" title="controller" alt="" coords="16,16,163,399"/>
+</map>

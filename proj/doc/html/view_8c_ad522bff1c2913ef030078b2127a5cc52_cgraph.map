@@ -1,0 +1,6 @@
+<map id="draw_clockValue" name="draw_clockValue">
+<area shape="rect" id="node1" title="Draws the clocks values." alt="" coords="5,31,136,57"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#a897283914114298c5832f5cb9cb14a6c" title="Draws the number." alt="" coords="195,5,305,32"/>
+<area shape="rect" id="node4" href="$graphic_8c.html#af05e022c4835fd36cb5ba99dc92d5d5c" title="Draws the two points." alt="" coords="184,56,316,83"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="364,31,479,57"/>
+</map>

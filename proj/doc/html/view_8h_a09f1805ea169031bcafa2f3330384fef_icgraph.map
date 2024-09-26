@@ -1,0 +1,9 @@
+<map id="draw_board" name="draw_board">
+<area shape="rect" id="node1" title="Draws the chess board." alt="" coords="544,56,643,83"/>
+<area shape="rect" id="node2" href="$controller_8c.html#acb677e252595a3a91a9d3bfe595108c3" title="Decreases the timer of the current player and updates the display if necessary." alt="" coords="176,5,347,32"/>
+<area shape="rect" id="node4" href="$view_8c.html#a0c697bef52486fe9045091ca868896ee" title="Draws the cursor on the game board." alt="" coords="395,31,496,57"/>
+<area shape="rect" id="node5" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="187,81,336,108"/>
+<area shape="rect" id="node6" href="$controller_8c.html#ab0957bc720f28c7bbfc56f57309dffcb" title="Routes the program flow based on the current state and user input." alt="" coords="415,132,476,159"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,81,128,108"/>
+<area shape="rect" id="node7" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="179,132,344,159"/>
+</map>

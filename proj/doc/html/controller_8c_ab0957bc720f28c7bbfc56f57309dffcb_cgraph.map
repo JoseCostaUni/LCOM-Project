@@ -1,0 +1,38 @@
+<map id="router" name="router">
+<area shape="rect" id="node1" title="Routes the program flow based on the current state and user input." alt="" coords="5,375,67,402"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#adfc3bb95533d2e51ccef9b19209075e8" title="Copies the background buffer." alt="" coords="115,21,293,47"/>
+<area shape="rect" id="node3" href="$game_8c.html#a01b298d02836b9f0b60e7187048627fe" title="Creates a new game instance." alt="" coords="151,71,257,98"/>
+<area shape="rect" id="node4" href="$view_8c.html#a23f011c6586ff8bfe952ac518d8d07d7" title="Draws the background of the game." alt="" coords="119,122,289,149"/>
+<area shape="rect" id="node8" href="$graphic_8c.html#a0d157d997329169f936545f9985e334b" title="Swaps the buffers." alt="" coords="612,223,720,250"/>
+<area shape="rect" id="node9" href="$graphic_8c.html#a64cfb616e0bd35decb1db2b2e5d8f319" title="Draws the black wins." alt="" coords="368,375,501,402"/>
+<area shape="rect" id="node10" href="$view_8c.html#a09f1805ea169031bcafa2f3330384fef" title="Draws the chess board." alt="" coords="155,426,253,453"/>
+<area shape="rect" id="node20" href="$graphic_8c.html#aab7503a2812fb4e0cc7fdd5ddaf515df" title="Draws the game instructions." alt="" coords="344,477,525,503"/>
+<area shape="rect" id="node21" href="$graphic_8c.html#a4bf1a613371611d5dcb60ef14cb531e2" title="Draws the game mode menu." alt="" coords="341,93,528,119"/>
+<area shape="rect" id="node22" href="$graphic_8c.html#a574331c32c3d1081fb697c030dd8aed0" title="Draws the menu." alt="" coords="385,223,484,250"/>
+<area shape="rect" id="node23" href="$graphic_8c.html#a3c56d51a4e2cfe734fc68bbdf477f2fa" title="Draws the white wins." alt="" coords="367,325,502,351"/>
+<area shape="rect" id="node24" href="$graphic_8c.html#a24015f2b3c19b2228803ab038d692dd4" title="erases the buffer." alt="" coords="153,527,255,554"/>
+<area shape="rect" id="node25" href="$controller_8c.html#a466fdd853b121ea8bca59f3d3a53f1db" title="Initializes a new game with the specified time limit for each player." alt="" coords="161,578,247,605"/>
+<area shape="rect" id="node29" href="$rtc_8c.html#abe2c923ffb69f289d545ad6cc067f925" title="Prints the time." alt="" coords="159,629,249,655"/>
+<area shape="rect" id="node30" href="$rtc_8c.html#ae25620ae8cbe29e1f673cf5cfa545ecf" title="Gets the current date." alt="" coords="126,730,282,757"/>
+<area shape="rect" id="node36" href="$graphic_8c.html#a0af812a9bbb79b79e6a18b0c5a32c7f2" title="Swaps the background buffer." alt="" coords="115,781,293,807"/>
+<area shape="rect" id="node5" href="$graphic_8c.html#a0f593d24f2659917247e9d8234b7ce68" title="Draws the board without pieces." alt="" coords="804,5,959,47"/>
+<area shape="rect" id="node7" href="$graphic_8c.html#af0cbda77d440e6b2818b8a99c5ee2d6f" title="Draws the game background." alt="" coords="344,143,525,170"/>
+<area shape="rect" id="node6" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="1007,274,1121,301"/>
+<area shape="rect" id="node11" href="$view_8c.html#a9f6516b9d6eba0460b880cfbcc2ffec9" title="Draws a piece on the game board based on its type." alt="" coords="387,426,483,453"/>
+<area shape="rect" id="node12" href="$view_8c.html#a53f0b5b34609223c0a533f2849cefb5a" title="Draws a bishop piece on the game board." alt="" coords="614,426,718,453"/>
+<area shape="rect" id="node15" href="$view_8c.html#aef66694baa8e4666f767a620d280dde9" title="Draws a king piece on the game board." alt="" coords="621,477,711,503"/>
+<area shape="rect" id="node16" href="$view_8c.html#a6ceaf37e6d9cbc86262c90c8ad3e93af" title="Draws a knight piece on the game board." alt="" coords="615,527,717,554"/>
+<area shape="rect" id="node17" href="$view_8c.html#ad7d6b1e676da779cfdce637886a566e9" title="Draws a pawn piece on the game board." alt="" coords="618,578,714,605"/>
+<area shape="rect" id="node18" href="$view_8c.html#a432e60ce009b513f1b5a1c04df97950d" title="Draws a queen piece on the game board." alt="" coords="615,325,717,351"/>
+<area shape="rect" id="node19" href="$view_8c.html#aa4230432f295a4afc9c536ce8ce58f26" title="Draws a rook piece on the game board." alt="" coords="621,375,711,402"/>
+<area shape="rect" id="node13" href="$graphic_8c.html#add642ffbd7541851a3b8afeb2b477331" title="Draws the Black Piece." alt="" coords="812,451,951,478"/>
+<area shape="rect" id="node14" href="$graphic_8c.html#a5bc9007966db542e8991431c3ccd7c48" title="Draws the White Piece." alt="" coords="812,401,951,427"/>
+<area shape="rect" id="node26" href="$game_8c.html#a3b50ad929b824d4209271a22ecf64c42" title="Initializes the chessboard with pieces in their starting positions." alt="" coords="391,578,478,605"/>
+<area shape="rect" id="node27" href="$game_8c.html#a8f27307c4c9a231c9a309e4921203a98" title="Initializes a player with the specified parameters." alt="" coords="389,654,480,681"/>
+<area shape="rect" id="node28" href="$game_8c.html#addee263d25ca6e5b1b80b3a28babce3c" title="Initializes a clock with the specified minutes and seconds." alt="" coords="627,730,705,757"/>
+<area shape="rect" id="node31" href="$rtc_8c.html#aeddfb25263642f0b777eff500cf78256" title="Adjusts the values of a date." alt="" coords="361,831,509,858"/>
+<area shape="rect" id="node33" href="$rtc_8c.html#a67b735a7406ec94e19258b318f939b2f" title="Reads a register from the RTC." alt="" coords="612,781,720,807"/>
+<area shape="rect" id="node35" href="$rtc_8c.html#aa4afce5d408aa1d0f995d3897d8e5b89" title="Checks if an update is in progress." alt="" coords="360,730,509,757"/>
+<area shape="rect" id="node32" href="$rtc_8c.html#af7c9a4150429a1fa7a71d5dac8fbc849" title="Converts a BCD value to decimal." alt="" coords="576,831,756,858"/>
+<area shape="rect" id="node34" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="832,781,931,807"/>
+</map>

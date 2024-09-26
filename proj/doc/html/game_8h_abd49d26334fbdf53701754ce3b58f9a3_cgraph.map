@@ -1,0 +1,9 @@
+<map id="is_movement_legal" name="is_movement_legal">
+<area shape="rect" id="node1" title="Checks if a movement of a specific piece type is legal from an initial position to a final position o..." alt="" coords="5,132,156,159"/>
+<area shape="rect" id="node2" href="$game_8c.html#afec517f7ade95b1b05f45a87450c092c" title="Checks if a piece can take another piece at a given position." alt="" coords="262,5,342,32"/>
+<area shape="rect" id="node3" href="$game_8c.html#a751a2c812e963953ca039bb200f84a4a" title="Checks if a given position is within the boundaries of the board." alt="" coords="241,56,363,83"/>
+<area shape="rect" id="node4" href="$game_8c.html#a193a818b9f61c0b72d19f2389ff42253" title="Checks if there is any piece in the diagonal path between two positions." alt="" coords="223,107,381,133"/>
+<area shape="rect" id="node5" href="$game_8c.html#adb617cd595b97ecd4f8bf3628d141580" title="Checks if there is any piece in front of a given position on the board." alt="" coords="236,157,368,184"/>
+<area shape="rect" id="node6" href="$game_8c.html#a860165381000e46c104b2e4631df2510" title="Checks if a square on the board is occupied by a piece." alt="" coords="227,208,377,235"/>
+<area shape="rect" id="node7" href="$game_8c.html#aa8a72467f38fa34620b572504d2e9115" title="Removes a piece from the board at the specified position." alt="" coords="204,259,400,285"/>
+</map>

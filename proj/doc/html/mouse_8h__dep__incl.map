@@ -1,0 +1,13 @@
+<map id="/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX&#45;LCOM/shared/g1/proj/src/mvc/controller/mouse/mouse.h" name="/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX&#45;LCOM/shared/g1/proj/src/mvc/controller/mouse/mouse.h">
+<area shape="rect" id="node1" title="File containing the constants and functions to interact with the mouse." alt="" coords="453,5,645,91"/>
+<area shape="rect" id="node2" href="$main_8c.html" title="File containing the main loop of the program." alt="" coords="5,413,196,483"/>
+<area shape="rect" id="node3" href="$controller_8h.html" title="This file contains the declaration of the functions that will be used to control the game...." alt="" coords="453,272,645,357"/>
+<area shape="rect" id="node6" href="$mouse_8c.html" title="File containing the implementation of the functions to interact with the mouse." alt="" coords="495,539,687,624"/>
+<area shape="rect" id="node10" href="$graphic_8h.html" title="File containing the constants and functions to interact with the graphic card." alt="" coords="727,139,919,224"/>
+<area shape="rect" id="node4" href="$controller_8c.html" title="This file contains the implementation of the controller." alt="" coords="221,405,413,491"/>
+<area shape="rect" id="node5" href="$view_8h.html" title="This file contains the declaration of the functions that will be used to draw the game on the screen." alt="" coords="720,413,927,483"/>
+<area shape="rect" id="node9" href="$linked__list_8c.html" title=" " alt="" coords="437,413,644,483"/>
+<area shape="rect" id="node7" href="$game_8c.html" title="Implementation of the chess game logic." alt="" coords="712,546,935,617"/>
+<area shape="rect" id="node8" href="$view_8c.html" title="This file contains the implementation of the functions that will be used to draw the game on the scre..." alt="" coords="959,546,1165,617"/>
+<area shape="rect" id="node11" href="$graphic_8c.html" title="File containing the implementation of the functions to interact with the graphic card." alt="" coords="1002,272,1194,357"/>
+</map>

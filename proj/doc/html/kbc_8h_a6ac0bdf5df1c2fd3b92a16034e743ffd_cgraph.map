@@ -1,0 +1,8 @@
+<map id="kbc_enable_interrupts" name="kbc_enable_interrupts">
+<area shape="rect" id="node1" title="enables the KBC interrupts" alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$kbc_8c.html#a6f3460dc0973086f6bd0a5047e3c3981" title="sends commands to the KBC" alt="" coords="220,5,383,32"/>
+<area shape="rect" id="node4" href="$keyboard_8c.html#a7c5f611b9e6ee9f0f11a224c8a196b23" title="tries to read the out buffer" alt="" coords="227,56,376,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="633,56,732,83"/>
+<area shape="rect" id="node5" href="$keyboard_8c.html#ad02355ed53c92ce490bb67d40c44c0b4" title="Reads the outputbuffer from the keyboard." alt="" coords="446,56,570,83"/>
+<area shape="rect" id="node6" href="$keyboard_8c.html#ab72fb7a6e78f00cc63adbfbc3276d1eb" title="Reads a register from the keyboard." alt="" coords="431,107,585,133"/>
+</map>

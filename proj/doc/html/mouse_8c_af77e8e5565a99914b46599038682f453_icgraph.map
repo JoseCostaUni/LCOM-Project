@@ -1,0 +1,5 @@
+<map id="cursor_draw_start" name="cursor_draw_start">
+<area shape="rect" id="node1" title="draws the cursor at the start of the game" alt="" coords="283,5,421,32"/>
+<area shape="rect" id="node2" href="$main_8c.html#a099d48038e444c2f3e69904477527798" title="Initializes the program." alt="" coords="176,5,235,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,5,128,32"/>
+</map>

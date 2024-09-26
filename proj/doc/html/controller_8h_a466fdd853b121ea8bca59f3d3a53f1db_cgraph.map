@@ -1,0 +1,6 @@
+<map id="init_game" name="init_game">
+<area shape="rect" id="node1" title="Initializes the game." alt="" coords="5,31,92,57"/>
+<area shape="rect" id="node2" href="$game_8c.html#a3b50ad929b824d4209271a22ecf64c42" title="Initializes the chessboard with pieces in their starting positions." alt="" coords="142,5,229,32"/>
+<area shape="rect" id="node3" href="$game_8c.html#a8f27307c4c9a231c9a309e4921203a98" title="Initializes a player with the specified parameters." alt="" coords="140,56,231,83"/>
+<area shape="rect" id="node4" href="$game_8c.html#addee263d25ca6e5b1b80b3a28babce3c" title="Initializes a clock with the specified minutes and seconds." alt="" coords="279,56,357,83"/>
+</map>

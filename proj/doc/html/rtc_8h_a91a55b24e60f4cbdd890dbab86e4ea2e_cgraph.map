@@ -1,0 +1,8 @@
+<map id="rtc_get_current_date" name="rtc_get_current_date">
+<area shape="rect" id="node1" title="Reads the current date from the RTC." alt="" coords="5,56,161,83"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#aeddfb25263642f0b777eff500cf78256" title="Adjusts the values of a date." alt="" coords="210,5,358,32"/>
+<area shape="rect" id="node4" href="$rtc_8c.html#a67b735a7406ec94e19258b318f939b2f" title="Reads a register from the RTC." alt="" coords="443,81,551,108"/>
+<area shape="rect" id="node6" href="$rtc_8c.html#aa4afce5d408aa1d0f995d3897d8e5b89" title="Checks if an update is in progress." alt="" coords="209,107,359,133"/>
+<area shape="rect" id="node3" href="$rtc_8c.html#af7c9a4150429a1fa7a71d5dac8fbc849" title="Converts a BCD value to decimal." alt="" coords="407,5,587,32"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="635,81,733,108"/>
+</map>

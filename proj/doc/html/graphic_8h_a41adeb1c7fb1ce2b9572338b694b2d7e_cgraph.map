@@ -1,0 +1,4 @@
+<map id="draw_both_clocks" name="draw_both_clocks">
+<area shape="rect" id="node1" title="draws the both clocks" alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="192,5,307,32"/>
+</map>

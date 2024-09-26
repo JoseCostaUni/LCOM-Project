@@ -1,0 +1,351 @@
+\hypertarget{rtc_8h}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/mvc/controller/rtc/rtc.h File Reference}
+\label{rtc_8h}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/rtc/rtc.h@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/mvc/controller/rtc/rtc.h}}
+
+
+File containing the implementation of the functions to interact with the RTC.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}I\+\_\+\+RTC.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{rtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcurrent__date}{current\+\_\+date}}
+\begin{DoxyCompactList}\small\item\em Struct to represent date and time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{rtc_8h_a6bbe679f115cec90d36d50eb2aac1b89}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes RTC interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8h_a9d4850bb2a488644672d43287f160622}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes RTC interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8h_aab7d2f68770d2f83ffd6913fb4efab6e}{read\+\_\+register}} (uint32\+\_\+t reg, uint8\+\_\+t $\ast$st)
+\begin{DoxyCompactList}\small\item\em Reads a register from the RTC. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8h_af7c9a4150429a1fa7a71d5dac8fbc849}{convert\+\_\+bcd\+\_\+to\+\_\+decimal}} (uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Converts a BCD value to decimal. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8h_a3a5893e77a58e9e6bd63fbf68c737975}{convert\+\_\+decimal\+\_\+to\+\_\+bcd}} (uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Converts a decimal value to BCD. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{rtc_8h_a91a55b24e60f4cbdd890dbab86e4ea2e}{rtc\+\_\+get\+\_\+current\+\_\+date}} (\mbox{\hyperlink{structcurrent__date}{current\+\_\+date}} $\ast$\mbox{\hyperlink{controller_8c_ac06182dafad29a807a5a0a80f7c6084e}{dt}})
+\begin{DoxyCompactList}\small\item\em Reads the current date from the RTC. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8h_a8c260e2e835f7472f0adacd3aacf9a0a}{print\+\_\+date}} (\mbox{\hyperlink{structcurrent__date}{current\+\_\+date}} $\ast$\mbox{\hyperlink{controller_8c_ac06182dafad29a807a5a0a80f7c6084e}{dt}})
+\begin{DoxyCompactList}\small\item\em Prints the date. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8h_a2fc2815b95771bb08344fdb9757687b3}{print\+\_\+time}} (\mbox{\hyperlink{structcurrent__date}{current\+\_\+date}} $\ast$\mbox{\hyperlink{controller_8c_ac06182dafad29a807a5a0a80f7c6084e}{dt}})
+\begin{DoxyCompactList}\small\item\em Prints the time. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{rtc_8h_af7f8729f7a0059186d371a80a6c23756}{adjust\+\_\+date\+\_\+values}} (\mbox{\hyperlink{structcurrent__date}{current\+\_\+date}} $\ast$\mbox{\hyperlink{controller_8c_ac06182dafad29a807a5a0a80f7c6084e}{dt}})
+\begin{DoxyCompactList}\small\item\em Adjusts the date values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing the implementation of the functions to interact with the RTC. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8h_af7f8729f7a0059186d371a80a6c23756}\label{rtc_8h_af7f8729f7a0059186d371a80a6c23756}} 
+\index{rtc.h@{rtc.h}!adjust\_date\_values@{adjust\_date\_values}}
+\index{adjust\_date\_values@{adjust\_date\_values}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{adjust\_date\_values()}{adjust\_date\_values()}}
+{\footnotesize\ttfamily void() adjust\+\_\+date\+\_\+values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcurrent__date}{current\+\_\+date}} $\ast$}]{date }\end{DoxyParamCaption})}
+
+
+
+Adjusts the date values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Address of memory to be initialized with the current date\\
+\hline
+\end{DoxyParams}
+Adjusts the date values.
+
+This function adjusts the values of a date.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Address of memory to be initialized with the adjusted date \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_af7f8729f7a0059186d371a80a6c23756_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_af7f8729f7a0059186d371a80a6c23756_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_af7c9a4150429a1fa7a71d5dac8fbc849}\label{rtc_8h_af7c9a4150429a1fa7a71d5dac8fbc849}} 
+\index{rtc.h@{rtc.h}!convert\_bcd\_to\_decimal@{convert\_bcd\_to\_decimal}}
+\index{convert\_bcd\_to\_decimal@{convert\_bcd\_to\_decimal}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{convert\_bcd\_to\_decimal()}{convert\_bcd\_to\_decimal()}}
+{\footnotesize\ttfamily void() convert\+\_\+bcd\+\_\+to\+\_\+decimal (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Converts a BCD value to decimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Address of memory to be initialized with the decimal value\\
+\hline
+\end{DoxyParams}
+This function converts a BCD value to decimal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Address of memory to be initialized with the decimal value \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_af7c9a4150429a1fa7a71d5dac8fbc849_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_a3a5893e77a58e9e6bd63fbf68c737975}\label{rtc_8h_a3a5893e77a58e9e6bd63fbf68c737975}} 
+\index{rtc.h@{rtc.h}!convert\_decimal\_to\_bcd@{convert\_decimal\_to\_bcd}}
+\index{convert\_decimal\_to\_bcd@{convert\_decimal\_to\_bcd}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{convert\_decimal\_to\_bcd()}{convert\_decimal\_to\_bcd()}}
+{\footnotesize\ttfamily void() convert\+\_\+decimal\+\_\+to\+\_\+bcd (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Converts a decimal value to BCD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Address of memory to be initialized with the BCD value\\
+\hline
+\end{DoxyParams}
+This function converts a decimal value to BCD.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Address of memory to be initialized with the BCD value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{rtc_8h_a8c260e2e835f7472f0adacd3aacf9a0a}\label{rtc_8h_a8c260e2e835f7472f0adacd3aacf9a0a}} 
+\index{rtc.h@{rtc.h}!print\_date@{print\_date}}
+\index{print\_date@{print\_date}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{print\_date()}{print\_date()}}
+{\footnotesize\ttfamily void() print\+\_\+date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcurrent__date}{current\+\_\+date}} $\ast$}]{date }\end{DoxyParamCaption})}
+
+
+
+Prints the date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Address of memory to be initialized with the current date\\
+\hline
+\end{DoxyParams}
+This function prints the date.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Address of memory with the date to be printed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{rtc_8h_a2fc2815b95771bb08344fdb9757687b3}\label{rtc_8h_a2fc2815b95771bb08344fdb9757687b3}} 
+\index{rtc.h@{rtc.h}!print\_time@{print\_time}}
+\index{print\_time@{print\_time}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{print\_time()}{print\_time()}}
+{\footnotesize\ttfamily void() print\+\_\+time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcurrent__date}{current\+\_\+date}} $\ast$}]{date }\end{DoxyParamCaption})}
+
+
+
+Prints the time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Address of memory to be initialized with the current date\\
+\hline
+\end{DoxyParams}
+This function prints the time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Address of memory with the time to be printed \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a2fc2815b95771bb08344fdb9757687b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_aab7d2f68770d2f83ffd6913fb4efab6e}\label{rtc_8h_aab7d2f68770d2f83ffd6913fb4efab6e}} 
+\index{rtc.h@{rtc.h}!read\_register@{read\_register}}
+\index{read\_register@{read\_register}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{read\_register()}{read\_register()}}
+{\footnotesize\ttfamily int() read\+\_\+register (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{reg,  }\item[{uint8\+\_\+t $\ast$}]{val }\end{DoxyParamCaption})}
+
+
+
+Reads a register from the RTC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & Register to be read \\
+\hline
+{\em st} & Address of memory to be initialized with the value read from the register\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, -\/1 otherwise
+\end{DoxyReturn}
+This function reads a register from the RTC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & Register to be read \\
+\hline
+{\em val} & Address of memory to be initialized with the value read from the register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, -\/1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{rtc_8h_aab7d2f68770d2f83ffd6913fb4efab6e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_aab7d2f68770d2f83ffd6913fb4efab6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_a91a55b24e60f4cbdd890dbab86e4ea2e}\label{rtc_8h_a91a55b24e60f4cbdd890dbab86e4ea2e}} 
+\index{rtc.h@{rtc.h}!rtc\_get\_current\_date@{rtc\_get\_current\_date}}
+\index{rtc\_get\_current\_date@{rtc\_get\_current\_date}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_get\_current\_date()}{rtc\_get\_current\_date()}}
+{\footnotesize\ttfamily int() rtc\+\_\+get\+\_\+current\+\_\+date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcurrent__date}{current\+\_\+date}} $\ast$}]{date }\end{DoxyParamCaption})}
+
+
+
+Reads the current date from the RTC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Address of memory to be initialized with the current date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, -\/1 otherwise
+\end{DoxyReturn}
+Reads the current date from the RTC.
+
+This function gets the current date.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & Address of memory to be initialized with the current date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, -\/1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a91a55b24e60f4cbdd890dbab86e4ea2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a91a55b24e60f4cbdd890dbab86e4ea2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_a6bbe679f115cec90d36d50eb2aac1b89}\label{rtc_8h_a6bbe679f115cec90d36d50eb2aac1b89}} 
+\index{rtc.h@{rtc.h}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
+\index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily int() rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes RTC interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, -\/1 otherwise
+\end{DoxyReturn}
+Subscribes RTC interrupts.
+
+This function subscribes and enables interrupts from the RTC.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 upon success, -\/1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{rtc_8h_a6bbe679f115cec90d36d50eb2aac1b89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8h_a9d4850bb2a488644672d43287f160622}\label{rtc_8h_a9d4850bb2a488644672d43287f160622}} 
+\index{rtc.h@{rtc.h}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
+\index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!rtc.h@{rtc.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes RTC interrupts. 
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, -\/1 otherwise
+\end{DoxyReturn}
+This function unsubscribes RTC interrupts.
+
+\begin{DoxyReturn}{Returns}
+int 0 upon success, -\/1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8h_a9d4850bb2a488644672d43287f160622_icgraph}
+\end{center}
+\end{figure}

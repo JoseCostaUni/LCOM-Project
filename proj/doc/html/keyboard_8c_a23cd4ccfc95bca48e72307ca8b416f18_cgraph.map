@@ -1,0 +1,11 @@
+<map id="break_from_cycles" name="break_from_cycles">
+<area shape="rect" id="node1" title="breaks from the cycles" alt="" coords="5,107,151,133"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#aea970a154161a35f6894898a092ed70a" title="interrupts handler of the keyboard" alt="" coords="262,31,326,57"/>
+<area shape="rect" id="node6" href="$keyboard_8c.html#a178b1db0b319dccad2840cc3fd273132" title="Subscribes and enables keyboard interrupts." alt="" coords="207,81,381,108"/>
+<area shape="rect" id="node7" href="$keyboard_8c.html#a32cc4de66854f8a7bd909e7aa8b901ed" title="Unsubscribes keyboard interrupts." alt="" coords="199,132,389,159"/>
+<area shape="rect" id="node8" href="$keyboard_8c.html#aafd4a17c8dbc26ddeb0f405c9d993d92" title="receives the keyboard scan" alt="" coords="207,183,381,209"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#ad02355ed53c92ce490bb67d40c44c0b4" title="Reads the outputbuffer from the keyboard." alt="" coords="453,5,577,32"/>
+<area shape="rect" id="node5" href="$keyboard_8c.html#ab72fb7a6e78f00cc63adbfbc3276d1eb" title="Reads a register from the keyboard." alt="" coords="437,56,592,83"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="640,31,739,57"/>
+<area shape="rect" id="node9" href="$keyboard_8c.html#a36aef6e0db295f00cbc0db17796a3b5a" title="cleans the scan info" alt="" coords="451,183,578,209"/>
+</map>

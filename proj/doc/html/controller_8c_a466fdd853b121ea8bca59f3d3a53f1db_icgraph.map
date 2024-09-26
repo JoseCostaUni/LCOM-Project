@@ -1,0 +1,6 @@
+<map id="init_game" name="init_game">
+<area shape="rect" id="node1" title="Initializes a new game with the specified time limit for each player." alt="" coords="499,5,585,32"/>
+<area shape="rect" id="node2" href="$controller_8c.html#ab0957bc720f28c7bbfc56f57309dffcb" title="Routes the program flow based on the current state and user input." alt="" coords="389,5,451,32"/>
+<area shape="rect" id="node3" href="$controller_8c.html#a3785128f2a9492f2254ab7db8af81fef" title="Parses keyboard input and updates the current key pressed." alt="" coords="176,5,341,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,5,128,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="draw_pause_menu" name="draw_pause_menu">
+<area shape="rect" id="node1" title="Draws the pause menu." alt="" coords="5,31,149,57"/>
+<area shape="rect" id="node2" href="$graphic_8c.html#a0d157d997329169f936545f9985e334b" title="Swaps the buffers." alt="" coords="201,5,309,32"/>
+<area shape="rect" id="node3" href="$graphic_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws the pixel." alt="" coords="197,56,312,83"/>
+</map>

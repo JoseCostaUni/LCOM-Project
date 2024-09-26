@@ -1,0 +1,116 @@
+\hypertarget{linked__list_8c}{}\doxysection{/home/bruno/\+Desktop/\+FEUP/2o ano/2o semetre/lcom/\+MINIX-\/\+LCOM/shared/g1/proj/src/utils/linked\+\_\+list.c File Reference}
+\label{linked__list_8c}\index{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/utils/linked\_list.c@{/home/bruno/Desktop/FEUP/2o ano/2o semetre/lcom/MINIX-\/LCOM/shared/g1/proj/src/utils/linked\_list.c}}
+{\ttfamily \#include \char`\"{}../mvc/controller/controller.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for linked\+\_\+list.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{linked__list_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$ \mbox{\hyperlink{linked__list_8c_a75a77cb2cff8fdeb99ae36448a6d3b35}{create\+\_\+doubly\+\_\+linked\+\_\+list}} ()
+\item 
+\mbox{\hyperlink{structNode}{Node}} $\ast$ \mbox{\hyperlink{linked__list_8c_af19b242ed4b982bfee8a3e06603e9c4c}{create\+Node}} (struct \mbox{\hyperlink{structBoard}{Board}} \mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}})
+\item 
+void \mbox{\hyperlink{linked__list_8c_a85910309aca5bc43d2a53794a04c0de4}{initialize\+List}} (\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$list)
+\item 
+void \mbox{\hyperlink{linked__list_8c_a151a51125d039994566ce86f419118e8}{insert\+At\+Beginning}} (\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$list, struct \mbox{\hyperlink{structBoard}{Board}} \mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}})
+\item 
+void \mbox{\hyperlink{linked__list_8c_ac2660d9383354a5ee57d100c80f4671b}{insert\+At\+End}} (\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$list, struct \mbox{\hyperlink{structBoard}{Board}} \mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}})
+\item 
+void \mbox{\hyperlink{linked__list_8c_a1b5839814cf69ffd9e68b28b43674c40}{insert\+At\+Position}} (\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$list, struct \mbox{\hyperlink{structBoard}{Board}} \mbox{\hyperlink{linked__list_8h_a97fcb05889b8d9f05df35376e04a314f}{board}}, int position)
+\item 
+void \mbox{\hyperlink{linked__list_8c_ad6677b66d0b6496a42ba1e084f79c21b}{print\+List}} (\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$list)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{linked__list_8c_a75a77cb2cff8fdeb99ae36448a6d3b35}\label{linked__list_8c_a75a77cb2cff8fdeb99ae36448a6d3b35}} 
+\index{linked\_list.c@{linked\_list.c}!create\_doubly\_linked\_list@{create\_doubly\_linked\_list}}
+\index{create\_doubly\_linked\_list@{create\_doubly\_linked\_list}!linked\_list.c@{linked\_list.c}}
+\doxysubsubsection{\texorpdfstring{create\_doubly\_linked\_list()}{create\_doubly\_linked\_list()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}}$\ast$ create\+\_\+doubly\+\_\+linked\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{linked__list_8c_af19b242ed4b982bfee8a3e06603e9c4c}\label{linked__list_8c_af19b242ed4b982bfee8a3e06603e9c4c}} 
+\index{linked\_list.c@{linked\_list.c}!createNode@{createNode}}
+\index{createNode@{createNode}!linked\_list.c@{linked\_list.c}}
+\doxysubsubsection{\texorpdfstring{createNode()}{createNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNode}{Node}}$\ast$ create\+Node (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structBoard}{Board}}}]{board }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{linked__list_8c_af19b242ed4b982bfee8a3e06603e9c4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{linked__list_8c_a85910309aca5bc43d2a53794a04c0de4}\label{linked__list_8c_a85910309aca5bc43d2a53794a04c0de4}} 
+\index{linked\_list.c@{linked\_list.c}!initializeList@{initializeList}}
+\index{initializeList@{initializeList}!linked\_list.c@{linked\_list.c}}
+\doxysubsubsection{\texorpdfstring{initializeList()}{initializeList()}}
+{\footnotesize\ttfamily void initialize\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{linked__list_8c_a151a51125d039994566ce86f419118e8}\label{linked__list_8c_a151a51125d039994566ce86f419118e8}} 
+\index{linked\_list.c@{linked\_list.c}!insertAtBeginning@{insertAtBeginning}}
+\index{insertAtBeginning@{insertAtBeginning}!linked\_list.c@{linked\_list.c}}
+\doxysubsubsection{\texorpdfstring{insertAtBeginning()}{insertAtBeginning()}}
+{\footnotesize\ttfamily void insert\+At\+Beginning (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$}]{list,  }\item[{struct \mbox{\hyperlink{structBoard}{Board}}}]{board }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{linked__list_8c_a151a51125d039994566ce86f419118e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{linked__list_8c_a151a51125d039994566ce86f419118e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{linked__list_8c_ac2660d9383354a5ee57d100c80f4671b}\label{linked__list_8c_ac2660d9383354a5ee57d100c80f4671b}} 
+\index{linked\_list.c@{linked\_list.c}!insertAtEnd@{insertAtEnd}}
+\index{insertAtEnd@{insertAtEnd}!linked\_list.c@{linked\_list.c}}
+\doxysubsubsection{\texorpdfstring{insertAtEnd()}{insertAtEnd()}}
+{\footnotesize\ttfamily void insert\+At\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$}]{list,  }\item[{struct \mbox{\hyperlink{structBoard}{Board}}}]{board }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{linked__list_8c_ac2660d9383354a5ee57d100c80f4671b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{linked__list_8c_ac2660d9383354a5ee57d100c80f4671b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{linked__list_8c_a1b5839814cf69ffd9e68b28b43674c40}\label{linked__list_8c_a1b5839814cf69ffd9e68b28b43674c40}} 
+\index{linked\_list.c@{linked\_list.c}!insertAtPosition@{insertAtPosition}}
+\index{insertAtPosition@{insertAtPosition}!linked\_list.c@{linked\_list.c}}
+\doxysubsubsection{\texorpdfstring{insertAtPosition()}{insertAtPosition()}}
+{\footnotesize\ttfamily void insert\+At\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$}]{list,  }\item[{struct \mbox{\hyperlink{structBoard}{Board}}}]{board,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{linked__list_8c_a1b5839814cf69ffd9e68b28b43674c40_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{linked__list_8c_ad6677b66d0b6496a42ba1e084f79c21b}\label{linked__list_8c_ad6677b66d0b6496a42ba1e084f79c21b}} 
+\index{linked\_list.c@{linked\_list.c}!printList@{printList}}
+\index{printList@{printList}!linked\_list.c@{linked\_list.c}}
+\doxysubsubsection{\texorpdfstring{printList()}{printList()}}
+{\footnotesize\ttfamily void print\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDoublyLinkedList}{Doubly\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
+

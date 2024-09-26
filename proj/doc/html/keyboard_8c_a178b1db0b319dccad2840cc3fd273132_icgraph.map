@@ -1,0 +1,5 @@
+<map id="keyboard_subscribe_int" name="keyboard_subscribe_int">
+<area shape="rect" id="node1" title="Subscribes and enables keyboard interrupts." alt="" coords="199,31,373,57"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a23cd4ccfc95bca48e72307ca8b416f18" title="breaks from the cycles" alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="17,56,139,83"/>
+</map>

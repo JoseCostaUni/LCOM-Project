@@ -1,0 +1,4 @@
+<map id="init_player" name="init_player">
+<area shape="rect" id="node1" title="Initializes a player with the specified parameters." alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node2" href="$game_8c.html#addee263d25ca6e5b1b80b3a28babce3c" title="Initializes a clock with the specified minutes and seconds." alt="" coords="144,5,223,32"/>
+</map>

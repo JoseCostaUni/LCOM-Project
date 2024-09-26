@@ -1,0 +1,11 @@
+<map id="draw_board_except_one_piece" name="draw_board_except_one_piece">
+<area shape="rect" id="node1" title="Draws the chess board except for one piece." alt="" coords="1339,23,1519,65"/>
+<area shape="rect" id="node2" href="$view_8c.html#abda224a2136d1683aefd16a605263d33" title="Advances a piece to a new position on the game board." alt="" coords="1154,5,1273,32"/>
+<area shape="rect" id="node9" href="$view_8c.html#a1add12a8f215611a402c91a709a12698" title="Moves a piece to its initial position on the game board." alt="" coords="1136,56,1291,83"/>
+<area shape="rect" id="node3" href="$game_8c.html#a5d5cf7f4919fd953e240529e8a92863b" title="Changes the position of a piece on the board if the move is legal." alt="" coords="917,5,1088,32"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a6fa632a85f47c9d846c55b975d118df9" title="In game mouse movement." alt="" coords="663,5,869,32"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a7c35b8ea4b294430bfbb2d6c0dd98354" title="parses the values of the mouse packet" alt="" coords="507,5,615,32"/>
+<area shape="rect" id="node6" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Subscribes mouse interrupts." alt="" coords="373,5,459,32"/>
+<area shape="rect" id="node7" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="176,5,325,32"/>
+<area shape="rect" id="node8" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,5,128,32"/>
+</map>

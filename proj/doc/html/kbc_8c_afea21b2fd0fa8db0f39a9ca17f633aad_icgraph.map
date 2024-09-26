@@ -1,0 +1,8 @@
+<map id="read_commands_kbc" name="read_commands_kbc">
+<area shape="rect" id="node1" title="reads the commands of the KBC" alt="" coords="601,56,761,83"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a18f94800c87c2b1f3c1dbaedf861347b" title="disables the mouse report" alt="" coords="387,5,553,32"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a96f453d50b145b9a6de548552a8c5a2e" title="enables the mouse report" alt="" coords="176,56,339,83"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Subscribes mouse interrupts." alt="" coords="427,107,513,133"/>
+<area shape="rect" id="node4" href="$main_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title="Main loop of the program." alt="" coords="5,81,128,108"/>
+<area shape="rect" id="node6" href="$controller_8c.html#a36011516c792514a2664ca1340b1c573" title="Parses mouse input and updates the display accordingly." alt="" coords="183,107,332,133"/>
+</map>

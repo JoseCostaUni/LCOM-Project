@@ -1,0 +1,14 @@
+<map id="setup" name="setup">
+<area shape="rect" id="node1" title="Initializes the program." alt="" coords="5,183,64,209"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#af77e8e5565a99914b46599038682f453" title="draws the cursor at the start of the game" alt="" coords="149,5,288,32"/>
+<area shape="rect" id="node3" href="$view_8c.html#a596a5c86bb771a1db7af41386c94eaad" title="Initializes the graphics mode." alt="" coords="149,56,289,83"/>
+<area shape="rect" id="node7" href="$graphic_8c.html#a64c934962c9c5b0bddc517f9678ddfee" title="Loads the numbers. This function loads the numbers." alt="" coords="161,107,276,133"/>
+<area shape="rect" id="node8" href="$graphic_8c.html#a67f86e0b7cb832cdc53f3d578b83afb7" title="Loads the xpm." alt="" coords="175,157,262,184"/>
+<area shape="rect" id="node9" href="$graphic_8c.html#a6399456ceeeb8df04f6ea6c55fee505c" title="Loads the xpm clocks board." alt="" coords="129,208,308,235"/>
+<area shape="rect" id="node10" href="$graphic_8c.html#a96f078d5229cccb86c289af5e7310399" title="Loads the xpm cursors." alt="" coords="152,259,285,285"/>
+<area shape="rect" id="node11" href="$graphic_8c.html#a6b2bbc22fb8d3bbd05195bbf6cdfe296" title="Loads the xpm game background." alt="" coords="112,309,325,336"/>
+<area shape="rect" id="node12" href="$graphic_8c.html#aba8fbf35f49c528a721402130a55a4fa" title="Loads the xpm menu." alt="" coords="153,360,284,387"/>
+<area shape="rect" id="node4" href="$graphic_8c.html#aa4e683fb6c23914b14e7932daa196d2c" title="Allocates the buffers." alt="" coords="381,5,507,32"/>
+<area shape="rect" id="node5" href="$graphic_8c.html#a9c86d5e3807f8c993bbaa4e7f139b581" title="Sets the frame mode." alt="" coords="378,56,510,83"/>
+<area shape="rect" id="node6" href="$graphic_8c.html#ad68181bf7a320dc3a6bfd8210c3ae0c8" title="Sets the graphic mode to the given mode." alt="" coords="373,107,515,133"/>
+</map>

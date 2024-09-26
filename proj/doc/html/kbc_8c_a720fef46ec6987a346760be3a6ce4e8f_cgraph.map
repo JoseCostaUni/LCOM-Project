@@ -1,0 +1,5 @@
+<map id="kbc_write_command_args" name="kbc_write_command_args">
+<area shape="rect" id="node1" title="writes a command arguments to the KBC" alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#ab72fb7a6e78f00cc63adbfbc3276d1eb" title="Reads a register from the keyboard." alt="" coords="245,5,400,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="448,5,547,32"/>
+</map>

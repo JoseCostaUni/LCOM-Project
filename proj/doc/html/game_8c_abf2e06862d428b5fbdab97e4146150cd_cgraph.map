@@ -1,0 +1,4 @@
+<map id="get_piece_from_click" name="get_piece_from_click">
+<area shape="rect" id="node1" title="Retrieves a piece from the board based on a click position." alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node2" href="$game_8c.html#a751a2c812e963953ca039bb200f84a4a" title="Checks if a given position is within the boundaries of the board." alt="" coords="213,5,336,32"/>
+</map>
